@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=GFS+Didot&family=Montserrat:wght@500&family=Roboto:wght@100&family=Trocchi&family=Ysabeau+SC:wght@600&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -29,6 +29,10 @@ body {
   }
   .btn_dark_green_outline {
     @apply border-gray-20 bg-green-90 px-8 py-5 text-white;
+  }
+
+  .btn_book_appointment {
+    @apply bg-black text-white px-4 py-2 rounded-md hover:bg-gray-800;
   }
 
   .max-container {
