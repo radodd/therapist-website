@@ -4,15 +4,15 @@ type ButtonProps = {
   type: "button" | "submit";
   title: string;
   icon?: string;
-  variant: string;
   full?: boolean;
+  negative?: boolean;
 };
-const Button = ({ type, title, icon, variant, full }: ButtonProps) => {
+const Button = ({ type, title, icon, full, negative }: ButtonProps) => {
   return (
     <button
-      className={`flexCenter gap-3 rounded-full border ${variant} ${
-        full && "w-full"
-      }`}
+      className={`btn-pink gap-3 rounded-full ${full && "w-full"} ${
+        negative && "!btn-negative"
+      } ${icon && icon}`}
       type={type}
     >
       {icon && <Image src={icon} alt={title} width={24} height={24} />}

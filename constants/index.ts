@@ -1,5 +1,5 @@
 // NAVIGATION
-export const NAV_LINKS = [
+export const navLinks = [
   { href: "/", key: "about", label: "About" },
   { href: "/", key: "therapy", label: "Therapy" },
   { href: "/", key: "contact ", label: "Contact " },
@@ -7,79 +7,80 @@ export const NAV_LINKS = [
 ];
 
 // CAMP SECTION
-export const PEOPLE_URL = [
-  "/person-1.png",
-  "/person-2.png",
-  "/person-3.png",
-  "/person-4.png",
+export const qualifications = [
+  {
+    title: "Education:",
+    highlights: [
+      "American Association of Marriage & Family Therapists",
+      "Ph.D. in Counseling from Columbia University",
+    ],
+  },
+  {
+    title: "Professional Organization Affiliations:",
+    highlights: [
+      "American College Counseling Association ( ACCA )",
+      "American Mental Health Counselors Association ( AMHCA )",
+      "American Rehabilitation Counseling Association ( ARCA )",
+    ],
+  },
+  {
+    title: "Specialized Training:",
+    highlights: [
+      "Positive Psychiatry and Mental Health",
+      "Creating Behavioral Change",
+      "Schizophrenia",
+      "Abnormal Psychology",
+      "Introduction to Psychology",
+    ],
+  },
 ];
 
 // FEATURES SECTION
-export const FEATURES = [
+export const focus = [
   {
-    title: "Real maps can be offline",
-    icon: "/map.svg",
-    variant: "green",
+    title: "Emotion Regulation",
     description:
-      "We provide a solution for you to be able to use our application when climbing, yes offline maps you can use at any time there is no signal at the location",
+      "Gen is a Somatic Experiencing Practitioner, a mind-body approach to reducing reactivity to stress. If you are feeling the post covid burnout of too much work and a lack of boundaries, Gen may be able to help you fill your cup and burn out less during periods of exposure to new stressors. Gen has worked with individuals and couples to improve emotion regulation skills both individually and in the couples system.",
   },
   {
-    title: "Set an adventure schedule",
-    icon: "/calendar.svg",
-    variant: "green",
+    title: "Sports Performance",
     description:
-      "Schedule an adventure with friends. On holidays, there are many interesting offers from Hilink. That way, there's no more discussion",
+      "Gen has a graduate certificate in Sport Psychology and recently attained a coaching certification from the Mental Performance Golf Academy. Modern neuroscience has proven that practicing skills such as utilizing visualization to achieve peak performance is just as good as practicing the physical skill itself. Gen has worked with collegiate and professional athletes to help them increase their confidence, overcome limiting beliefs and stay more present at game time.",
   },
   {
-    title: "Technology using augment reality",
-    icon: "/tech.svg",
-    variant: "green",
+    title: "Trauma/PTSD",
     description:
-      "Technology uses augmented reality as a guide to your hiking trail in the forest to the top of the mountain. Already supported by the latest technology without an internet connection",
+      "Gen is a Somatic Experiencing practitioner which utilizes mindfulness and a slow and steady exposure to stressors to increase stress resilience and promote hope. Research has shown that somatic psychotherapy can help reduce severity and actual symptoms of PTSD and other stress-related diagnoses. Gen has worked with individuals, couples and athletes to help them heal their trauma.",
   },
   {
-    title: "Many new locations every month",
-    icon: "/location.svg",
-    variant: "orange",
+    title: "Relationships",
+
     description:
-      "Lots of new locations every month, because we have a worldwide community of climbers who share their best experiences with climbing",
+      "Gen has been working with couples for over 4 years and has specific training in Sue Johnson’s Emotionally Focused Therapy technique [EFT]. Research has shown that through increasing vulnerability and identifying feelings, communication organically changes and couples feel more connected afterwards.",
   },
 ];
 
 // FOOTER SECTION
-export const FOOTER_LINKS = [
+export const footerLinks = [
   {
     title: "Learn More",
     links: [
-      "About Hilink",
-      "Press Releases",
-      "Environment",
-      "Jobs",
-      "Privacy Policy",
-      "Contact Us",
+      { name: "About", link: "/" },
+      { name: "Services", link: "/" },
+      { name: "Contact", link: "/" },
     ],
   },
   {
-    title: "Our Community",
-    links: ["Climbing xixixi", "Hiking hilink", "Hilink kinthill"],
+    title: "Get in touch",
+    links: [
+      { name: "Gen Fulton Psychotherapy", link: "/" },
+      { name: "Mill Valley, CA 94941", link: "/" },
+      { name: "(628)265-6746", link: "/" },
+    ],
   },
 ];
 
-export const FOOTER_CONTACT_INFO = {
-  title: "Contact Us",
-  links: [
-    { label: "Admin Officer", value: "123-456-7890" },
-    { label: "Email Officer", value: "hilink@akinthil.com" },
-  ],
-};
-
-export const SOCIALS = {
+export const socials = {
   title: "Social",
-  links: [
-    "/facebook.svg",
-    "/instagram.svg",
-    "/twitter.svg",
-    "/youtube.svg",
-    "/wordpress.svg",
-  ],
+  links: ["/facebook.svg", "/instagram.svg", "/twitter.svg", "/youtube.svg"],
 };

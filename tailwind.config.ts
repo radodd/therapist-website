@@ -6,46 +6,45 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontSize: {
+      xs: ["12px", "16px"],
+      sm: ["16px", "20px"],
+      base: ["20px", "normal"],
+      lg: ["32px", "normal"],
+      xl: ["64px", "normal"],
+      "2xl": ["24px", "29.26px"],
+      "3xl": ["28px", "50px"],
+      "4xl": ["48px", "58px"],
+      "8xl": ["96px", "106px"],
+    },
+    fontWeight: {
+      light: 350,
+      normal: 500,
+      bold: 800,
+      extrabold: 900,
+    },
     extend: {
+      fontFamily: {
+        // avenir: ["Avenir", "sans-serif"],
+        montserrat: ["Montserrat", "sans-serif"],
+      },
       colors: {
-        green: {
-          50: "#30AF5B",
-          90: "#292C27",
-        },
-        gray: {
-          10: "#EEEEEE",
-          20: "#A2A2A2",
-          30: "#7B7B7B",
-          50: "#585858",
-          90: "#141414",
-        },
-        orange: {
-          50: "#FF814C",
-        },
-        blue: {
-          70: "#021639",
-        },
-        yellow: {
-          50: "#FEC601",
-        },
+        primary: "#ECEEFF",
+        "coral-red": "#FF6452",
+        "slate-gray": "#6D6D6D",
+        "pale-blue": "#F5F6FF",
+        "white-400": "rgba(255, 255, 255, 0.80)",
+        "navy-blue": "#0F1D44",
+        bubblegum: "#BD83B8",
+      },
+      boxShadow: {
+        "3xl": "0 10px 40px rgba(0, 0, 0, 0.1)",
       },
       backgroundImage: {
-        "bg-img-1": "url('/img-1.png')",
-        "bg-img-2": "url('/img-2.png')",
-        "feature-bg": "url('/feature-bg.png')",
-        pattern: "url('/pattern.png')",
-        "pattern-2": "url('/pattern-bg.png')",
+        banner: "url('/bg-banner.png')",
       },
       screens: {
-        xs: "400px",
-        "3xl": "1680px",
-        "4xl": "2200px",
-      },
-      maxWidth: {
-        "10xl": "1512px",
-      },
-      borderRadius: {
-        "5xl": "40px",
+        wide: "1440px",
       },
     },
   },
