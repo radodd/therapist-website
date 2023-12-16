@@ -24,6 +24,10 @@
     @apply bg-navy-blue border border-bubblegum text-bubblegum px-6 py-3 rounded-full hover:bg-pink-700;
   }
 
+  .btn-icon {
+    @apply bg-transparent border-none;
+  }
+
   .max-container {
     @apply mx-auto max-w-[1440px];
   }

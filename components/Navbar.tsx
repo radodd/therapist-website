@@ -25,11 +25,11 @@ const Navbar = () => {
   );
 
   return (
-    <header className="padding-x py-8  z-10 w-full bg-navy-blue">
+    <header className="padding-x py-8 w-full bg-navy-blue">
       <nav className="border-2 border-red-500 flex justify-between items-center max-container padding-container">
         <Link href="/" className="flex items-center">
-          <Image src="/logo.png" alt="logo" width={74} height={29} />
-          <span className="flex ml-2 text-white text-4xl font-montserrat">
+          <Image src="/logo.svg" alt="logo" width={74} height={29} />
+          <span className="flex ml-2 text-white text-4xl font-montserrat max-sm:hidden">
             Gen Fulton
           </span>
         </Link>

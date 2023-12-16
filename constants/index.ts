@@ -36,7 +36,7 @@ export const qualifications = [
 ];
 
 // FEATURES SECTION
-export const focus = [
+export const specialties = [
   {
     title: "Emotion Regulation",
     description:

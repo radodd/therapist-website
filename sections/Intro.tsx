@@ -1,14 +1,14 @@
 import Image from "next/image";
-import Button from "./Button";
+import Button from "../components/Button";
 
 const Intro = () => {
   return (
     <section
       id="about"
-      className="border-blue-400 border-2 flex items-center max-lg:flex-col gap-[110px] w-full max-container"
+      className="border-blue-400 border-2 flex items-center flex-col w-full max-container"
     >
-      <div className="relative flex flex-row">
-        <div className="flex justify-start items-center">
+      <div className="relative flex  mt-10 gap-6 max-lg:flex-col">
+        <div className="flex justify-start items-center max-lg:justify-center">
           <Image
             src="/intro-picture.png"
             alt="intro picture"
@@ -18,11 +18,11 @@ const Intro = () => {
           />
         </div>
 
-        <div className="flex flex-1 flex-col text-white gap-8 ml-[110px]">
+        <div className="flex flex-col text-white gap-8 ml-[110px] max-lg:ml-0">
           <h2 className="font-montserrat text-lg font-normal lg:max-w-lg">
             Meet Gen
           </h2>
-          <p className="mt-4 lg:max-w-3xl font-montserrat font-light">
+          <p className=" lg:max-w-3xl font-montserrat font-light">
             My approach to therapy focuses on conjointly developing goals that
             suit your needs to reduce stress, burnout and improve joy,
             inspiration and harmony in your life. Primarily utilizing
@@ -33,13 +33,13 @@ const Intro = () => {
             Somatic Experiencing, a mind-body approach to trauma healing and
             improving stress resiliency to work with individuals and athletes.
           </p>
-          <div className="flex flex-wrap gap-8 font-extrabold font-sm">
+          <div className="flex flex-wrap gap-8 font-extrabold font-sm max-lg:justify-center max-sm:gap-[22px]">
             <Button title="Contact Gen" type="button" />
             <Button title="View Gen's CV" type="button" negative={true} />
           </div>
         </div>
       </div>
-      <div className="flex flex-col  bottom-0 justify-center ">
+      <div className=" justify-center m-10">
         <Button type="button" title="" icon="arrow.svg" />
       </div>
     </section>

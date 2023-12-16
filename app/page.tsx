@@ -1,18 +1,22 @@
-import Intro from "@/components/Intro";
+import Intro from "@/sections/Intro";
 import Footer from "@/components/Footer";
-import Consult from "@/components/Consult";
-import Banner from "@/components/Banner";
-import Reviews from "@/components/Reviews";
+import Consult from "@/sections/Consult";
+import Banner from "@/sections/Banner";
+import Reviews from "@/sections/Reviews";
 import Navbar from "@/components/Navbar";
+import Focus from "@/sections/Focus";
 
 export default function Home() {
   return (
     <>
-      <section className="sm:px-[70px] px-[35px] bg-banner bg-no-repeat">
+      <section className="sm:px-[70px] max-sm:px-8 bg-banner bg-no-repeat bg-cover">
         <Banner />
       </section>
       <section className="sm:px-[70px] px-[35px] mt-[72px] bg-navy-blue border-blue-700 border-2">
         <Intro />
+      </section>
+      <section className="padding">
+        <Focus />
       </section>
       <section className="padding-x py-10">
         <Reviews />

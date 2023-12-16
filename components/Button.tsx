@@ -12,7 +12,7 @@ const Button = ({ type, title, icon, full, negative }: ButtonProps) => {
     <button
       className={`btn-pink gap-3 rounded-full ${full && "w-full"} ${
         negative && "!btn-negative"
-      } ${icon && icon}`}
+      } ${icon && "btn-icon"}`}
       type={type}
     >
       {icon && <Image src={icon} alt={title} width={24} height={24} />}
