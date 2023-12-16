@@ -55,6 +55,20 @@ export const specialties = [
   },
 ];
 
+export const reviews = [
+  {
+    id: 1,
+    text: "My experiences with Gen were excellent. Over the course of many visits it's clear that Gen has strong listening skills and excellent therapy techniques to help cope or resolve challenges--many of which I now use daily or weekly to manage interpersonal and solo difficulties. I'd recommend Gen to anyone.",
+  },
+  {
+    id: 2,
+    text: "Someone said a nice thing.",
+  },
+  {
+    id: 3,
+    text: "And ANOTHER nice thing here.",
+  },
+];
 // FOOTER SECTION
 export const footerLinks = [
   {
