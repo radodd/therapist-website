@@ -4,7 +4,7 @@ import Consult from "@/sections/Consult";
 import Banner from "@/sections/Banner";
 import Reviews from "@/sections/Reviews";
 import Navbar from "@/components/Navbar";
-import Focus from "@/sections/Focus";
+import Expertise from "@/sections/Expertise";
 
 export default function Home() {
   return (
@@ -15,17 +15,15 @@ export default function Home() {
       <section className="sm:px-[70px] px-[35px] mt-[72px] bg-navy-blue border-blue-700 border-2">
         <Intro />
       </section>
-      <section className="padding">
-        <Focus />
+      <section className="sm:px-[70px] sm:p-10">
+        <Expertise />
       </section>
-      <section className="padding-x py-10">
+      <section className="sm:px-[70px] sm:pt-10">
         <Reviews />
       </section>
-
       <section className="padding-x sm:py-32 py-16 w-full">
         <Consult />
       </section>
-
       <section className="padding padding-x padding-t pb-8">
         <Footer />
       </section>

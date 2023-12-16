@@ -11,9 +11,9 @@
   scroll-behavior: smooth;
 }
 
-/* body {
-  font-family: Didot;
-} */
+body {
+  font-family: Montserrat;
+}
 
 @layer utilities {
   .btn-pink {
