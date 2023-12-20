@@ -45,6 +45,7 @@ module.exports = {
       },
       backgroundImage: {
         banner: "url('/bg-banner.png')",
+        consult: "url('/bg-consult.jpg')",
       },
       screens: {
         wide: "1440px",
