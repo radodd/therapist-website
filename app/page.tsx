@@ -12,7 +12,7 @@ export default function Home() {
       <section className="sm:px-[70px] max-sm:px-8 bg-banner bg-no-repeat bg-cover">
         <Banner />
       </section>
-      <section className="sm:px-[70px] px-[35px] mt-[72px] bg-navy-blue border-blue-700 border-2">
+      <section className="sm:px-[70px] px-[35px] mt-[72px] intro-bg-style">
         <Intro />
       </section>
       <section className="sm:px-[70px] sm:p-10">
@@ -21,7 +21,7 @@ export default function Home() {
       <section className="relative sm:px-0 bg-sea-foam justify-center">
         <Reviews />
       </section>
-      <section className="sm:px-[70px] sm:p-10 mt-[72px] bg-gradient-to-r from-[rgba(38,66,90,0.70)] via-transparent to-[rgba(38,66,90,0.70)] bg-cover bg-no-repeat">
+      <section className=" mt-[72px] consult-bg-style">
         <Consult />
       </section>
     </>

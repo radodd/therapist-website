@@ -5,16 +5,16 @@ const Intro = () => {
   return (
     <section
       id="about"
-      className="border-blue-400 border-2 flex items-center flex-col w-full max-container"
+      className="border-blue-400 border-2 flex items-center flex-col w-full max-container bg-consult-bg-color"
     >
       <div className="relative flex  mt-10 gap-6 max-lg:flex-col">
         <div className="flex justify-start items-center max-lg:justify-center">
           <Image
-            src="/intro-picture.png"
+            src="/selfie.jpg"
             alt="intro picture"
-            width={310}
-            height={400}
-            className="object-contain"
+            width={300}
+            height={300}
+            className="object-cover rounded-full"
           />
         </div>
 

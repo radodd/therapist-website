@@ -27,7 +27,7 @@ const Navbar = () => {
   return (
     <header className="padding-x py-8 w-full bg-navy-blue">
       <nav className="border-2 border-red-500 flex justify-between items-center max-container padding-container">
-        <Link href="/" className="flex items-center">
+        <Link href="/app/favicon.ico" className="flex items-center">
           <Image src="/logo.svg" alt="logo" width={74} height={29} />
           <span className="flex ml-2 text-white text-4xl font-montserrat max-sm:hidden">
             Gen Fulton

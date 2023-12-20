@@ -28,6 +28,20 @@ body {
     @apply bg-transparent border-none hover:bg-transparent hover:scale-125 hover:opacity-100 transition-transform;
   }
 
+  .banner-bg-style {
+    @apply bg-gradient-to-r from-opacity-70 to-opacity-0 bg-cover bg-center;
+  }
+
+  .intro-bg-style {
+    @apply bg-cover bg-no-repeat bg-right;
+    background-image: url("/intro.jpg");
+  }
+
+  .consult-bg-style {
+    @apply bg-cover bg-no-repeat bg-right;
+    background-image: url("/consult.jpg");
+  }
+
   .max-container {
     @apply mx-auto max-w-[1440px];
   }

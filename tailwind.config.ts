@@ -39,13 +39,14 @@ module.exports = {
         "navy-blue": "#0F1D44",
         bubblegum: "#BD83B8",
         "sea-foam": "#B5D9CC",
+        "consult-bg-color": "rgba(38, 66, 90, 0.70)",
       },
       boxShadow: {
         "3xl": "0 10px 40px rgba(0, 0, 0, 0.1)",
       },
       backgroundImage: {
-        banner: "url('/bg-banner.png')",
-        consult: "url('/bg-consult.jpg')",
+        banner: "url('/banner.jpg')",
+        consult: "url('/consult.jpg')",
       },
       screens: {
         wide: "1440px",
