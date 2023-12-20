@@ -9,10 +9,10 @@ import Expertise from "@/sections/Expertise";
 export default function Home() {
   return (
     <>
-      <section className="sm:px-[70px] max-sm:px-8 bg-banner bg-no-repeat bg-cover">
+      <section className="bg-banner bg-no-repeat bg-cover">
         <Banner />
       </section>
-      <section className="sm:px-[70px] px-[35px] mt-[72px] intro-bg-style">
+      <section className="intro-bg-style">
         <Intro />
       </section>
       <section className="sm:px-[70px] sm:p-10">
@@ -27,3 +27,4 @@ export default function Home() {
     </>
   );
 }
+// sm:px-[70px] px-[35px] mt-[72px]

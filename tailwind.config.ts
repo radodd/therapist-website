@@ -20,7 +20,7 @@ module.exports = {
       "8xl": ["96px", "106px"],
     },
     fontWeight: {
-      light: 350,
+      light: 300,
       normal: 500,
       bold: 800,
       extrabold: 900,
@@ -40,6 +40,7 @@ module.exports = {
         bubblegum: "#BD83B8",
         "sea-foam": "#B5D9CC",
         "consult-bg-color": "rgba(38, 66, 90, 0.70)",
+        "banner-bg-color": "rgba(0, 0, 0, 0.50)",
       },
       boxShadow: {
         "3xl": "0 10px 40px rgba(0, 0, 0, 0.1)",
@@ -50,9 +51,11 @@ module.exports = {
       },
       screens: {
         wide: "1440px",
+        navscreen: "1090px",
         medium: "1225px",
         small: "950px",
         extrasmall: "740px",
+        mobile: "750px",
       },
     },
   },

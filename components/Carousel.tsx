@@ -22,11 +22,11 @@ const Carousel: React.FC<CarouselProps> = ({ text }) => {
 
   return (
     <>
-      <motion.div className="border-purple-400 border-2 flex justify-center max-w-[1080px] max-medium:max-w-[810px] max-small:max-w-[600px] max-extrasmall:max-w-[350px]">
+      <motion.div className="border-purple-400 border-2 flex items-center justify-center max-w-[1080px] max-medium:max-w-[810px] max-small:max-w-[600px] max-extrasmall:max-w-[350px] max-mobile:min-h-[200px]">
         {reviews.map((item, index) => (
           <motion.p
             key={item.id}
-            className={`border-orange-400 border-2 flex text-center text-2xl  ${
+            className={`border-orange-400 border-2 text-2xl max-mobile:align-middle z-30 ${
               index === current ? "" : "hidden"
             }`}
             initial={{ opacity: 0, x: 100 }}

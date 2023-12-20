@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=GFS+Didot&family=Montserrat:wght@500&family=Roboto:wght@100&family=Trocchi&family=Ysabeau+SC:wght@600&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=GFS+Didot&family=Montserrat:wght@500&family=Roboto:wght@100&family=Trocchi&family=Ysabeau+SC:wght@600&display=swap"); */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -21,7 +23,7 @@ body {
   }
 
   .btn-negative {
-    @apply bg-navy-blue border border-bubblegum text-bubblegum px-6 py-3 rounded-full hover:bg-pink-700;
+    @apply bg-transparent border-white text-white px-6 py-3 rounded-full hover:bg-pink-700;
   }
 
   .btn-icon {
@@ -40,6 +42,23 @@ body {
   .consult-bg-style {
     @apply bg-cover bg-no-repeat bg-right;
     background-image: url("/consult.jpg");
+  }
+
+  .image-cropper {
+    width: 350px;
+    height: 350px;
+    /* position: relative; */
+    overflow: hidden;
+    border-radius: 100%;
+  }
+
+  .profile-pic {
+    /* display: inline; */
+    /* margin: 0 auto; */
+    margin-left: 10%;
+    scale: 140%;
+    height: 100%;
+    width: auto;
   }
 
   .max-container {

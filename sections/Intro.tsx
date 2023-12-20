@@ -5,20 +5,21 @@ const Intro = () => {
   return (
     <section
       id="about"
-      className="border-blue-400 border-2 flex items-center flex-col w-full max-container bg-consult-bg-color"
+      className="flex items-center flex-col w-full object-cover bg-consult-bg-color"
     >
-      <div className="relative flex  mt-10 gap-6 max-lg:flex-col">
-        <div className="flex justify-start items-center max-lg:justify-center">
+      <div className="relative flex mt-10 max-lg:flex-col items-center sm:mx-[70px]">
+        <div className="flex justify-start items-center max-lg:justify-center image-cropper">
           <Image
             src="/selfie.jpg"
             alt="intro picture"
-            width={300}
-            height={300}
-            className="object-cover rounded-full"
+            width={384}
+            height={512}
+            // style={{ width: "auto", height: "auto" }}
+            className="profile-pic max-lg:m-0"
           />
         </div>
 
-        <div className="flex flex-col text-white gap-8 ml-[110px] max-lg:ml-0">
+        <div className="flex flex-col text-white gap-8 ml-[110px] max-lg:ml-0 max-[640px]:mx-8">
           <h2 className="font-montserrat text-lg font-normal lg:max-w-lg">
             Meet Gen
           </h2>
