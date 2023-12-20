@@ -1,47 +1,157 @@
 "use client";
 
-import { navLinks } from "@/constants";
-import { useState } from "react";
+// import { navLinks } from "@/constants";
+// import { useState } from "react";
+// import Image from "next/image";
+// import Link from "next/link";
+// import Button from "./Button";
+// import { motion } from "framer-motion";
+
+// const Navbar = () => {
+//   const [dropdownOpen, setDropdownOpen] = useState(false);
+
+//   const DropdownMenu = () => (
+//     <motion.ul
+//       initial={{ opacity: 0, y: -20 }}
+//       animate={{ opacity: 1, y: 0 }}
+//       exit={{ opacity: 0, y: -20 }}
+//       className="absolute top-full w-full bg-white border border-gray-300 shadow-md py-2 z-10"
+//     >
+//       {/* className={`${
+//                 index === navLinks.length - 1
+//                   ? "btn-pink"
+//                   : " text-white flexCenter cursor-pointer transition-all hover:font-bold"
+//               }`} */}
+//       {navLinks.map((item, index) => (
+//         <li key={item.label}>
+//           <a
+//             href={item.href}
+//             className={`block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 ${
+//               index === navLinks.length - 1 ? "btn-pink" : ""
+//             }`}
+//           >
+//             {item.label}
+//           </a>
+//         </li>
+//       ))}
+//     </motion.ul>
+//   );
+
+//   return (
+//     <header className="padding-x py-8 w-full bg-navy-blue ">
+//       <nav className="border-2 border-red-500 flex justify-between items-center max-container padding-container relative">
+//         <Link href="/app/favicon.ico" className="flex items-center">
+//           <Image
+//             src="/logo.svg"
+//             alt="Gen Fulton website logo"
+//             width={87.44}
+//             height={47.16}
+//             // style={{ width: "auto", height: "auto" }}
+//           />
+//           <span className="flex ml-2 text-white text-4xl font-montserrat max-sm:hidden">
+//             Gen Fulton
+//           </span>
+//         </Link>
+
+//         {/* Navigation links for large screens */}
+
+//         <ul className="flex-1 flex justify-end items-center h-full gap-12 lg:flex max-lg:hidden font-montserrat">
+//           {navLinks.map((link, index) => (
+//             <Link
+//               href={link.href}
+//               key={link.key}
+//               // className="border-2 border-red-800 regular-16 text-gray-50 flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold"
+//               className={`${
+//                 index === navLinks.length - 1
+//                   ? "btn-pink"
+//                   : " text-white flexCenter cursor-pointer transition-all hover:font-bold"
+//               }`}
+//             >
+//               {link.label}
+//             </Link>
+//           ))}
+//         </ul>
+
+//         {/* Hamburger menu for small screens */}
+//         <div className="lg:hidden">
+//           <Image
+//             src="/testhamburger.svg"
+//             alt="menu"
+//             width={32}
+//             height={32}
+//             className="inline-block cursor-pointer lg:hidden"
+//             onClick={() => {
+//               console.log("burger clicked");
+//               setDropdownOpen(!dropdownOpen);
+//             }}
+//           />
+//         </div>
+
+//         {/* Conditionally render Dropdown menu for small screens */}
+//         {dropdownOpen && <DropdownMenu />}
+//       </nav>
+//     </header>
+//   );
+// };
+
+// export default Navbar;
+
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Button from "./Button";
+import { motion, AnimatePresence } from "framer-motion";
+import { navLinks } from "@/constants";
 
 const Navbar = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   const DropdownMenu = () => (
-    <ul className="absolute top-full left-0 w-full bg-white border border-gray-300 shadow-md py-2">
-      {navLinks.map((item) => (
+    <motion.ul
+      initial={{ opacity: 0, y: -20 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -20 }}
+      className="absolute top-full w-full bg-white border border-gray-300 shadow-md py-2 z-10 lg:hidden"
+    >
+      {navLinks.map((item, index) => (
         <li key={item.label}>
           <a
             href={item.href}
-            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+            className={`block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 ${
+              index === navLinks.length - 1 ? "btn-pink" : ""
+            }`}
           >
             {item.label}
           </a>
         </li>
       ))}
-    </ul>
+    </motion.ul>
   );
 
   return (
-    <header className="padding-x py-8 w-full bg-navy-blue">
-      <nav className="border-2 border-red-500 flex justify-between items-center max-container padding-container">
+    <motion.header
+      initial={{ opacity: 0, y: -20 }}
+      animate={{ opacity: 1, y: 0 }}
+      className="padding-x py-8 w-full bg-navy-blue"
+    >
+      <nav className="border-2 border-red-500 flex justify-between items-center max-container padding-container relative">
         <Link href="/app/favicon.ico" className="flex items-center">
-          <Image src="/logo.svg" alt="logo" width={74} height={29} />
+          <Image
+            src="/logo.svg"
+            alt="Gen Fulton website logo"
+            width={87.44}
+            height={47.16}
+          />
           <span className="flex ml-2 text-white text-4xl font-montserrat max-sm:hidden">
             Gen Fulton
           </span>
         </Link>
 
         {/* Navigation links for large screens */}
-
         <ul className="flex-1 flex justify-end items-center h-full gap-12 lg:flex max-lg:hidden font-montserrat">
           {navLinks.map((link, index) => (
             <Link
               href={link.href}
               key={link.key}
-              // className="border-2 border-red-800 regular-16 text-gray-50 flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold"
               className={`${
                 index === navLinks.length - 1
                   ? "btn-pink"
@@ -55,20 +165,20 @@ const Navbar = () => {
 
         {/* Hamburger menu for small screens */}
         <div className="lg:hidden">
-          <Image
-            src="hamburger.svg"
-            alt="menu"
-            width={32}
-            height={32}
+          <div
             className="inline-block cursor-pointer lg:hidden"
-            onClick={() => setDropdownOpen(!dropdownOpen)}
-          />
+            onClick={() => {
+              setDropdownOpen(!dropdownOpen);
+            }}
+          >
+            <Image src="/testhamburger.svg" alt="menu" width={32} height={32} />
+          </div>
         </div>
 
         {/* Conditionally render Dropdown menu for small screens */}
-        {dropdownOpen && <DropdownMenu />}
+        <AnimatePresence>{dropdownOpen && <DropdownMenu />}</AnimatePresence>
       </nav>
-    </header>
+    </motion.header>
   );
 };
 

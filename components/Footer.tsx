@@ -9,7 +9,12 @@ const Footer = () => {
       <footer className="padding-x py-8 w-full bg-navy-blue">
         <nav className="border-2 border-red-500 flex justify-between items-center max-container padding-container">
           <Link href="/" className="flex items-center">
-            <Image src="/logo.svg" alt="logo" width={74} height={29} />
+            <Image
+              src="/logo.svg"
+              alt="Gen Fulton website logo"
+              width={87.44}
+              height={47.16}
+            />
             <span className="flex ml-2 text-white text-[40px] font-montserrat max-sm:hidden">
               Gen Fulton
             </span>
