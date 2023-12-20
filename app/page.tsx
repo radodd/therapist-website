@@ -24,9 +24,6 @@ export default function Home() {
       <section className="sm:px-[70px] sm:p-10 mt-[72px] bg-gradient-to-r from-[rgba(38,66,90,0.70)] via-transparent to-[rgba(38,66,90,0.70)] bg-cover bg-no-repeat">
         <Consult />
       </section>
-      <section className="padding padding-x padding-t pb-8">
-        <Footer />
-      </section>
     </>
   );
 }

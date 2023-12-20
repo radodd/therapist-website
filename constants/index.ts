@@ -74,17 +74,17 @@ export const footerLinks = [
   {
     title: "Learn More",
     links: [
-      { name: "About", link: "/" },
-      { name: "Services", link: "/" },
-      { name: "Contact", link: "/" },
+      { name: "About", href: "/" },
+      { name: "Services", href: "/" },
+      { name: "Contact", href: "/" },
     ],
   },
   {
     title: "Get in touch",
     links: [
-      { name: "Gen Fulton Psychotherapy", link: "/" },
-      { name: "Mill Valley, CA 94941", link: "/" },
-      { name: "(628)265-6746", link: "/" },
+      { name: "Gen Fulton Psychotherapy", href: "/" },
+      { name: "Mill Valley, CA 94941", href: "/" },
+      { name: "(628)265-6746", href: "/" },
     ],
   },
 ];
