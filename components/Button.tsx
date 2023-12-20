@@ -20,8 +20,8 @@ const Button = ({
   return (
     <button
       className={`btn-pink gap-3 rounded-full ${full && "w-full"} ${
-        negative && "!btn-negative"
-      } ${icon && "btn-icon"}`}
+        negative && "btn-negative"
+      } ${icon && "btn-icon mx-4 max-extrasmall:px-0"}`}
       type={type}
       onClick={onClick}
     >

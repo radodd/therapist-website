@@ -1,11 +1,16 @@
 import Carousel from "@/components/Carousel";
 import { reviews } from "@/constants";
 
-const Reviews = () => {
+const Reviews = ({ ...reviews }) => {
   return (
-    <section>
-      <div className="border-green-600 border-2 w-full overflow-hidden">
-        <Carousel />
+    <section className=" border-blue-400 border-2 flex justify-center items-center py-10 ">
+      <div className=" border-purple-400 border-2 flex flex-col justify-center items-center gap-6 ">
+        <img
+          src="carousel-icon.svg"
+          alt="carousel icon"
+          className=" flex justify-center"
+        />
+        <Carousel text={reviews.text} />
       </div>
     </section>
   );

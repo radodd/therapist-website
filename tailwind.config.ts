@@ -38,6 +38,7 @@ module.exports = {
         "white-400": "rgba(255, 255, 255, 0.80)",
         "navy-blue": "#0F1D44",
         bubblegum: "#BD83B8",
+        "sea-foam": "#B5D9CC",
       },
       boxShadow: {
         "3xl": "0 10px 40px rgba(0, 0, 0, 0.1)",
@@ -47,6 +48,9 @@ module.exports = {
       },
       screens: {
         wide: "1440px",
+        medium: "1225px",
+        small: "950px",
+        extrasmall: "740px",
       },
     },
   },

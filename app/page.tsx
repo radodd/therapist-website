@@ -18,7 +18,7 @@ export default function Home() {
       <section className="sm:px-[70px] sm:p-10">
         <Expertise />
       </section>
-      <section className="sm:px-[70px] sm:pt-10">
+      <section className="relative sm:px-0 bg-sea-foam justify-center">
         <Reviews />
       </section>
       <section className="padding-x sm:py-32 py-16 w-full">
