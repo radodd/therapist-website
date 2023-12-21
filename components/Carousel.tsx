@@ -22,11 +22,11 @@ const Carousel: React.FC<CarouselProps> = ({ text }) => {
 
   return (
     <>
-      <motion.div className="border-purple-400 border-2 flex items-center justify-center max-w-[1080px] max-medium:max-w-[810px] max-small:max-w-[600px] max-extrasmall:max-w-[350px] max-mobile:min-h-[200px]">
+      <motion.div className="flex items-center justify-center h-[200px] max-w-[1080px] max-medium:max-w-[810px] max-small:max-w-[600px] max-extrasmall:max-w-[350px] max-mobile:min-h-[200px]">
         {reviews.map((item, index) => (
           <motion.p
             key={item.id}
-            className={`border-orange-400 border-2 text-2xl max-mobile:align-middle z-30 ${
+            className={`text-2xl max-mobile:align-middle z-30 ${
               index === current ? "" : "hidden"
             }`}
             initial={{ opacity: 0, x: 100 }}
@@ -45,12 +45,14 @@ const Carousel: React.FC<CarouselProps> = ({ text }) => {
         <Button
           type="button"
           title=""
+          variant="btn-icon"
           icon="arrow-left.svg"
           onClick={previousSlide}
         />
         <Button
           type="button"
           title=""
+          variant="btn-icon"
           icon="arrow-right.svg"
           onClick={nextSlide}
         />

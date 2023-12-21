@@ -3,8 +3,8 @@ import { reviews } from "@/constants";
 
 const Reviews = ({ ...reviews }) => {
   return (
-    <section className=" border-blue-400 border-2 flex justify-center items-center py-10 ">
-      <div className=" border-purple-400 border-2 flex flex-col justify-center items-center gap-6 ">
+    <section className="flex justify-center items-center py-10 ">
+      <div className="flex flex-col justify-center items-center gap-6 ">
         <img
           src="carousel-icon.svg"
           alt="carousel icon"

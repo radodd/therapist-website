@@ -35,7 +35,7 @@ const Navbar = () => {
     <motion.header
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
-      className="padding-x py-8 w-full bg-navy-blue"
+      className="padding-x py-8 w-full bg-stone-blue"
     >
       <nav className="flex justify-between items-center max-container padding-container relative">
         <Link href="/" className="flex items-center">

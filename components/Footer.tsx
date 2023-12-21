@@ -6,7 +6,7 @@ import Button from "./Button";
 const Footer = () => {
   return (
     <>
-      <footer className="padding-x py-8 w-full bg-navy-blue">
+      <footer className="padding-x py-8 w-full bg-stone-blue">
         <nav className="border-2 border-red-500 flex justify-between items-center max-container padding-container">
           <Link href="/" className="flex items-center">
             <Image
@@ -37,7 +37,11 @@ const Footer = () => {
             ))}
           </div>
           <div>
-            <Button type="button" title="Schedule Consult" />
+            <Button
+              type="button"
+              title="Schedule Consult"
+              variant="btn-primary"
+            />
           </div>
         </nav>
       </footer>

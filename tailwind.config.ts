@@ -36,7 +36,7 @@ module.exports = {
         "slate-gray": "#6D6D6D",
         "pale-blue": "#F5F6FF",
         "white-400": "rgba(255, 255, 255, 0.80)",
-        "navy-blue": "#0F1D44",
+        "stone-blue": "#26425A",
         fern: "#558F61",
         "sea-foam": "#B5D9CC",
         "consult-bg-color": "rgba(38, 66, 90, 0.70)",
