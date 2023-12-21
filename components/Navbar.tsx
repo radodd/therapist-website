@@ -38,9 +38,9 @@ const Navbar = () => {
       className="padding-x py-8 w-full bg-navy-blue"
     >
       <nav className="flex justify-between items-center max-container padding-container relative">
-        <Link href="/app/favicon.ico" className="flex items-center">
+        <Link href="/" className="flex items-center">
           <Image
-            src="/logo.svg"
+            src="/favicon.ico"
             alt="Gen Fulton website logo"
             width={87.44}
             height={47.16}
