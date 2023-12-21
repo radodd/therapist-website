@@ -37,7 +37,7 @@ module.exports = {
         "pale-blue": "#F5F6FF",
         "white-400": "rgba(255, 255, 255, 0.80)",
         "navy-blue": "#0F1D44",
-        bubblegum: "#BD83B8",
+        fern: "#558F61",
         "sea-foam": "#B5D9CC",
         "consult-bg-color": "rgba(38, 66, 90, 0.70)",
         "banner-bg-color": "rgba(0, 0, 0, 0.50)",

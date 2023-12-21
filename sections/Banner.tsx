@@ -20,7 +20,7 @@ const Banner = () => {
           uncomfortable symptoms and increased insight, hope and harmony.
         </p>
         <div className="mb-[13px] font-extrabold">
-          <Button type="button" full={false} title="View Services" />
+          <Button type="button" variant="btn-primary" title="View Services" />
         </div>
       </div>
     </section>

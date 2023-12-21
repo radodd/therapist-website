@@ -58,7 +58,7 @@ const Navbar = () => {
               key={link.key}
               className={`${
                 index === navLinks.length - 1
-                  ? "btn-pink"
+                  ? "btn-primary"
                   : " text-white flexCenter cursor-pointer transition-all hover:font-bold"
               }`}
             >

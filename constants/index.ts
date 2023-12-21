@@ -1,36 +1,32 @@
 // NAVIGATION
 export const navLinks = [
   { href: "/", key: "about", label: "About" },
-  { href: "/", key: "therapy", label: "Therapy" },
-  { href: "/", key: "contact ", label: "Contact " },
-  { href: "/", key: "book_appointment ", label: "Book Appointment" },
+  { href: "#therapy", key: "therapy", label: "Therapy" },
+  { href: "#contact", key: "contact ", label: "Contact " },
+  { href: "#contact", key: "book_appointment ", label: "Book Appointment" },
 ];
 
 // CAMP SECTION
 export const qualifications = [
   {
-    title: "Education:",
+    title: "Education",
     highlights: [
-      "American Association of Marriage & Family Therapists",
-      "Ph.D. in Counseling from Columbia University",
+      "MA Counseling Psychology, John F. Kennedy University, 2018",
+      "Graduate Certificate in Sport Psychology 2016",
     ],
   },
   {
-    title: "Professional Organization Affiliations:",
+    title: "Professional Experience",
     highlights: [
-      "American College Counseling Association ( ACCA )",
-      "American Mental Health Counselors Association ( AMHCA )",
-      "American Rehabilitation Counseling Association ( ARCA )",
+      "Since graduating, I have worked in non-profit settings, sliding scale clinics, private practice settings seeing individuals and couples, and clinics working with worker’s compensation patients, high functioning adults, and with healthcare workers. Some of my experience includes helping people with perfectionism, stress management, burnout management, depression, anxiety, relationships problems, improving communication, life transition issues, and healing PTSD. I have also coached professional athletes to improve sport performance through identifying beliefs that may hamper sport performance. I have helped them improve concentration skills and identify what they can control such as their attitude about stressors.",
     ],
   },
   {
-    title: "Specialized Training:",
+    title: "Specialized Training",
     highlights: [
-      "Positive Psychiatry and Mental Health",
-      "Creating Behavioral Change",
-      "Schizophrenia",
-      "Abnormal Psychology",
-      "Introduction to Psychology",
+      "Somatic Experiencing Practitioner Certificate 2019, issued by Somatic Experiencing Trauma Institute",
+      "Emotionally Focused Therapy Externship 2019",
+      "Level I Coaching Certificate 2023, issued by Mental Performance Golf Academy",
     ],
   },
 ];

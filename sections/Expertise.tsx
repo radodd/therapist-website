@@ -3,7 +3,10 @@ import ExpertiseCard from "@/components/ExpertiseCard";
 
 const Expertise = () => {
   return (
-    <section className="max-container flex flex-col border-green-700 border-2">
+    <section
+      id="therapy"
+      className="max-container flex flex-col border-green-700 border-2"
+    >
       <h1 className="flex justify-center text-[40px] font-bold pb-10">
         Gen's Expertise
       </h1>

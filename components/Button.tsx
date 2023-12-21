@@ -3,25 +3,17 @@ import Image from "next/image";
 type ButtonProps = {
   type: "button" | "submit";
   title: string;
+  variant: string;
   icon?: string;
-  full?: boolean;
-  negative?: boolean;
   onClick?: () => void;
 };
 
-const Button = ({
-  type,
-  title,
-  icon,
-  full,
-  negative,
-  onClick,
-}: ButtonProps) => {
+const Button = ({ type, title, variant, icon, onClick }: ButtonProps) => {
   return (
     <button
-      className={`btn-pink gap-3 rounded-full ${full && "w-full"} ${
-        negative && "btn-negative"
-      } ${icon && "btn-icon mx-4 max-extrasmall:px-0"}`}
+      className={`gap-3 rounded-full ${variant}
+      ${icon && "btn-icon"}
+      `}
       type={type}
       onClick={onClick}
     >
