@@ -30,7 +30,7 @@ const Intro = () => {
         {/* Contains Title, Intro Paragraph, Buttons */}
         <div className="flex flex-col text-white max-w-[748px] gap-8 lg:ml-[110px] max-[640px]:mx-8">
           <h2 className="font-montserrat text-lg font-normal lg:max-w-lg">
-            Meet Gen TEST
+            Meet Gen
           </h2>
           <p className="lg:max-w-3xl text-base font-light">
             My approach to therapy focuses on conjointly developing goals that
@@ -65,7 +65,7 @@ const Intro = () => {
 
       {/* ONLY See More Content */}
       <div
-        className={`flex flex-col text-white long-text ${
+        className={`flex flex-col text-white long-text max-[640px]:mx-8 ${
           collapse ? "expanded" : ""
         } my-10 mx-[70px]`}
       >
