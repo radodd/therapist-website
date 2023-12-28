@@ -3,7 +3,11 @@ export const navLinks = [
   { href: "/", key: "about", label: "About" },
   { href: "#therapy", key: "therapy", label: "Therapy" },
   { href: "#contact", key: "contact ", label: "Contact " },
-  { href: "#contact", key: "book_appointment ", label: "Book Appointment" },
+  {
+    href: "https://calendly.com/ethanf-flores/30min",
+    key: "book_appointment ",
+    label: "Book Appointment",
+  },
 ];
 
 // QUALIFICATION SECTION

@@ -20,6 +20,7 @@ const Navbar = () => {
         <li key={item.label}>
           <a
             href={item.href}
+            target="_blank"
             className={`block px-4 py-2 text-md text-gray-700 hover:bg-gray-100 ${
               index === navLinks.length - 1 ? "btn-pink" : ""
             }`}
@@ -56,6 +57,7 @@ const Navbar = () => {
             <Link
               href={link.href}
               key={link.key}
+              target="_blank"
               className={`${
                 index === navLinks.length - 1
                   ? "btn-primary"
