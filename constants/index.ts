@@ -65,15 +65,23 @@ export const expertise = [
 export const reviews = [
   {
     id: 1,
+    text: "I started working with Gen midway through this season.  Gen helped me to understand more about what makes me perform.  Gen’s advice and assistance worked; I won my first event after working with her.  I also had my lowest ever season scoring average.  Gen’s practical but simple approach to sport psychology really helped me as it kept things simple.  It allowed me a framework to use under pressure and it became the foundation to my on-course routine.",
+    name: "A.B Professional Golfer",
+  },
+  {
+    id: 1,
     text: "My experiences with Gen were excellent. Over the course of many visits it's clear that Gen has strong listening skills and excellent therapy techniques to help cope or resolve challenges--many of which I now use daily or weekly to manage interpersonal and solo difficulties. I'd recommend Gen to anyone.",
+    name: "George Washington",
   },
   {
     id: 2,
     text: "Someone said a nice thing.",
+    name: "Stewart Little",
   },
   {
     id: 3,
     text: "And ANOTHER nice thing here.",
+    name: "Albert Einstein",
   },
 ];
 // FOOTER SECTION

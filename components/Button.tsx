@@ -6,9 +6,17 @@ type ButtonProps = {
   variant: string;
   icon?: string;
   onClick?: () => void;
+  selected?: boolean;
 };
 
-const Button = ({ type, title, variant, icon, onClick }: ButtonProps) => {
+const Button = ({
+  type,
+  title,
+  variant,
+  icon,
+  onClick,
+  selected,
+}: ButtonProps) => {
   return (
     <button
       className={`gap-3 rounded-full ${variant}

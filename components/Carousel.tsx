@@ -7,9 +7,10 @@ import { motion } from "framer-motion";
 
 type CarouselProps = {
   text: string;
+  slideIndex: number;
 };
 
-const Carousel: React.FC<CarouselProps> = ({ text }) => {
+const Carousel: React.FC<CarouselProps> = ({ text, slideIndex }) => {
   const [current, setCurrent] = useState<number>(0);
 
   const previousSlide = () => {
@@ -20,9 +21,21 @@ const Carousel: React.FC<CarouselProps> = ({ text }) => {
     setCurrent((prev) => (prev === reviews.length - 1 ? 0 : prev + 1));
   };
 
+  const goToSlide = (slideIndex) => {
+    setCurrent(slideIndex);
+  };
+
+  // const Dot = ({ active }: { active: boolean }) => (
+  //   <span
+  //     className={`inline-block w-4 h-4 mx-2 bg-[#8B949A;] rounded-full ${
+  //       active ? "bg-primary" : ""
+  //     }`}
+  //   ></span>
+  // );
+
   return (
     <>
-      <motion.div className="flex items-center justify-center h-[200px] max-w-[1080px] max-medium:max-w-[810px] max-small:max-w-[600px] max-extrasmall:max-w-[350px] max-mobile:min-h-[200px]">
+      <motion.div className="flex items-center justify-center h-[398px] max-w-[1080px] max-medium:max-w-[810px] max-small:max-w-[600px] max-extrasmall:max-w-[350px] max-mobile:min-h-[200px]">
         {reviews.map((item, index) => (
           <motion.p
             key={item.id}
@@ -40,6 +53,25 @@ const Carousel: React.FC<CarouselProps> = ({ text }) => {
             "{item.text}"
           </motion.p>
         ))}
+
+        <div className="absolute z-10 bottom-4 flex justify-center py-2">
+          {reviews.map((slide, slideIndex) => (
+            <div
+              key={slideIndex}
+              onClick={() => goToSlide(slideIndex)}
+              className="text-2xl cursor-pointer"
+            >
+              <Button
+                type="button"
+                title=""
+                variant={`${
+                  slideIndex === current ? "btn-selected" : "btn-icon"
+                }`}
+                icon="dot.svg"
+              />
+            </div>
+          ))}
+        </div>
       </motion.div>
       <div className="absolute h-full w-full justify-between items-center flex max-w-[1270px]">
         <Button

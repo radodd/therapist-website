@@ -30,6 +30,10 @@ body {
     @apply bg-transparent border-none mx-4 hover:scale-125 hover:opacity-100 transition-transform;
   }
 
+  .btn-selected {
+    @apply bg-transparent border-none mx-4 hover:scale-125 hover:opacity-100 transition-transform !fill-primary;
+  }
+
   .btn-underline {
     @apply bg-transparent underline border-none text-white;
   }
