@@ -21,7 +21,7 @@ const Carousel: React.FC<CarouselProps> = ({ text, slideIndex }) => {
     setCurrent((prev) => (prev === reviews.length - 1 ? 0 : prev + 1));
   };
 
-  const goToSlide = (slideIndex) => {
+  const goToSlide = (slideIndex: React.SetStateAction<number>) => {
     setCurrent(slideIndex);
   };
 
