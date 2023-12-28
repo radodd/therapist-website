@@ -15,7 +15,7 @@ const Footer = () => {
               width={87.44}
               height={47.16}
             />
-            <span className="flex ml-2 text-white text-[40px] font-montserrat max-[1130px]:hidden">
+            <span className="flex ml-2 text-white text-[40px]  max-[1130px]:hidden">
               Gen Fulton
             </span>
           </Link>
@@ -27,7 +27,7 @@ const Footer = () => {
                   {section.links.map((link) => (
                     <li
                       key={link.name}
-                      className="mt-3 text-sm font-montserrat leading-normal hover:text-slate-gray cursor-pointer"
+                      className="mt-3 text-sm leading-normal hover:text-slate-gray cursor-pointer"
                     >
                       <a>{link.name} </a>
                     </li>

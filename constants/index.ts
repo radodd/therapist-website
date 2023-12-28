@@ -38,25 +38,25 @@ export const qualifications = [
 export const expertise = [
   {
     title: "Sports Performance",
-    icon: "/sports-icon.svg",
+    icon: "/icon-sports.svg",
     description:
       "Gen has worked with collegiate and professional athletes to help them increase their confidence, overcome limiting beliefs and stay more present at game time.",
   },
   {
     title: "Stress/Burnout",
-    icon: "/stress-icon.svg",
+    icon: "/icon-stress.svg",
     description:
       "If you are feeling the post covid burnout and a lack of boundaries, Gen may be able to help you fill your cup and burn out less during periods of exposure to new stressors.",
   },
   {
     title: "Relationship",
-    icon: "/relationship-icon.svg",
+    icon: "/icon-relationship.svg",
     description:
       "Gen can help you and your partner’s communication with over 4 years of experience and specific training using Sue Johnson’s Emotionally Focused Therapy technique [EFT].",
   },
   {
     title: "Trauma/PTSD",
-    icon: "/trauma-icon.svg",
+    icon: "/icon-trauma.svg",
     description:
       "Gen is a Somatic Experiencing practitioner which utilizes mindfulness and a slow and steady exposure to stressors to increase stress resilience and promote hope. ",
   },

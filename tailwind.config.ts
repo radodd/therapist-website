@@ -9,26 +9,21 @@ module.exports = {
   ],
   theme: {
     fontSize: {
-      xs: ["12px", "16px"],
-      sm: ["16px", "20px"],
-      base: ["20px", "normal"],
-      lg: ["32px", "normal"],
-      xl: ["64px", "normal"],
-      "2xl": ["24px", "29.26px"],
-      "3xl": ["28px", "50px"],
-      "4xl": ["48px", "58px"],
-      "8xl": ["96px", "106px"],
+      xm: ["16px", "normal"],
+      sm: ["20px", "normal"],
+      md: ["24px", "normal"],
+      lg: ["30px", "normal"],
+      nav: ["40px", "normal"],
+      hero: ["64px", "normal"],
     },
     fontWeight: {
       light: 300,
-      normal: 500,
-      bold: 800,
-      extrabold: 900,
+      normal: 400,
+      bold: 700,
     },
     extend: {
       fontFamily: {
-        // avenir: ["Avenir", "sans-serif"],
-        montserrat: ["Montserrat", "sans-serif"],
+        sans: ["Open Sans", "sans-serif"],
       },
       colors: {
         primary: "#144F7C",
@@ -37,9 +32,6 @@ module.exports = {
         quaternary: "#",
         "sea-foam": "#B5D9CC",
         "consult-bg-color": "rgba(38, 66, 90, 0.70)",
-        "hero-bg-color":
-          "bg-gradient-to-r from-[rgba(0, 0, 0, 0.80)] to-[rgba(0, 0, 0, 0.00)]",
-        // "linear-gradient(90deg, rgba(0, 0, 0, 0.80) 12.01%, rgba(0, 0, 0, 0.00) 88.89%)",
       },
       boxShadow: {
         "3xl": "0 10px 40px rgba(0, 0, 0, 0.1)",

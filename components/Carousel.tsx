@@ -25,21 +25,13 @@ const Carousel: React.FC<CarouselProps> = ({ text, slideIndex }) => {
     setCurrent(slideIndex);
   };
 
-  // const Dot = ({ active }: { active: boolean }) => (
-  //   <span
-  //     className={`inline-block w-4 h-4 mx-2 bg-[#8B949A;] rounded-full ${
-  //       active ? "bg-primary" : ""
-  //     }`}
-  //   ></span>
-  // );
-
   return (
     <>
       <motion.div className="flex items-center justify-center h-[398px] max-w-[1080px] max-medium:max-w-[810px] max-small:max-w-[600px] max-extrasmall:max-w-[350px] max-mobile:min-h-[200px]">
         {reviews.map((item, index) => (
           <motion.p
             key={item.id}
-            className={`text-2xl max-mobile:align-middle z-30 ${
+            className={`text-md font-normal text-primary max-mobile:align-middle z-30 ${
               index === current ? "" : "hidden"
             }`}
             initial={{ opacity: 0, x: 100 }}
@@ -51,23 +43,27 @@ const Carousel: React.FC<CarouselProps> = ({ text, slideIndex }) => {
             transition={{ type: "spring", duration: 0.5 }}
           >
             "{item.text}"
+            <div
+              key={item.name}
+              className="font-bold text-md flex justify-center mt-6"
+            >
+              {item.name}
+            </div>
           </motion.p>
         ))}
 
-        <div className="absolute z-10 bottom-4 flex justify-center py-2">
+        <div className="absolute z-10 bottom-4 flex justify-center py-2 gap-4">
           {reviews.map((slide, slideIndex) => (
             <div
               key={slideIndex}
               onClick={() => goToSlide(slideIndex)}
-              className="text-2xl cursor-pointer"
+              className="cursor-pointer"
             >
               <Button
                 type="button"
-                title=""
-                variant={`${
-                  slideIndex === current ? "btn-selected" : "btn-icon"
+                icon={`${
+                  slideIndex === current ? "dot-selected.svg" : "dot.svg"
                 }`}
-                icon="dot.svg"
               />
             </div>
           ))}

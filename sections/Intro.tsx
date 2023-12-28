@@ -37,10 +37,10 @@ const Intro = () => {
 
         {/* Contains Title, Intro Paragraph, Buttons */}
         <div className="flex flex-col text-white max-w-[748px] gap-8 lg:ml-[110px] max-[640px]:mx-8">
-          <h2 className="font-montserrat text-lg font-normal mt-10 lg:max-w-lg">
+          <h2 className=" text-lg font-normal mt-10 lg:max-w-lg">
             Hi, I'm Gen Fulton.
           </h2>
-          <p className="lg:max-w-3xl text-base font-light">
+          <p className="lg:max-w-3xl text-sm font-normal">
             My approach to therapy focuses on conjointly developing goals that
             suit your needs to reduce stress, burnout and improve joy,
             inspiration and harmony in your life. Primarily utilizing
@@ -85,7 +85,7 @@ const Intro = () => {
           <div key={item.title} className="flex flex-col pb-6">
             <h2 className="font-normal text-lg pb-6">{item.title}</h2>
             {item.highlights.map((highlight, index) => (
-              <p key={`${item.id}-${index}`} className="font-light text-base">
+              <p key={`${item.id}-${index}`} className="font-light text-sm">
                 {highlight}
               </p>
             ))}

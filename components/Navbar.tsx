@@ -20,7 +20,7 @@ const Navbar = () => {
         <li key={item.label}>
           <a
             href={item.href}
-            className={`block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 ${
+            className={`block px-4 py-2 text-md text-gray-700 hover:bg-gray-100 ${
               index === navLinks.length - 1 ? "btn-pink" : ""
             }`}
           >
@@ -45,13 +45,13 @@ const Navbar = () => {
             width={87.44}
             height={47.16}
           />
-          <span className="flex ml-2 text-white text-4xl font-montserrat max-sm:hidden">
+          <span className="flex ml-2 text-white text-nav max-sm:hidden">
             Gen Fulton
           </span>
         </Link>
 
         {/* Navigation links for large screens */}
-        <ul className="flex-1 flex justify-end items-center h-full gap-12 max-navscreen:hidden font-montserrat">
+        <ul className="flex-1 flex justify-end items-center h-full gap-12 max-navscreen:hidden ">
           {navLinks.map((link, index) => (
             <Link
               href={link.href}
@@ -75,7 +75,7 @@ const Navbar = () => {
               setDropdownOpen(!dropdownOpen);
             }}
           >
-            <Image src="/testhamburger.svg" alt="menu" width={32} height={32} />
+            <Image src="/hamburger.svg" alt="menu" width={32} height={32} />
           </div>
         </div>
 

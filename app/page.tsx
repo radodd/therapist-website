@@ -5,12 +5,16 @@ import Hero from "@/sections/Hero";
 import Reviews from "@/sections/Reviews";
 import Navbar from "@/components/Navbar";
 import Expertise from "@/sections/Expertise";
+import HeroText from "@/sections/HeroText";
 
 export default function Home() {
   return (
     <>
       <section className="">
         <Hero />
+      </section>
+      <section className="flex justify-center">
+        <HeroText />
       </section>
       <section className="relative overflow-hidden">
         <Intro />
