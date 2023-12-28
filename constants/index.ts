@@ -6,9 +6,10 @@ export const navLinks = [
   { href: "#contact", key: "book_appointment ", label: "Book Appointment" },
 ];
 
-// CAMP SECTION
+// QUALIFICATION SECTION
 export const qualifications = [
   {
+    id: 1,
     title: "Education",
     highlights: [
       "MA Counseling Psychology, John F. Kennedy University, 2018",
@@ -16,12 +17,14 @@ export const qualifications = [
     ],
   },
   {
+    id: 2,
     title: "Professional Experience",
     highlights: [
       "Since graduating, I have worked in non-profit settings, sliding scale clinics, private practice settings seeing individuals and couples, and clinics working with worker’s compensation patients, high functioning adults, and with healthcare workers. Some of my experience includes helping people with perfectionism, stress management, burnout management, depression, anxiety, relationships problems, improving communication, life transition issues, and healing PTSD. I have also coached professional athletes to improve sport performance through identifying beliefs that may hamper sport performance. I have helped them improve concentration skills and identify what they can control such as their attitude about stressors.",
     ],
   },
   {
+    id: 3,
     title: "Specialized Training",
     highlights: [
       "Somatic Experiencing Practitioner Certificate 2019, issued by Somatic Experiencing Trauma Institute",
@@ -31,23 +34,31 @@ export const qualifications = [
   },
 ];
 
-// FEATURES SECTION
-export const specialties = [
-  {
-    title: "Emotion Regulation",
-    icon: "/SadFace.svg",
-  },
+// EXPERTISE SECTION
+export const expertise = [
   {
     title: "Sports Performance",
-    icon: "/RunningMan.svg",
+    icon: "/sports-icon.svg",
+    description:
+      "Gen has worked with collegiate and professional athletes to help them increase their confidence, overcome limiting beliefs and stay more present at game time.",
   },
   {
-    title: "Trauma/      PTSD",
-    icon: "/TraumaFace.svg",
+    title: "Stress/Burnout",
+    icon: "/stress-icon.svg",
+    description:
+      "If you are feeling the post covid burnout and a lack of boundaries, Gen may be able to help you fill your cup and burn out less during periods of exposure to new stressors.",
   },
   {
-    title: "Relationships",
-    icon: "/Heart.svg",
+    title: "Relationship",
+    icon: "/relationship-icon.svg",
+    description:
+      "Gen can help you and your partner’s communication with over 4 years of experience and specific training using Sue Johnson’s Emotionally Focused Therapy technique [EFT].",
+  },
+  {
+    title: "Trauma/PTSD",
+    icon: "/trauma-icon.svg",
+    description:
+      "Gen is a Somatic Experiencing practitioner which utilizes mindfulness and a slow and steady exposure to stressors to increase stress resilience and promote hope. ",
   },
 ];
 
@@ -73,6 +84,7 @@ export const footerLinks = [
       { name: "About", href: "/" },
       { name: "Services", href: "/" },
       { name: "Contact", href: "/" },
+      { name: "TEST", href: "/" },
     ],
   },
   {

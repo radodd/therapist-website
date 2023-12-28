@@ -31,22 +31,21 @@ module.exports = {
         montserrat: ["Montserrat", "sans-serif"],
       },
       colors: {
-        primary: "#ECEEFF",
-        "coral-red": "#FF6452",
-        "slate-gray": "#6D6D6D",
-        "pale-blue": "#F5F6FF",
-        "white-400": "rgba(255, 255, 255, 0.80)",
-        "stone-blue": "#26425A",
-        fern: "#558F61",
+        primary: "#144F7C",
+        secondary: "#26425A",
+        tertiary: "#558F61",
+        quaternary: "#",
         "sea-foam": "#B5D9CC",
         "consult-bg-color": "rgba(38, 66, 90, 0.70)",
-        "banner-bg-color": "rgba(0, 0, 0, 0.50)",
+        "hero-bg-color":
+          "bg-gradient-to-r from-[rgba(0, 0, 0, 0.80)] to-[rgba(0, 0, 0, 0.00)]",
+        // "linear-gradient(90deg, rgba(0, 0, 0, 0.80) 12.01%, rgba(0, 0, 0, 0.00) 88.89%)",
       },
       boxShadow: {
         "3xl": "0 10px 40px rgba(0, 0, 0, 0.1)",
       },
       backgroundImage: {
-        banner: "url('/banner.jpg')",
+        hero: "url('/hero.jpg')",
         consult: "url('/consult.jpg')",
       },
       screens: {

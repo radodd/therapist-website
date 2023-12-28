@@ -6,8 +6,8 @@ import Button from "./Button";
 const Footer = () => {
   return (
     <>
-      <footer className="padding-x py-8 w-full bg-stone-blue">
-        <nav className="border-2 border-red-500 flex justify-between items-center max-container padding-container">
+      <footer className="padding-x py-8 w-full bg-secondary">
+        <nav className="border-2 border-red-500 flex justify-between items-center max-container padding-container max-small:top-0 ">
           <Link href="/" className="flex items-center">
             <Image
               src="/logo.svg"
@@ -15,12 +15,12 @@ const Footer = () => {
               width={87.44}
               height={47.16}
             />
-            <span className="flex ml-2 text-white text-[40px] font-montserrat max-sm:hidden">
+            <span className="flex ml-2 text-white text-[40px] font-montserrat max-[1130px]:hidden">
               Gen Fulton
             </span>
           </Link>
 
-          <div className="flex flex-1 justify-between lg:gap-10 gap-20 flex-wrap text-white ">
+          <div className="flex flex-1 justify-between lg:gap-10 gap-20 flex-wrap text-white  max-small:gap-2">
             {footerLinks.map((section) => (
               <div key={section.title} className="px-10">
                 <ul>
@@ -36,13 +36,13 @@ const Footer = () => {
               </div>
             ))}
           </div>
-          <div>
+          {/* <div className="container mx-auto flex flex-col mt-auto">
             <Button
               type="button"
               title="Schedule Consult"
               variant="btn-primary"
             />
-          </div>
+          </div> */}
         </nav>
       </footer>
     </>

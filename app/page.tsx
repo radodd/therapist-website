@@ -1,7 +1,7 @@
 import Intro from "@/sections/Intro";
 import Footer from "@/components/Footer";
 import Consult from "@/sections/Consult";
-import Banner from "@/sections/Banner";
+import Hero from "@/sections/Hero";
 import Reviews from "@/sections/Reviews";
 import Navbar from "@/components/Navbar";
 import Expertise from "@/sections/Expertise";
@@ -9,10 +9,10 @@ import Expertise from "@/sections/Expertise";
 export default function Home() {
   return (
     <>
-      <section className="bg-banner bg-no-repeat bg-cover">
-        <Banner />
+      <section className="">
+        <Hero />
       </section>
-      <section className="intro-bg-style">
+      <section className="relative overflow-hidden">
         <Intro />
       </section>
       <section className="sm:px-[70px] sm:p-10">

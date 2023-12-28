@@ -11,26 +11,34 @@ const Intro = () => {
   return (
     <section
       id="about"
-      className="flex items-center flex-col w-full object-cover bg-[#144F7C]"
+      className="z-20 flex items-center flex-col w-full object-cover bg-[#144F7C]"
     >
+      {/* Vector Blob Layer */}
+
+      <img
+        src={"/blob.svg"}
+        alt=""
+        className="absolute z-10"
+        style={{ right: "0" }}
+      />
+
       {/* Contains <>Image,</> and <>Title, Intro Paragraph, Buttons</> */}
-      <div className="relative flex mt-10 max-lg:flex-col items-center sm:ml-[70px] sm:mr-[180px]">
+      <div className="z-30 relative flex mt-10 max-lg:flex-col items-center sm:ml-[70px] sm:mr-[180px]">
         {/* Contains Only Image */}
-        <div className="flex justify-start items-center max-lg:justify-center image-cropper">
+        <div className="flex justify-start items-center max-lg:justify-center">
           <Image
             src="/selfie.jpg"
             alt="intro picture"
-            width={384}
-            height={512}
-            // style={{ width: "auto", height: "auto" }}
-            className="profile-pic max-lg:m-0"
+            width={300}
+            height={450}
+            className="max-lg:m-0 rounded-t-full"
           />
         </div>
 
         {/* Contains Title, Intro Paragraph, Buttons */}
         <div className="flex flex-col text-white max-w-[748px] gap-8 lg:ml-[110px] max-[640px]:mx-8">
-          <h2 className="font-montserrat text-lg font-normal lg:max-w-lg">
-            Meet Gen
+          <h2 className="font-montserrat text-lg font-normal mt-10 lg:max-w-lg">
+            Hi, I'm Gen Fulton.
           </h2>
           <p className="lg:max-w-3xl text-base font-light">
             My approach to therapy focuses on conjointly developing goals that
@@ -47,12 +55,16 @@ const Intro = () => {
           <div className="">
             <Button
               type="button"
-              title="See More"
+              title={collapse ? "See Less" : "See More"}
               variant="btn-underline"
               onClick={() => setCollapse((prev) => !prev)}
             />
           </div>
-          <div className="flex flex-wrap gap-8 font-extrabold font-sm max-lg:justify-center max-sm:gap-[22px]">
+          <div
+            className={`flex flex-wrap gap-8 font-extrabold font-sm max-lg:justify-center max-sm:gap-[22px] ${
+              collapse && "hidden"
+            }`}
+          >
             <Button title="Contact Gen" type="button" variant="btn-primary" />
             <Button
               title="View Gen's CV"
@@ -65,22 +77,22 @@ const Intro = () => {
 
       {/* ONLY See More Content */}
       <div
-        className={`flex flex-col text-white long-text max-[640px]:mx-8 ${
+        className={`z-30 flex flex-col text-white long-text max-w-[1190px] max-[640px]:mx-8 ${
           collapse ? "expanded" : ""
         } my-10 mx-[70px]`}
       >
         {qualifications.map((item, index) => (
           <div key={item.title} className="flex flex-col pb-6">
             <h2 className="font-normal text-lg pb-6">{item.title}</h2>
-            {item.highlights.map((highlight) => (
-              <p className="font-light text-base">{highlight}</p>
+            {item.highlights.map((highlight, index) => (
+              <p key={`${item.id}-${index}`} className="font-light text-base">
+                {highlight}
+              </p>
             ))}
           </div>
         ))}
         <Button title="View Gen's CV" type="button" variant="btn-transparent" />
       </div>
-
-      {/* END See More Content */}
     </section>
   );
 };
