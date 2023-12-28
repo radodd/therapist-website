@@ -10,7 +10,7 @@ const Reviews = ({ ...reviews }) => {
           alt="carousel icon"
           className=" flex justify-center"
         />
-        <Carousel text={reviews.text} />
+        <Carousel text={reviews.text} slideIndex={0} />
       </div>
     </section>
   );
