@@ -57,12 +57,12 @@ body {
   .long-text {
     max-height: 0;
     overflow: hidden;
-    display: inline-block;
+    display: block;
     transition: max-height 0.3s;
   }
 
   .expanded {
-    max-height: max-content;
+    max-height: 80rem;
     transition: max-height 2s;
   }
   /* .image-cropper {

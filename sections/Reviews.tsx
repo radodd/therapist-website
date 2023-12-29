@@ -8,7 +8,7 @@ const Reviews = ({ ...reviews }) => {
         <img
           src="carousel-icon.svg"
           alt="carousel icon"
-          className=" flex justify-center"
+          className="z-10 flex justify-center"
         />
         <Carousel text={reviews.text} slideIndex={0} />
       </div>

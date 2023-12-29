@@ -27,11 +27,11 @@ const Carousel: React.FC<CarouselProps> = ({ text, slideIndex }) => {
 
   return (
     <>
-      <motion.div className="flex items-center justify-center h-[398px] max-w-[1080px] max-medium:max-w-[810px] max-small:max-w-[600px] max-extrasmall:max-w-[350px] max-mobile:min-h-[200px]">
+      <motion.div className="flex items-center justify-center h-[398px] max-w-[1080px] max-medium:max-w-[810px] max-small:max-w-[600px] max-extrasmall:max-w-[350px] max-mobile:min-h-[200px] max-mobile:max-h-[508px]">
         {reviews.map((item, index) => (
           <motion.p
             key={item.id}
-            className={`text-md font-normal text-primary max-mobile:align-middle z-30 ${
+            className={`text-md font-normal text-primary max-mobile:align-middle z-30 max-mobile:text-[16px] max-mobile:w-56 ${
               index === current ? "" : "hidden"
             }`}
             initial={{ opacity: 0, x: 100 }}
@@ -45,14 +45,14 @@ const Carousel: React.FC<CarouselProps> = ({ text, slideIndex }) => {
             "{item.text}"
             <div
               key={item.name}
-              className="font-bold text-md flex justify-center mt-6"
+              className="font-bold text-md flex justify-center mt-6 max-mobile:text-[15px] max-mobile:mb-6"
             >
               - {item.name}
             </div>
           </motion.p>
         ))}
 
-        <div className="absolute z-10 bottom-4 flex justify-center py-2 gap-4">
+        <div className="absolute z-10 bottom-4 flex justify-center py-2 gap-4 max-mobile:mb-4">
           {reviews.map((slide, slideIndex) => (
             <div
               key={slideIndex}

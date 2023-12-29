@@ -31,7 +31,7 @@ module.exports = {
         tertiary: "#558F61",
         quaternary: "#",
         "sea-foam": "#B5D9CC",
-        "consult-bg-color": "rgba(38, 66, 90, 0.70)",
+        "consult-bg-color": "rgba(20, 79, 124, 0.70)",
       },
       boxShadow: {
         "3xl": "0 10px 40px rgba(0, 0, 0, 0.1)",
@@ -47,6 +47,7 @@ module.exports = {
         small: "950px",
         extrasmall: "740px",
         mobile: "394px",
+        tablet: "833px",
       },
     },
   },
