@@ -36,7 +36,7 @@ const Navbar = () => {
     <motion.header
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
-      className="padding-x py-8 w-full bg-secondary"
+      className="px-8 py-8 w-full bg-secondary"
     >
       <nav className="flex justify-between items-center max-container padding-container relative">
         <Link href="/" className="flex items-center">
@@ -46,7 +46,7 @@ const Navbar = () => {
             width={87.44}
             height={47.16}
           />
-          <span className="flex ml-2 text-white text-nav max-sm:hidden">
+          <span className="flex ml-2 text-white text-lg max-tablet:hidden">
             Gen Fulton
           </span>
         </Link>
@@ -72,7 +72,7 @@ const Navbar = () => {
         {/* Hamburger menu for small screens */}
         <div className="navscreen:hidden">
           <div
-            className="inline-block cursor-pointer mx-8 max-mobile:mx-0"
+            className="inline-block cursor-pointer mx-8 max-tablet:mx-0"
             onClick={() => {
               setDropdownOpen(!dropdownOpen);
             }}

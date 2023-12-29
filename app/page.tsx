@@ -19,7 +19,7 @@ export default function Home() {
       <section className="relative overflow-hidden">
         <Intro />
       </section>
-      <section className="sm:px-[70px] sm:p-10">
+      <section className="medium:px-[70px] medium:p-10 max-tablet:my-16 ">
         <Expertise />
       </section>
       <section className="relative sm:px-0 bg-sea-foam justify-center">

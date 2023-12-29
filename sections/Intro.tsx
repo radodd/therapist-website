@@ -23,7 +23,7 @@ const Intro = () => {
       />
 
       {/* Contains <>Image,</> and <>Title, Intro Paragraph, Buttons</> */}
-      <div className="z-30 relative flex mt-10 max-lg:flex-col items-center sm:ml-[70px] sm:mr-[180px]">
+      <div className="z-30 relative flex mt-10 max-lg:flex-col items-center medium:ml-[70px] medium:mr-[180px] tablet:m-10">
         {/* Contains Only Image */}
         <div className="flex justify-start items-center max-lg:justify-center">
           <Image
@@ -36,7 +36,7 @@ const Intro = () => {
         </div>
 
         {/* Contains Title, Intro Paragraph, Buttons */}
-        <div className="flex flex-col text-white max-w-[748px] gap-8 lg:ml-[110px] max-[640px]:mx-8">
+        <div className="flex flex-col text-white max-w-[748px] gap-8 lg:ml-[110px] max-mobile:mx-8">
           <h2 className=" text-lg font-normal mt-10 lg:max-w-lg">
             Hi, I'm Gen Fulton.
           </h2>

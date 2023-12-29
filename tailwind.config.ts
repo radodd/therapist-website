@@ -13,7 +13,7 @@ module.exports = {
       sm: ["20px", "normal"],
       md: ["24px", "normal"],
       lg: ["30px", "normal"],
-      nav: ["40px", "normal"],
+      xl: ["40px", "normal"],
       hero: ["64px", "normal"],
     },
     fontWeight: {
@@ -47,7 +47,7 @@ module.exports = {
         small: "950px",
         extrasmall: "740px",
         mobile: "394px",
-        tablet: "833px",
+        tablet: "835px",
       },
     },
   },

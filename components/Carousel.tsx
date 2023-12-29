@@ -27,7 +27,7 @@ const Carousel: React.FC<CarouselProps> = ({ text, slideIndex }) => {
 
   return (
     <>
-      <motion.div className="flex items-center justify-center h-[398px] max-w-[1080px] max-medium:max-w-[810px] max-small:max-w-[600px] max-extrasmall:max-w-[350px] max-mobile:min-h-[200px] max-mobile:max-h-[508px]">
+      <motion.div className="flex items-center justify-center h-[398px] max-w-[1080px] max-medium:max-w-[810px] max-small:max-w-[600px] max-extrasmall:max-w-[350px] max-mobile:min-h-[200px] max-mobile:max-h-[508px] max-tablet:min-h-[563px]">
         {reviews.map((item, index) => (
           <motion.p
             key={item.id}
@@ -45,7 +45,7 @@ const Carousel: React.FC<CarouselProps> = ({ text, slideIndex }) => {
             "{item.text}"
             <div
               key={item.name}
-              className="font-bold text-md flex justify-center mt-6 max-mobile:text-[15px] max-mobile:mb-6"
+              className="font-bold text-md flex justify-center mt-6 max-mobile:text-[15px] max-tablet:mb-6 max-mobile:mb-6"
             >
               - {item.name}
             </div>
