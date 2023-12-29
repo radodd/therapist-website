@@ -27,7 +27,12 @@ const Carousel: React.FC<CarouselProps> = ({ text, slideIndex }) => {
 
   return (
     <>
-      <motion.div className="flex items-center justify-center h-[398px] max-w-[1080px] max-medium:max-w-[810px] max-small:max-w-[600px] max-extrasmall:max-w-[350px] max-mobile:min-h-[200px] max-mobile:max-h-[508px] max-tablet:min-h-[563px]">
+      <motion.div className="flex flex-col gap-6 items-center justify-center max-w-[1080px] max-medium:max-w-[810px] max-small:max-w-[600px] max-extrasmall:max-w-[350px] max-mobile:min-h-[508px] mobile:min-h-[563px] ">
+        <img
+          src="carousel-icon.svg"
+          alt="carousel icon"
+          className="z-10 flex justify-center"
+        />
         {reviews.map((item, index) => (
           <motion.p
             key={item.id}
@@ -43,16 +48,16 @@ const Carousel: React.FC<CarouselProps> = ({ text, slideIndex }) => {
             transition={{ type: "spring", duration: 0.5 }}
           >
             "{item.text}"
-            <div
+            <span
               key={item.name}
-              className="font-bold text-md flex justify-center mt-6 max-mobile:text-[15px] max-tablet:mb-6 max-mobile:mb-6"
+              className="font-bold text-md flex justify-center mt-6 max-mobile:text-[15px]"
             >
               - {item.name}
-            </div>
+            </span>
           </motion.p>
         ))}
 
-        <div className="absolute z-10 bottom-4 flex justify-center py-2 gap-4 max-mobile:mb-4">
+        <div className=" z-40 flex bottom-0 justify-center py-2 gap-4 max-mobile:mb-4">
           {reviews.map((slide, slideIndex) => (
             <div
               key={slideIndex}

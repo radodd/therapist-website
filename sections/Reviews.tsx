@@ -4,12 +4,7 @@ import { reviews } from "@/constants";
 const Reviews = ({ ...reviews }) => {
   return (
     <section className="flex justify-center items-center py-10 ">
-      <div className="flex flex-col justify-center items-center gap-6 ">
-        <img
-          src="carousel-icon.svg"
-          alt="carousel icon"
-          className="z-10 flex justify-center"
-        />
+      <div className="flex justify-center items-center">
         <Carousel text={reviews.text} slideIndex={0} />
       </div>
     </section>
@@ -17,3 +12,4 @@ const Reviews = ({ ...reviews }) => {
 };
 
 export default Reviews;
+// className="flex flex-col justify-center items-center gap-6
