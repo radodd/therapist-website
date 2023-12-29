@@ -46,7 +46,7 @@ module.exports = {
         medium: "1225px",
         small: "950px",
         extrasmall: "740px",
-        mobile: "750px",
+        mobile: "394px",
       },
     },
   },

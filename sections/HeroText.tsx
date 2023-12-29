@@ -2,7 +2,7 @@ import React from "react";
 
 const HeroText = () => {
   return (
-    <section className="flex py-16 justify-center items-center w-full max-w-[1160px]">
+    <section className="flex py-16 justify-center items-center text-center w-full max-w-[1160px] max-mobile:mx-8">
       <p className="text-lg font-normal text-secondary">
         Gen works with her clients based on where they are and what they hope to
         achieve rather than imposing an agenda on her clients. This holistic,

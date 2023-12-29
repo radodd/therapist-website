@@ -47,7 +47,7 @@ const Carousel: React.FC<CarouselProps> = ({ text, slideIndex }) => {
               key={item.name}
               className="font-bold text-md flex justify-center mt-6"
             >
-              {item.name}
+              - {item.name}
             </div>
           </motion.p>
         ))}

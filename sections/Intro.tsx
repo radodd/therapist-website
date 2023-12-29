@@ -77,9 +77,9 @@ const Intro = () => {
 
       {/* ONLY See More Content */}
       <div
-        className={`z-30 flex flex-col text-white long-text max-w-[1190px] max-[640px]:mx-8 ${
+        className={`z-30 flex flex-col text-white long-text max-w-[1190px] max-mobile:mx-8 ${
           collapse ? "expanded" : ""
-        } my-10 mx-[70px]`}
+        } my-8 mx-[70px]`}
       >
         {qualifications.map((item, index) => (
           <div key={item.title} className="flex flex-col pb-6">
@@ -91,7 +91,14 @@ const Intro = () => {
             ))}
           </div>
         ))}
-        <Button title="View Gen's CV" type="button" variant="btn-transparent" />
+        <div className="flex gap-8">
+          <Button title="Contact Gen" type="button" variant="btn-primary" />
+          <Button
+            title="View Gen's CV"
+            type="button"
+            variant="btn-transparent"
+          />
+        </div>
       </div>
     </section>
   );
