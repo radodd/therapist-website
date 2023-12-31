@@ -43,6 +43,9 @@ body {
   .btn-underline {
     @apply bg-transparent underline border-none text-white font-light;
   }
+  .btn-card {
+    @apply bg-transparent underline border-none text-primary font-light text-sm;
+  }
 
   .hero-bg-style {
     @apply bg-gradient-to-r from-opacity-70 to-opacity-0 bg-cover bg-center;

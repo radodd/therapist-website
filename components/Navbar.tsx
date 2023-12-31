@@ -7,7 +7,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import { navLinks } from "@/constants";
 import Button from "./Button";
 import "hamburgers/dist/hamburgers.css";
-// import "../app/hamburgers-settings.scss";
 
 const Navbar = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -17,18 +16,16 @@ const Navbar = () => {
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -20 }}
-      className="absolute top-full w-screen left-0 text-center bg-white border border-gray-300 shadow-md rounded-b-2xl z-50 navscreen:hidden"
+      className="absolute top-full w-screen left-0 text-center bg-primary max-mobile:bg-white border border-primary shadow-md rounded-b-2xl z-50 navscreen:hidden"
     >
-      <div className="my-6">
+      <div className="my-4 gap-3 max-mobile:my-6 max-mobile:gap-6">
         {navLinks.map((item, index) => (
-          <li key={item.label} className="pb-6 ">
+          <li key={item.label} className="pb-3 last:pb-0">
             <a
               href={item.href}
               target={index !== navLinks.length - 1 ? "" : "_blank"}
-              className={`block text-sm font-normal text-secondary hover:bg-gray-100 ${
-                index === navLinks.length - 1
-                  ? "text-tertiary font-semibold"
-                  : ""
+              className={`block text-xm font-normal text-white max-mobile:text-black hover:bg-secondary hover:font-bold ${
+                index === navLinks.length - 1 ? "font-semibold" : ""
               }`}
             >
               {item.label}
