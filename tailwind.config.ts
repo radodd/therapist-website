@@ -19,6 +19,7 @@ module.exports = {
     fontWeight: {
       light: 300,
       normal: 400,
+      semibold: 600,
       bold: 700,
     },
     extend: {
@@ -28,7 +29,7 @@ module.exports = {
       colors: {
         primary: "#144F7C",
         secondary: "#26425A",
-        tertiary: "#558F61",
+        tertiary: "#6E57D4",
         quaternary: "#",
         "sea-foam": "#B5D9CC",
         "consult-bg-color": "rgba(20, 79, 124, 0.70)",

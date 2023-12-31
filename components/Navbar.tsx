@@ -5,6 +5,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { navLinks } from "@/constants";
+import Button from "./Button";
+import "hamburgers/dist/hamburgers.css";
+// import "../app/hamburgers-settings.scss";
 
 const Navbar = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -14,21 +17,25 @@ const Navbar = () => {
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -20 }}
-      className="absolute top-full w-full bg-white border border-gray-300 shadow-md py-2 z-10 lg:hidden"
+      className="absolute top-full w-screen left-0 text-center bg-white border border-gray-300 shadow-md rounded-b-2xl z-50 navscreen:hidden"
     >
-      {navLinks.map((item, index) => (
-        <li key={item.label}>
-          <a
-            href={item.href}
-            target="_blank"
-            className={`block px-4 py-2 text-md text-gray-700 hover:bg-gray-100 ${
-              index === navLinks.length - 1 ? "btn-pink" : ""
-            }`}
-          >
-            {item.label}
-          </a>
-        </li>
-      ))}
+      <div className="my-6">
+        {navLinks.map((item, index) => (
+          <li key={item.label} className="pb-6 ">
+            <a
+              href={item.href}
+              target={index !== navLinks.length - 1 ? "" : "_blank"}
+              className={`block text-sm font-normal text-secondary hover:bg-gray-100 ${
+                index === navLinks.length - 1
+                  ? "text-tertiary font-semibold"
+                  : ""
+              }`}
+            >
+              {item.label}
+            </a>
+          </li>
+        ))}
+      </div>
     </motion.ul>
   );
 
@@ -36,9 +43,9 @@ const Navbar = () => {
     <motion.header
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
-      className="px-8 py-8 w-full bg-secondary"
+      className="px-8 py-8 w-full bg-secondary relative"
     >
-      <nav className="flex justify-between items-center max-container padding-container relative">
+      <nav className="flex justify-between items-center max-container padding-container ">
         <Link href="/" className="flex items-center">
           <Image
             src="/favicon.ico"
@@ -77,7 +84,18 @@ const Navbar = () => {
               setDropdownOpen(!dropdownOpen);
             }}
           >
-            <Image src="/hamburger.svg" alt="menu" width={32} height={32} />
+            {/* <Image src="/hamburger.svg" alt="menu" width={32} height={32} /> */}
+
+            <button
+              className={`hamburger hamburger--collapse ${
+                dropdownOpen ? "is-active" : ""
+              } `}
+              type="button"
+            >
+              <span className="hamburger-box">
+                <span className="hamburger-inner"></span>
+              </span>
+            </button>
           </div>
         </div>
 

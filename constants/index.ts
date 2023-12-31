@@ -4,7 +4,7 @@ export const navLinks = [
   { href: "#therapy", key: "therapy", label: "Therapy" },
   { href: "#contact", key: "contact ", label: "Contact " },
   {
-    href: "https://calendly.com/ethanf-flores/30min",
+    href: "https://calendly.com/genfultonconsultancy/",
     key: "book_appointment ",
     label: "Book Appointment",
   },
@@ -91,7 +91,7 @@ export const reviews = [
 // FOOTER SECTION
 export const footerLinks = [
   {
-    title: "Learn More",
+    // title: "Learn More",
     links: [
       { name: "About", href: "/" },
       { name: "Services", href: "/" },
@@ -99,6 +99,8 @@ export const footerLinks = [
       { name: "TEST", href: "/" },
     ],
   },
+];
+export const footerConnections = [
   {
     title: "Get in touch",
     links: [

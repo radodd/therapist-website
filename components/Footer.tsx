@@ -6,8 +6,9 @@ import Button from "./Button";
 const Footer = () => {
   return (
     <>
-      <footer className="padding-x py-8 w-full bg-secondary">
-        <nav className="border-2 border-red-500 flex justify-between items-center max-container padding-container max-small:top-0 ">
+      <footer className="w-full bg-secondary px-[70px">
+        <nav className="flex justify-between items-center max-container">
+          {/* conditional render */}
           <Link href="/" className="flex items-center">
             <Image
               src="/logo.svg"

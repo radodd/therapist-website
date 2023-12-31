@@ -2,7 +2,11 @@
 
 /* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"); */
 
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap");
+/* hamburgers-custom.css */
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap");
+
+/* @import "hamburgers/dist/hamburgers.css"; */
 
 @tailwind base;
 @tailwind components;
@@ -21,7 +25,7 @@ body {
 
 @layer utilities {
   .btn-primary {
-    @apply bg-tertiary border border-tertiary text-white px-6 py-3 rounded-full font-bold hover:bg-green-700;
+    @apply bg-tertiary border-2 border-white text-white px-6 py-3 rounded-full font-bold hover:bg-green-700;
   }
 
   .btn-transparent {
@@ -54,6 +58,15 @@ body {
     background-image: url("/consult.jpg");
   }
 
+  .hamburger .hamburger-inner,
+  .hamburger .hamburger-inner::before,
+  .hamburger .hamburger-inner::after,
+  .is-active .hamburger-inner,
+  .is-active .hamburger-inner::before {
+    background-color: white !important;
+    color: #fff !important;
+  }
+
   .long-text {
     max-height: 0;
     overflow: hidden;
@@ -62,7 +75,7 @@ body {
   }
 
   .expanded {
-    max-height: 80rem;
+    max-height: 85rem;
     transition: max-height 2s;
   }
   /* .image-cropper {

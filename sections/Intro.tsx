@@ -36,8 +36,8 @@ const Intro = () => {
         </div>
 
         {/* Contains Title, Intro Paragraph, Buttons */}
-        <div className="flex flex-col text-white max-w-[748px] gap-8 lg:ml-[110px] max-mobile:mx-8">
-          <h2 className=" text-lg font-normal mt-10 lg:max-w-lg">
+        <div className="flex flex-col text-white max-w-[748px] gap-8 lg:ml-[110px] max-tablet:mx-8">
+          <h2 className="text-lg font-normal mt-10 lg:max-w-lg">
             Hi, I'm Gen Fulton.
           </h2>
           <p className="lg:max-w-3xl text-sm font-normal">

@@ -8,7 +8,7 @@ const Expertise = () => {
         Areas of&nbsp;
         <span className="max-mobile:inline-block">Expertise</span>
       </h1>
-      <div className="flex items-center justify-center gap-[72px] flex-wrap max-mobile:mb-8 max-medium:grid max-medium:grid-cols-2 max-tablet:flex">
+      <div className="flex items-center justify-center gap-[72px] flex-wrap max-mobile:mb-8 max-[1440px]:grid max-[1440px]:grid-cols-2 max-tablet:flex">
         {expertise.map((item, index) => (
           <div className="justify-center mobile:w-[264px] mobile:h-[463px]">
             <ExpertiseCard key={item.title} {...item} />

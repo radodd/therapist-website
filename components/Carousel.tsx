@@ -50,7 +50,7 @@ const Carousel: React.FC<CarouselProps> = ({ text, slideIndex }) => {
             "{item.text}"
             <span
               key={item.name}
-              className="font-bold text-md flex justify-center mt-6 max-mobile:text-[15px]"
+              className="font-bold text-md text-tertiary flex justify-center mt-6 max-mobile:text-[15px]"
             >
               - {item.name}
             </span>

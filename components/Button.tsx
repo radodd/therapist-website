@@ -7,6 +7,7 @@ type ButtonProps = {
   icon?: string;
   onClick?: () => void;
   selected?: boolean;
+  href?: string;
 };
 
 const Button = ({

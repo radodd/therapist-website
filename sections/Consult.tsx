@@ -1,9 +1,11 @@
 "use client";
 import Button from "@/components/Button";
 import { useEffect, useState } from "react";
+// import { useRouter } from "next/router";
 
 const Consult = () => {
   const [isMobile, setIsMobile] = useState(false);
+  // const router = useRouter();
 
   useEffect(() => {
     const handleResize = () => {
@@ -22,6 +24,14 @@ const Consult = () => {
     };
   }, []); // Empty dependency array ensures that the effect runs only once on mount
 
+  // const handleClick = () => {
+  //   router.push("https://calendly.com/genfultonconsultancy/");
+  // };
+
+  // Navigation function
+  const handleClick = () => {
+    window.open("https://calendly.com/genfultonconsultancy/", "_blank");
+  };
   return (
     <section
       id="contact"
@@ -36,6 +46,7 @@ const Consult = () => {
           type="button"
           title={`Schedule a Free ${isMobile ? "Consult" : "Consultation"}`}
           variant="btn-primary"
+          onClick={handleClick}
         />
       </div>
     </section>
