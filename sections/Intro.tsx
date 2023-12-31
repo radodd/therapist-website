@@ -13,7 +13,7 @@ const Intro = () => {
   return (
     <section
       id="about"
-      className="z-20 flex items-center flex-col w-full object-cover bg-primary"
+      className="relative z-20 flex items-center flex-col w-full object-cover bg-primary"
     >
       {/* Vector Blob Layer */}
 

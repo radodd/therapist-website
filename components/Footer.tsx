@@ -47,7 +47,7 @@ const Footer = () => {
             <div className="flex flex-1 justify-around lg:gap-10 gap-10 flex-wrap text-white">
               <Link href="/" className="flex items-center">
                 <Image
-                  src="/logo.svg"
+                  src="/favicon.ico"
                   alt="Gen Fulton website logo"
                   width={87.44}
                   height={47.16}
