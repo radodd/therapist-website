@@ -88,27 +88,17 @@ export const reviews = [
     name: "Albert Einstein",
   },
 ];
+
 // FOOTER SECTION
 export const footerLinks = [
-  {
-    title: "Learn More",
-    links: [
-      { name: "About", href: "/" },
-      { name: "Services", href: "/" },
-      { name: "Contact", href: "/" },
-      { name: "TEST", href: "/" },
-    ],
-  },
+  { name: "About", href: "/" },
+  { name: "Services", href: "/" },
+  { name: "Contact", href: "/" },
 ];
+
 export const footerConnections = [
-  {
-    title: "Get in touch",
-    links: [
-      { name: "Gen Fulton Psychotherapy", href: "/" },
-      { name: "Mill Valley, CA 94941", href: "/" },
-      { name: "(628)265-6746", href: "/" },
-    ],
-  },
+  { name: "Gen's Linkedin", href: "/", icon: "/linkedin.svg" },
+  { name: "(628)265-6746", href: "/", icon: "/whatsapp.svg" },
 ];
 
 export const socials = {

@@ -1,49 +1,74 @@
 import Image from "next/image";
 import Link from "next/link";
 import { footerLinks } from "@/constants";
+import { footerConnections } from "@/constants";
 import Button from "./Button";
 
 const Footer = () => {
   return (
     <>
-      <footer className="w-full bg-secondary px-[70px">
-        <nav className="flex justify-between items-center max-container">
-          {/* conditional render */}
-          <Link href="/" className="flex items-center">
-            <Image
-              src="/logo.svg"
-              alt="Gen Fulton website logo"
-              width={87.44}
-              height={47.16}
-            />
-            <span className="flex ml-2 text-white text-[40px]  max-[1130px]:hidden">
-              Gen Fulton
-            </span>
-          </Link>
-
-          <div className="flex flex-1 justify-between lg:gap-10 gap-20 flex-wrap text-white  max-small:gap-2">
-            {footerLinks.map((section) => (
-              <div key={section.title} className="px-10">
-                <ul>
-                  {section.links.map((link) => (
-                    <li
-                      key={link.name}
-                      className="mt-3 text-sm leading-normal hover:text-slate-gray cursor-pointer"
-                    >
-                      <a>{link.name} </a>
-                    </li>
-                  ))}
-                </ul>
+      <footer className="w-full bg-secondary px-[70px] py-6">
+        <nav className="flex justify-center">
+          {/* condition render for normal screen size  */}
+          <div className="max-tablet:hidden flex justify-between text-white w-full">
+            <div className="flex items-center gap-14 text-base">
+              <div className="flex items-center text-[40px] gap-5">
+                <Link href="/" className="">
+                  <Image
+                    src="logo.svg"
+                    alt="Gen fulton website logo"
+                    width={87.44}
+                    height={47.16}
+                  />
+                </Link>
+                <h2>Gen Fulton</h2>
               </div>
-            ))}
+              <div className="flex flex-col gap-3">
+                {footerLinks.map((item) => (
+                  <ul key={item.name}>
+                    <p>{item.name}</p>
+                  </ul>
+                ))}
+              </div>
+            </div>
+            <div className="text-white flex flex-col justify-center items-end gap-3">
+              <h3>Gen Fulton Psychotherapy</h3>
+              {footerConnections.map((item) => (
+                <div key={item.name} className="flex gap-2">
+                  <img src={item.icon} alt={`${item.name} icon`} />
+                  <p>{item.name}</p>
+                </div>
+              ))}
+            </div>
           </div>
-          {/* <div className="container mx-auto flex flex-col mt-auto">
-            <Button
-              type="button"
-              title="Schedule Consult"
-              variant="btn-primary"
-            />
-          </div> */}
+
+          {/* Conditional render for mobile screen  */}
+          <div className="tablet:hidden ">
+            <div className="flex flex-1 justify-around lg:gap-10 gap-10 flex-wrap text-white">
+              <Link href="/" className="flex items-center">
+                <Image
+                  src="/logo.svg"
+                  alt="Gen Fulton website logo"
+                  width={87.44}
+                  height={47.16}
+                />
+              </Link>
+              <div className="flex flex-col gap-1">
+                {footerLinks.map((item) => (
+                  <ul key={item.name}>{item.name}</ul>
+                ))}
+              </div>
+            </div>
+            <div className="text-white mt-5 flex flex-col justify-center items-center gap-2 w-max">
+              <h3>Gen Fulton Psychotherapy</h3>
+              {footerConnections.map((item) => (
+                <div key={item.name} className="flex gap-2">
+                  <img src={item.icon} alt={`${item.name} icon`} />
+                  <p>{item.name}</p>
+                </div>
+              ))}
+            </div>
+          </div>
         </nav>
       </footer>
     </>

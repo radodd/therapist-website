@@ -5,6 +5,7 @@ import Button from "../components/Button";
 import { useState } from "react";
 import { qualifications } from "@/constants";
 import { motion } from "framer-motion";
+import BlobLayer from "@/components/BlobLayer";
 
 const Intro = () => {
   const [collapse, setCollapse] = useState(false);
@@ -16,24 +17,7 @@ const Intro = () => {
     >
       {/* Vector Blob Layer */}
 
-      <motion.img
-        src={"/blob.svg"}
-        alt=""
-        className="absolute z-10"
-        style={{ right: "0" }}
-        initial={{
-          transform: "translateX(8px) translateY(-4px)",
-        }}
-        animate={{
-          transform: "translateX(25px) translateY(-20px)",
-        }}
-        transition={{
-          repeat: Infinity,
-          repeatType: "mirror",
-          duration: 3,
-          ease: "easeInOut",
-        }}
-      />
+      <BlobLayer />
 
       {/* Contains <>Image,</> and <>Title, Intro Paragraph, Buttons</> */}
       <div className="z-30 relative flex mt-10 max-lg:flex-col items-center medium:ml-[70px] medium:mr-[180px] tablet:m-10">
