@@ -4,6 +4,7 @@ import Image from "next/image";
 import Button from "../components/Button";
 import { useState } from "react";
 import { qualifications } from "@/constants";
+import { motion } from "framer-motion";
 
 const Intro = () => {
   const [collapse, setCollapse] = useState(false);
@@ -11,15 +12,27 @@ const Intro = () => {
   return (
     <section
       id="about"
-      className="z-20 flex items-center flex-col w-full object-cover bg-[#144F7C]"
+      className="z-20 flex items-center flex-col w-full object-cover bg-primary"
     >
       {/* Vector Blob Layer */}
 
-      <img
+      <motion.img
         src={"/blob.svg"}
         alt=""
         className="absolute z-10"
         style={{ right: "0" }}
+        initial={{
+          transform: "translateX(8px) translateY(-4px)",
+        }}
+        animate={{
+          transform: "translateX(25px) translateY(-20px)",
+        }}
+        transition={{
+          repeat: Infinity,
+          repeatType: "mirror",
+          duration: 3,
+          ease: "easeInOut",
+        }}
       />
 
       {/* Contains <>Image,</> and <>Title, Intro Paragraph, Buttons</> */}
