@@ -91,7 +91,7 @@ export const reviews = [
 // FOOTER SECTION
 export const footerLinks = [
   {
-    // title: "Learn More",
+    title: "Learn More",
     links: [
       { name: "About", href: "/" },
       { name: "Services", href: "/" },
