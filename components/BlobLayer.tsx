@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 
 const BlobLayer = () => {
   return (
-    <div className="absolute border-2 justify-end border-red-700 flex flex-wrap w-full h-[1000px] ">
+    <div className="absolute flex flex-wrap w-full h-[1000px] ">
       {/* Blob 1 */}
-      <div className=" border-2 border-orange-500 w-full z-10 relative">
+      <div className="w-full z-10 relative">
         <motion.img
           src={"/blob-1.svg"}
           alt=""
@@ -30,7 +30,7 @@ const BlobLayer = () => {
 
       {/* Blob 2 */}
       <div
-        className="z-20 w-full relative border-2 border-green-500"
+        className="z-20 w-full relative"
         style={{
           transform: "translateX(10vw) translateY(vh)", // Use viewport units for responsive translation
         }}
@@ -40,13 +40,13 @@ const BlobLayer = () => {
           alt=""
           className="absolute transform"
           style={{
-            right: "20vw",
+            right: "10vw",
           }}
           initial={{
-            transform: "translateX(8px) translateY(-4px)",
+            transform: "translateX(15px) translateY(-4px)",
           }}
           animate={{
-            transform: "translateX(30px) translateY(-50px)",
+            transform: "translateX(50px) translateY(-50px)",
           }}
           transition={{
             repeat: Infinity,
@@ -59,7 +59,7 @@ const BlobLayer = () => {
 
       {/* Blob 3 */}
       <div
-        className="z-30 w-full relative border-2 border-red-200"
+        className="z-30 w-full relative"
         style={{ transform: "translateY(-200px)" }}
       >
         <motion.img
@@ -73,7 +73,7 @@ const BlobLayer = () => {
             transform: "translateX(9px) translateY(1px)",
           }}
           animate={{
-            transform: "translateX(15px) translateY(-10px)",
+            transform: "translateX(15px) translateY(-50px)",
           }}
           transition={{
             repeat: Infinity,
