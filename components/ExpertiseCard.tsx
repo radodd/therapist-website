@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import Button from "./Button";
+import { motion } from "framer-motion";
 
 type ExpertiseCardProps = {
   title: string;
@@ -19,8 +20,35 @@ const ExpertiseCard = ({
   const [collapse, setCollapse] = useState(false);
 
   return (
-    <div className="flex flex-col justify-center items-center text-[#000409]  max-mobile:w-[264px]">
-      <img src={icon} alt="icon" width={186} height={186} />
+    <div
+      className={`flex flex-col justify-center items-center text-[#000409] mobile:w-[280px] max-mobile:w-[264px]  ${
+        collapse ? "h-[566px]" : "h-[407px]"
+      }`}
+    >
+      {/* Animated SVG */}
+      <div className="border-2 border-red-300 w-full h-full relative">
+        {/* Include your animated SVG component here */}
+        {/* Example: <AnimatedSVGComponent /> */}
+
+        <motion.img
+          src={"/card-blob-3.svg"}
+          alt=""
+          className="z-10 absolute transform translate-x-8"
+          initial={{
+            transform: "translateX(3px) translateY(-8px) rotate(0deg)",
+          }}
+          animate={{
+            transform: "translateX(20px) translateY(-15px) rotate(175deg)",
+          }}
+          transition={{
+            repeat: Infinity,
+            repeatType: "mirror",
+            duration: 10,
+            ease: "easeInOut",
+          }}
+        />
+      </div>
+      <img src={icon} alt="icon" width={186} height={186} className="z-20" />
       <h2 className="text-lg text-primary font-semibold justify-center text-center py-7 tracking-[-1.5px]">
         {title}
       </h2>

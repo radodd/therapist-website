@@ -78,7 +78,7 @@ body {
   }
 
   .expanded {
-    max-height: 85rem;
+    max-height: 120rem;
     transition: max-height 2s;
   }
   /* .image-cropper {

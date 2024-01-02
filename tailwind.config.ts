@@ -48,6 +48,7 @@ module.exports = {
         small: "950px",
         extrasmall: "740px",
         mobile: "394px",
+        mobileplus: "470px",
         tablet: "835px",
       },
     },
