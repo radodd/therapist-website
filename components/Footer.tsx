@@ -7,7 +7,7 @@ import Button from "./Button";
 const Footer = () => {
   return (
     <>
-      <footer className="w-full bg-secondary px-[70px] py-6">
+      <footer className="w-full bg-primary px-[70px] py-6">
         <nav className="flex justify-center">
           {/* condition render for normal screen size  */}
           <div className="max-tablet:hidden flex justify-between text-white w-full">

@@ -22,7 +22,7 @@ const BlobLayer = () => {
           transition={{
             repeat: Infinity,
             repeatType: "mirror",
-            duration: 3,
+            duration: 4,
             ease: "easeInOut",
           }}
         />
@@ -51,7 +51,7 @@ const BlobLayer = () => {
           transition={{
             repeat: Infinity,
             repeatType: "mirror",
-            duration: 3,
+            duration: 5,
             ease: "easeInOut",
           }}
         />

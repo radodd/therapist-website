@@ -40,7 +40,7 @@ const Navbar = () => {
     <motion.header
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
-      className="px-8 py-8 w-full bg-secondary relative"
+      className="px-8 py-8 w-full bg-primary relative"
     >
       <nav className="flex justify-between items-center max-container padding-container ">
         <Link href="/" className="flex items-center">

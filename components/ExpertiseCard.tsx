@@ -19,9 +19,9 @@ const ExpertiseCard = ({
   const [collapse, setCollapse] = useState(false);
 
   return (
-    <div className="flex flex-col gap-6 justify-center items-center text-[#000409]  max-mobile:w-[264px]">
+    <div className="flex flex-col justify-center items-center text-[#000409]  max-mobile:w-[264px]">
       <img src={icon} alt="icon" width={186} height={186} />
-      <h2 className="text-lg text-primary font-semibold justify-center text-center tracking-[-1.5px]">
+      <h2 className="text-lg text-primary font-semibold justify-center text-center py-7 tracking-[-1.5px]">
         {title}
       </h2>
       <p className="justify-center text-center text-sm font-normal">
@@ -36,7 +36,7 @@ const ExpertiseCard = ({
       >
         {expanded}
       </p>
-      <div className="">
+      <div className="pt-7">
         <Button
           type="button"
           title={collapse ? "See Less" : "See More"}
