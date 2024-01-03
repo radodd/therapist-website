@@ -1,15 +1,16 @@
 import Intro from "@/sections/Intro";
-import Footer from "@/components/Footer";
+import Footer from "@/sections/Footer";
 import Consult from "@/sections/Consult";
 import Hero from "@/sections/Hero";
 import Reviews from "@/sections/Reviews";
-import Navbar from "@/components/Navbar";
+import Navbar from "@/sections/Navbar";
 import Expertise from "@/sections/Expertise";
 import HeroText from "@/sections/HeroText";
 
 export default function Home() {
   return (
     <>
+      <Navbar />
       <section>
         <Hero />
       </section>
@@ -28,7 +29,7 @@ export default function Home() {
       <section className=" mt-[72px] consult-bg-style">
         <Consult />
       </section>
+      <Footer />
     </>
   );
 }
-// sm:px-[70px] px-[35px] mt-[72px]

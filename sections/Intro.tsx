@@ -2,13 +2,32 @@
 
 import Image from "next/image";
 import Button from "../components/Button";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { qualifications } from "@/constants";
 import { motion } from "framer-motion";
 import BlobLayer from "@/components/BlobLayer";
 
 const Intro = () => {
   const [collapse, setCollapse] = useState(false);
+  const [isTablet, setIsTablet] = useState(false);
+  // const router = useRouter();
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsTablet(window.matchMedia("(max-width: 835px)").matches);
+    };
+
+    // Initial check on mount
+    handleResize();
+
+    // Listen for window resize events
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []); // Empty dependency array ensures that the effect runs only once on mount
 
   return (
     <section
@@ -48,8 +67,8 @@ const Intro = () => {
             Somatic Experiencing, a mind-body approach to trauma healing and
             improving stress resiliency to work with individuals and athletes.
           </p>
-
-          <div className="">
+          {/* See Less/More Button */}
+          <div className="max-tablet:hidden">
             <Button
               type="button"
               title={collapse ? "See Less" : "See More"}
@@ -57,16 +76,17 @@ const Intro = () => {
               onClick={() => setCollapse((prev) => !prev)}
             />
           </div>
+          {/* Arrow Icon conditionally renders on screen size */}
           <div
             className={`flex flex-wrap gap-8 font-extrabold font-sm max-lg:justify-center max-sm:gap-[22px] ${
               collapse && "hidden"
-            }`}
+            } ${isTablet ? "" : "hidden"}`}
           >
-            <Button title="Contact Gen" type="button" variant="btn-primary" />
             <Button
-              title="View Gen's CV"
               type="button"
-              variant="btn-transparent"
+              variant="btn-icon"
+              icon="/arrow-down.svg"
+              onClick={() => setCollapse((prev) => !prev)}
             />
           </div>
         </div>
@@ -76,7 +96,7 @@ const Intro = () => {
       <div
         className={`z-30 flex flex-col text-white long-text my-8 mx-[70px]
         max-w-[1190px]
-        max-mobile:mx-3
+        max-tablet:mx-7
          ${collapse ? "expanded" : ""} `}
       >
         {qualifications.map((item, index) => (
@@ -89,13 +109,20 @@ const Intro = () => {
             ))}
           </div>
         ))}
-        <div className="flex gap-8 max-mobile:flex-col">
-          <Button title="Contact Gen" type="button" variant="btn-primary" />
+        <div className="gap-8">
           <Button
             title="View Gen's CV"
             type="button"
             variant="btn-transparent"
           />
+          <div className="flex justify-center items-center pt-6">
+            <Button
+              type="button"
+              variant="btn-icon"
+              icon="/arrow-down.svg"
+              onClick={() => setCollapse((prev) => !prev)}
+            />
+          </div>
         </div>
       </div>
     </section>
