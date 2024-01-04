@@ -43,6 +43,7 @@ export const expertise = [
   {
     title: "Sports Performance",
     icon: "/icon-sports.svg",
+    blob: "/card-blob-1.svg",
     description:
       "If you need help increasing your confidence, and staying present at games.",
     expanded:
@@ -51,6 +52,7 @@ export const expertise = [
   {
     title: "Stress/Burnout",
     icon: "/icon-stress.svg",
+    blob: "/card-blob-2.svg",
     description:
       "If you are feeling the post covid burnout and a lack of boundaries.",
     expanded:
@@ -59,6 +61,7 @@ export const expertise = [
   {
     title: "Relationship",
     icon: "/icon-relationship.svg",
+    blob: "/card-blob-3.svg",
     description: "If you and your partner need help with your communication.",
     expanded:
       "Gen has been working with couples for over 4 years and has specific training in Sue Johnson’s Emotionally Focused Therapy technique.",
@@ -66,6 +69,7 @@ export const expertise = [
   {
     title: "Trauma/PTSD",
     icon: "/icon-trauma.svg",
+    blob: "/card-blob-4.svg",
     description:
       "If you need help to increase stress resilience and promote hope.",
     expanded:

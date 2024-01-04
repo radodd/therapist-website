@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 type ExpertiseCardProps = {
   title: string;
   icon: string;
+  blob: string;
   description: string;
   expanded: string;
 };
@@ -14,31 +15,41 @@ type ExpertiseCardProps = {
 const ExpertiseCard = ({
   title,
   icon,
+  blob,
   description,
   expanded,
 }: ExpertiseCardProps) => {
   const [collapse, setCollapse] = useState(false);
 
   return (
-    <div
-      className={`flex flex-col justify-center items-center text-[#000409] mobile:w-[280px] max-mobile:w-[264px]  ${
-        collapse ? "h-[566px]" : "h-[407px]"
-      }`}
+    <motion.div
+      className={`flex flex-col justify-center items-center text-[#000409] mobile:w-[280px] max-mobile:w-[264px]  `}
+      animate={{
+        height: collapse ? 556 : 407,
+      }}
+      transition={{
+        duration: 0.4,
+      }}
     >
       {/* Animated SVG */}
-      <div className="border-2 border-red-300 w-full h-full relative">
+      <div className="w-[186px] h-[186px] transform relative">
         {/* Include your animated SVG component here */}
         {/* Example: <AnimatedSVGComponent /> */}
 
         <motion.img
-          src={"/card-blob-3.svg"}
+          src={blob}
           alt=""
-          className="z-10 absolute transform translate-x-8"
+          className="z-10 absolute"
           initial={{
-            transform: "translateX(3px) translateY(-8px) rotate(0deg)",
+            x: 0,
+            y: 0,
+            scale: 0.9,
           }}
           animate={{
-            transform: "translateX(20px) translateY(-15px) rotate(175deg)",
+            x: 0,
+            y: 0,
+            scale: 1.2,
+            rotate: 200,
           }}
           transition={{
             repeat: Infinity,
@@ -47,8 +58,14 @@ const ExpertiseCard = ({
             ease: "easeInOut",
           }}
         />
+        <img
+          src={icon}
+          alt="icon"
+          width={186}
+          height={186}
+          className="z-20 absolute"
+        />
       </div>
-      <img src={icon} alt="icon" width={186} height={186} className="z-20" />
       <h2 className="text-lg text-primary font-semibold justify-center text-center py-7 tracking-[-1.5px]">
         {title}
       </h2>
@@ -72,7 +89,7 @@ const ExpertiseCard = ({
           onClick={() => setCollapse((prev) => !prev)}
         />
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -61,7 +61,7 @@ const Intro = () => {
             suit your needs to reduce stress, burnout and improve joy,
             inspiration and harmony in your life. Primarily utilizing
             neuroscience-backed techniques to improve emotional resiliency and
-            nervous system re regulation, I will work with you on developing
+            nervous system re-regulation, I will work with you on developing
             goals that meet your needs. Sessions are paced at a rhythm that
             feels right for your nervous system regulation and needs. I utilize
             Somatic Experiencing, a mind-body approach to trauma healing and
