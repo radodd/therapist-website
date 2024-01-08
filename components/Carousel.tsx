@@ -27,7 +27,15 @@ const Carousel: React.FC<CarouselProps> = ({ text, slideIndex }) => {
 
   return (
     <>
-      <motion.div className="flex flex-col gap-6 items-center justify-center max-w-[1080px] max-medium:max-w-[810px] max-small:max-w-[600px] max-extrasmall:max-w-[350px] max-mobile:min-h-[508px] mobile:min-h-[563px] ">
+      <motion.div
+        className="flex flex-col gap-6 items-center justify-center text-center max-w-[1080px]
+        mobile:max-h-[563px]
+        max-mobile:min-h-[508px]
+        max-mobileplus:max-w-[250px]
+        max-extrasmall:max-w-[350px]
+        max-small:max-w-[600px]
+        max-medium:max-w-[810px]"
+      >
         <img
           src="carousel-icon.svg"
           alt="carousel icon"
@@ -36,9 +44,10 @@ const Carousel: React.FC<CarouselProps> = ({ text, slideIndex }) => {
         {reviews.map((item, index) => (
           <motion.p
             key={item.id}
-            className={`text-md font-normal text-primary max-mobile:align-middle z-30 max-mobile:text-[16px] max-mobile:w-56 ${
-              index === current ? "" : "hidden"
-            }`}
+            className={`text-md font-normal text-primary z-30
+            max-mobile:align-middle
+            max-mobileplus:text-[16px]
+            max-mobile:w-56 ${index === current ? "" : "hidden"}`}
             initial={{ opacity: 0, x: 100 }}
             animate={{
               opacity: index === current ? 1 : 0,
@@ -50,7 +59,7 @@ const Carousel: React.FC<CarouselProps> = ({ text, slideIndex }) => {
             "{item.text}"
             <span
               key={item.name}
-              className="font-bold text-md text-tertiary flex justify-center mt-6 max-mobile:text-[15px]"
+              className="font-bold text-md text-tertiary flex justify-center mt-6 max-mobileplus:text-[16px]"
             >
               - {item.name}
             </span>
@@ -74,7 +83,7 @@ const Carousel: React.FC<CarouselProps> = ({ text, slideIndex }) => {
           ))}
         </div>
       </motion.div>
-      <div className="absolute h-full w-full justify-between items-center flex max-w-[1270px]">
+      <div className="absolute h-full w-full justify-between items-center flex px-[40px] max-w-[1349px] max-tablet:px-[10px]">
         <Button
           type="button"
           title=""

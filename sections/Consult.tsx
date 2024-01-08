@@ -37,14 +37,14 @@ const Consult = () => {
       id="contact"
       className="object-cover h-full w-full bg-consult-bg-color p-10"
     >
-      <div className="flex mt-10 gap-6 flex-col justify-center items-center text-center text-white max-mobile:mt-0">
+      <div className="flex gap-6 flex-col justify-center items-center text-center text-white">
         <h1 className="font-normal text-xl max-mobile:text-center">
           Ready to take the next step?
         </h1>
         <p className="font-normal text-md">Request a free 30 minute Consult.</p>
         <Button
           type="button"
-          title={`Schedule a Free ${isMobile ? "Consult" : "Consultation"}`}
+          title={`Schedule a Free ${isMobile ? "Consult" : "Consult"}`}
           variant="btn-primary"
           onClick={handleClick}
         />

@@ -56,7 +56,7 @@ const Navbar = () => {
         </Link>
 
         {/* Navigation links for large screens */}
-        <ul className="flex-1 flex justify-end items-center h-full gap-12 text-md max-navscreen:hidden ">
+        <ul className="flex-1 flex justify-end items-center h-full gap-12 text-white text-md max-navscreen:hidden ">
           {navLinks.map((link, index) => (
             <Link
               href={link.href}
@@ -65,7 +65,7 @@ const Navbar = () => {
               className={`${
                 index === navLinks.length - 1
                   ? "btn-primary"
-                  : " text-white flexCenter cursor-pointer transition-all hover:font-bold"
+                  : "cursor-pointer transition-all hover:font-bold"
               }`}
             >
               {link.label}

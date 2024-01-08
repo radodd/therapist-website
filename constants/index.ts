@@ -113,7 +113,11 @@ export const footerLinks = [
 ];
 
 export const footerConnections = [
-  { name: "Gen's Linkedin", href: "/", icon: "/linkedin.svg" },
+  {
+    name: "Gen's Linkedin",
+    href: "/https://www.linkedin.com/in/gen-fulton-lmft-sep-96a38566/",
+    icon: "/linkedin.svg",
+  },
   { name: "(628)265-6746", href: "/", icon: "/whatsapp.svg" },
 ];
 
