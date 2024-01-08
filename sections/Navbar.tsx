@@ -45,12 +45,12 @@ const Navbar = () => {
       <nav className="flex justify-between items-center max-container padding-container ">
         <Link href="/" className="flex items-center">
           <Image
-            src="/favicon.ico"
+            src="logo.svg"
             alt="Gen Fulton website logo"
-            width={87.44}
-            height={47.16}
+            width={31}
+            height={54}
           />
-          <span className="flex ml-2 text-white text-lg max-tablet:hidden">
+          <span className="flex ml-2 text-white text-xl max-tablet:hidden">
             Gen Fulton
           </span>
         </Link>
@@ -61,7 +61,7 @@ const Navbar = () => {
             <Link
               href={link.href}
               key={link.key}
-              target="_blank"
+              target={`${index === navLinks.length - 1 ? "_blank" : ""}`}
               className={`${
                 index === navLinks.length - 1
                   ? "btn-primary"

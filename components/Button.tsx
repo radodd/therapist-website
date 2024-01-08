@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 type ButtonProps = {
   type: "button" | "submit";
@@ -17,7 +18,21 @@ const Button = ({
   icon,
   onClick,
   selected,
+  href,
 }: ButtonProps) => {
+  if (href) {
+    return (
+      <Link
+        href={href}
+        className={`gap-3 rounded-full ${variant}`}
+        onClick={onClick}
+      >
+        {icon && <img src={icon} alt={title} />}
+        <label className="whitespace-nowrap cursor-pointer">{title}</label>
+      </Link>
+    );
+  }
+
   return (
     <button
       className={`gap-3 rounded-full ${variant}`}

@@ -12,13 +12,13 @@ const Footer = () => {
           {/* condition render for normal screen size  */}
           <div className="max-tablet:hidden flex justify-between text-white w-full">
             <div className="flex items-center gap-14 text-base">
-              <div className="flex items-center text-[40px] gap-5">
+              <div className="flex items-center text-[40px] gap-4">
                 <Link href="/" className="">
                   <Image
                     src="logo.svg"
                     alt="Gen fulton website logo"
-                    width={87.44}
-                    height={47.16}
+                    width={31}
+                    height={54}
                   />
                 </Link>
                 <h2>Gen Fulton</h2>

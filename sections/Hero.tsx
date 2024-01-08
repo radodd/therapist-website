@@ -76,7 +76,12 @@ const Hero = () => {
             max-tablet:mb-10
             tablet:mb-[86px]"
           >
-            <Button type="button" variant="btn-primary" title="View Services" />
+            <Button
+              type="button"
+              variant="btn-primary"
+              title="View Services"
+              href="#services"
+            />
           </div>
         </div>
       </div>
