@@ -17,7 +17,7 @@ const Footer = () => {
                   <Image
                     src="logo.svg"
                     alt="Gen fulton website logo"
-                    width={31}
+                    width={31.165}
                     height={54}
                   />
                 </Link>
@@ -49,8 +49,8 @@ const Footer = () => {
                 <Image
                   src="/favicon.ico"
                   alt="Gen Fulton website logo"
-                  width={87.44}
-                  height={47.16}
+                  width={31.165}
+                  height={54}
                 />
               </Link>
               <div className="flex flex-col gap-1">
