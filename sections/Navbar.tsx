@@ -45,7 +45,7 @@ const Navbar = () => {
       <nav className="flex justify-between items-center max-container padding-container ">
         <Link href="/" className="flex items-center">
           <Image
-            src="logo.svg"
+            src="/favicon.ico"
             alt="Gen Fulton website logo"
             width={31.165}
             height={54}
