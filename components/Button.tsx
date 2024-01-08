@@ -25,9 +25,7 @@ const Button = ({
       onClick={onClick}
     >
       {icon && <img src={icon} alt={title} />}
-      <label className="text-xm whitespace-nowrap cursor-pointer">
-        {title}
-      </label>
+      <label className="whitespace-nowrap cursor-pointer">{title}</label>
     </button>
   );
 };

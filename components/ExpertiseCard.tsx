@@ -23,7 +23,9 @@ const ExpertiseCard = ({
 
   return (
     <motion.div
-      className={`flex flex-col justify-center items-center text-[#000409] mobile:w-[280px] max-mobile:w-[264px]  `}
+      className={`flex flex-col justify-center items-center text-[#000409]
+      mobile:w-[280px]
+      max-mobile:w-[264px]`}
       animate={{
         height: collapse ? 556 : 407,
       }}
@@ -43,18 +45,16 @@ const ExpertiseCard = ({
           initial={{
             x: 0,
             y: 0,
-            scale: 0.9,
           }}
           animate={{
             x: 0,
             y: 0,
-            scale: 1.2,
             rotate: 200,
           }}
           transition={{
             repeat: Infinity,
             repeatType: "mirror",
-            duration: 10,
+            duration: 50,
             ease: "easeInOut",
           }}
         />

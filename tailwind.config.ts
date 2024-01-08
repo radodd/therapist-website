@@ -30,7 +30,7 @@ module.exports = {
         primary: "#144F7C",
         secondary: "#26425A",
         tertiary: "#6E57D4",
-        quaternary: "#",
+        quaternary: "#4E3C97",
         "sea-foam": "#B5D9CC",
         "consult-bg-color": "rgba(20, 79, 124, 0.70)",
       },

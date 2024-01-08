@@ -14,7 +14,7 @@ export default function Home() {
       <section>
         <Hero />
       </section>
-      <section className="flex justify-center">
+      <section className="flex justify-center bg-[#F9F4E9]">
         <HeroText />
       </section>
       <section className="relative overflow-hidden">

@@ -17,11 +17,11 @@ body {
 
 @layer utilities {
   .btn-primary {
-    @apply bg-tertiary border-2 border-white text-white px-6 py-[10px] rounded-full font-bold hover:bg-green-700;
+    @apply bg-tertiary border-2 border-white text-white px-6 py-[10px] rounded-full font-normal hover:bg-quaternary;
   }
 
   .btn-transparent {
-    @apply bg-transparent border-white border text-white px-6 py-[10px] rounded-full hover:bg-green-700;
+    @apply bg-transparent border-white border text-white px-6 py-[10px] rounded-full hover:bg-quaternary;
   }
 
   .btn-icon {

@@ -56,7 +56,7 @@ const Navbar = () => {
         </Link>
 
         {/* Navigation links for large screens */}
-        <ul className="flex-1 flex justify-end items-center h-full gap-12 max-navscreen:hidden ">
+        <ul className="flex-1 flex justify-end items-center h-full gap-12 text-md max-navscreen:hidden ">
           {navLinks.map((link, index) => (
             <Link
               href={link.href}
