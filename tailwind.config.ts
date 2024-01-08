@@ -42,10 +42,9 @@ module.exports = {
         consult: "url('/consult.jpg')",
       },
       screens: {
+        wideplus: "2000px",
         wide: "1440px",
-
         medium: "1225px",
-
         navscreen: "1090px",
         small: "950px",
         tablet: "835px",

@@ -114,6 +114,9 @@ const Intro = () => {
             title="View Gen's CV"
             type="button"
             variant="btn-transparent"
+            onClick={() =>
+              window.open("/Gen Fulton's Curriculum Vitae 2024.pdf")
+            }
           />
           <div className="flex justify-center items-center pt-6">
             <Button

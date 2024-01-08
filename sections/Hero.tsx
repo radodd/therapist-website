@@ -27,9 +27,12 @@ const Hero = () => {
         tablet:translate-x-[3%]
         medium:translate-y-[8%]
         medium:scale-[1.3]
-        wide:-translate-x-[3%]
+        wide:translate-x-[10%]
         wide:translate-y-[12%]
-        wide:scale-[1.1]"
+        wide:scale-[1.2]
+        wideplus:translate-x-[5%]
+        wideplus:translate-y-[12%]
+        wideplus:scale-[1.1]"
       />
 
       <div

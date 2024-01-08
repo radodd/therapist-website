@@ -3,13 +3,19 @@ import { motion } from "framer-motion";
 
 const BlobLayer = () => {
   return (
-    <div className="absolute flex flex-wrap w-full h-[1000px] ">
+    <div
+      className="absolute flex flex-wrap w-full h-[1000px]
+    max-small:scale-[0.5]
+    max-small:right-0
+    max-small:translate-x-[25%]
+    max-small:-translate-y-[20%]"
+    >
       {/* Blob 1 */}
       <div className="w-full z-10 relative">
         <motion.img
           src={"/blob-1.svg"}
           alt=""
-          className="absolute"
+          className="absolute small:scale-50 "
           style={{
             right: "0",
           }}
