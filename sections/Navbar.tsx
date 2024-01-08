@@ -24,7 +24,7 @@ const Navbar = () => {
             <a
               href={item.href}
               target={index !== navLinks.length - 1 ? "" : "_blank"}
-              className={`block text-xm font-normal text-white max-mobile:text-black hover:bg-secondary hover:font-bold ${
+              className={`block text-xm font-normal text-white hover:bg-secondary hover:font-bold ${
                 index === navLinks.length - 1 ? "font-semibold" : ""
               }`}
             >

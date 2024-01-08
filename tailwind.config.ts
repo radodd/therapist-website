@@ -43,13 +43,15 @@ module.exports = {
       },
       screens: {
         wide: "1440px",
-        navscreen: "1090px",
+
         medium: "1225px",
+
+        navscreen: "1090px",
         small: "950px",
-        extrasmall: "740px",
-        mobile: "394px",
-        mobileplus: "470px",
         tablet: "835px",
+        extrasmall: "740px",
+        mobileplus: "470px",
+        mobile: "394px",
       },
     },
   },
