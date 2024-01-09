@@ -35,9 +35,9 @@ const Consult = () => {
   return (
     <section
       id="contact"
-      className="object-cover h-full w-full bg-consult-bg-color p-10"
+      className="object-cover h-full w-full bg-consult-bg-color py-10 px-[70px]"
     >
-      <div className="flex gap-6 flex-col justify-center items-center text-center text-white">
+      <div className="flex gap-8 flex-col justify-center items-center text-center text-white">
         <h1 className="font-normal text-xl max-mobile:text-center">
           Ready to take the next step?
         </h1>
