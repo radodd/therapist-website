@@ -86,7 +86,7 @@ export const reviews = [
   {
     id: 1,
     text: "I started working with Gen midway through this season. Gen helped me to understand more about what makes me perform. Gen’s advice and assistance worked; I won my first event after working with her. I also had my lowest ever season scoring average. Gen’s practical but simple approach to sport psychology really helped me as it kept things simple. It allowed me a framework to use under pressure and it became the foundation to my on-course routine.",
-    name: "Professional golfer",
+    name: "Professional Golfer",
   },
   {
     id: 2,
@@ -96,7 +96,7 @@ export const reviews = [
   {
     id: 3,
     text: "We saw marriage and family therapist Genevieve Fulton for six months. Gen's knowledge and expertise in helping us discern and understand patterns of behavior built up over three decades of marriage in our weekly sessions was very helpful. Her empathetic manner and caring approach manages to build trust, while keeping us focused on underlying issues and behaviors that one sometimes finds easier to avoid.",
-    name: "",
+    name: "S.C.",
   },
   {
     id: 4,
@@ -107,9 +107,9 @@ export const reviews = [
 
 // FOOTER SECTION
 export const footerLinks = [
-  { name: "About", href: "/" },
-  { name: "Services", href: "/" },
-  { name: "Contact", href: "/" },
+  { name: "About", href: "#intro" },
+  { name: "Services", href: "#services" },
+  { name: "Contact", href: "#contact" },
 ];
 
 export const footerConnections = [
@@ -121,7 +121,7 @@ export const footerConnections = [
   { name: "(628)265-6746", href: "/", icon: "/whatsapp.svg" },
 ];
 
-export const socials = {
-  title: "Social",
-  links: ["/facebook.svg", "/instagram.svg", "/twitter.svg", "/youtube.svg"],
-};
+// export const socials = {
+//   title: "Social",
+//   links: ["/facebook.svg", "/instagram.svg", "/twitter.svg", "/youtube.svg"],
+// };

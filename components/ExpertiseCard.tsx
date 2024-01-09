@@ -27,7 +27,7 @@ const ExpertiseCard = ({
       mobile:w-[280px]
       max-mobile:w-[264px]`}
       animate={{
-        height: collapse ? 556 : 407,
+        height: collapse ? 580 : 407,
       }}
       transition={{
         duration: 0.4,

@@ -17,16 +17,21 @@ const Footer = () => {
                   <Image
                     src="logo.svg"
                     alt="Gen fulton website logo"
-                    width={31.165}
-                    height={54}
+                    width={50}
+                    height={74}
                   />
                 </Link>
                 <h2>Gen Fulton</h2>
               </div>
               <div className="flex flex-col gap-3">
-                {footerLinks.map((item) => (
+                {footerLinks.map((item, index) => (
                   <ul key={item.name}>
-                    <p>{item.name}</p>
+                    <Link
+                      href={item.href}
+                      className="hover:text-slate-300 cursor-pointer"
+                    >
+                      {item.name}
+                    </Link>
                   </ul>
                 ))}
               </div>
@@ -36,7 +41,13 @@ const Footer = () => {
               {footerConnections.map((item) => (
                 <div key={item.name} className="flex gap-2">
                   <img src={item.icon} alt={`${item.name} icon`} />
-                  <p>{item.name}</p>
+                  <Link
+                    href={item.href}
+                    target="_blank"
+                    className="curser-pointer hover:text-slate-300"
+                  >
+                    {item.name}
+                  </Link>
                 </div>
               ))}
             </div>
@@ -44,13 +55,13 @@ const Footer = () => {
 
           {/* Conditional render for mobile screen  */}
           <div className="tablet:hidden ">
-            <div className="flex flex-1 justify-around lg:gap-10 gap-10 flex-wrap text-white">
+            <div className="flex flex-1 justify-around gap-6 flex-wrap text-white">
               <Link href="/" className="flex items-center">
                 <Image
                   src="/favicon.ico"
                   alt="Gen Fulton website logo"
-                  width={31.165}
-                  height={54}
+                  width={50}
+                  height={74}
                 />
               </Link>
               <div className="flex flex-col gap-1">

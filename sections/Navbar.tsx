@@ -62,10 +62,10 @@ const Navbar = () => {
               href={link.href}
               key={link.key}
               target={`${index === navLinks.length - 1 ? "_blank" : ""}`}
-              className={`${
+              className={`TEST ${
                 index === navLinks.length - 1
                   ? "btn-primary"
-                  : "cursor-pointer transition-all hover:font-bold"
+                  : "cursor-pointer transition-all hover:text-slate-300"
               }`}
             >
               {link.label}

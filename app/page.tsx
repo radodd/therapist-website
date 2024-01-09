@@ -6,6 +6,7 @@ import Reviews from "@/sections/Reviews";
 import Navbar from "@/sections/Navbar";
 import Expertise from "@/sections/Expertise";
 import HeroText from "@/sections/HeroText";
+import Copyright from "@/sections/Copyright";
 
 export default function Home() {
   return (
@@ -30,6 +31,9 @@ export default function Home() {
         <Consult />
       </section>
       <Footer />
+      <section>
+        <Copyright />
+      </section>
     </>
   );
 }
