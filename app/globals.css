@@ -17,11 +17,19 @@ body {
 
 @layer utilities {
   .btn-primary {
+<<<<<<< HEAD
     @apply bg-tertiary border-2 border-white text-white text-xm px-6 py-[10px] rounded-full font-normal cursor-pointer hover:bg-quaternary;
   }
 
   .btn-transparent {
     @apply bg-transparent border-white border text-white px-6 py-[10px] rounded-full hover:bg-quaternary;
+=======
+    @apply bg-tertiary border-2 border-white text-white font-normal px-6 py-[10px] rounded-full hover:bg-green-700;
+  }
+
+  .btn-transparent {
+    @apply bg-transparent border-white border text-white px-6 py-[10px] rounded-full hover:bg-green-700;
+>>>>>>> 65a2ae2b90c06d5f92ed6ac52376ed8085dcb33b
   }
 
   .btn-icon {
