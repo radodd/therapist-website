@@ -40,9 +40,9 @@ const Navbar = () => {
     <motion.header
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
-      className="px-8 py-8 w-full bg-primary relative"
+      className="px-8 py-8 w-full bg-primary relative "
     >
-      <nav className="flex justify-between items-center max-container padding-container ">
+      <nav className="flex justify-between items-center tablet:pl-[38px]">
         <Link href="/" className="flex items-center">
           <Image
             src="/favicon.ico"
@@ -50,9 +50,9 @@ const Navbar = () => {
             width={31.165}
             height={54}
           />
-          <span className="flex ml-2 text-white text-xl max-tablet:hidden">
+          {/* <span className="flex ml-2 text-white text-xl max-tablet:hidden">
             Gen Fulton
-          </span>
+          </span> */}
         </Link>
 
         {/* Navigation links for large screens */}

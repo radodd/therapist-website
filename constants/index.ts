@@ -1,7 +1,7 @@
 // NAVIGATION
 export const navLinks = [
   { href: "#about", key: "about", label: "About" },
-  { href: "#services", key: "services", label: "Services" },
+  { href: "#expertise", key: "expertise", label: "Expertise" },
   { href: "#contact", key: "contact ", label: "Contact " },
   {
     href: "https://calendly.com/genfultonconsultancy/",
@@ -115,7 +115,7 @@ export const footerLinks = [
 export const footerConnections = [
   {
     name: "Gen's Linkedin",
-    href: "/https://www.linkedin.com/in/gen-fulton-lmft-sep-96a38566/",
+    href: "https://www.linkedin.com/in/gen-fulton-lmft-sep-96a38566/",
     icon: "/linkedin.svg",
   },
   { name: "+1 (415) 579-2187", href: "/", icon: "/whatsapp.svg" },

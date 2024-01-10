@@ -9,10 +9,10 @@ const Expertise = () => {
         <span className="max-mobile:inline-block">Expertise</span>
       </h1>
       <div
-        className="flex mx-auto items-center justify-center gap-[72px] flex-wrap
+        className="flex mx-auto items-center justify-center gap-16 flex-wrap
       max-mobile:mb-8
-      max-[1440px]:grid
-      max-[1440px]:grid-cols-2
+      max-wide:grid
+      max-wide:grid-cols-2
       max-small:flex"
       >
         {expertise.map((item, index) => (

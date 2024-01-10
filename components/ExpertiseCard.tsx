@@ -69,13 +69,13 @@ const ExpertiseCard = ({
       <h2 className="text-lg text-primary font-semibold justify-center text-center py-7 tracking-[-1.5px]">
         {title}
       </h2>
-      <p className="justify-center text-center text-sm font-normal">
+      <p className="justify-center text-center text-sm font-normal max-w-[260px]">
         {description}
       </p>
 
       {/* ONLY See More Content */}
       <p
-        className={`justify-center text-center text-sm font-normal long-text  ${
+        className={`justify-center text-center text-sm font-normal long-text max-w-[260px] ${
           collapse ? "expanded" : "hidden"
         }`}
       >
