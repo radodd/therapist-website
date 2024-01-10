@@ -3,7 +3,7 @@ import ExpertiseCard from "@/components/ExpertiseCard";
 
 const Expertise = () => {
   return (
-    <section id="services" className="max-container flex flex-col">
+    <section id="expertise" className="max-container flex flex-col">
       <h1 className="flex max-small:flex-col justify-center text-xl font-normal pb-10 text-primary text-center">
         Areas of&nbsp;
         <span className="max-mobile:inline-block">Expertise</span>

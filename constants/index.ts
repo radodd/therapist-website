@@ -108,7 +108,7 @@ export const reviews = [
 // FOOTER SECTION
 export const footerLinks = [
   { name: "About", href: "#intro" },
-  { name: "Services", href: "#services" },
+  { name: "Expertise", href: "#expertise" },
   { name: "Contact", href: "#contact" },
 ];
 
@@ -118,7 +118,7 @@ export const footerConnections = [
     href: "/https://www.linkedin.com/in/gen-fulton-lmft-sep-96a38566/",
     icon: "/linkedin.svg",
   },
-  { name: "(628)265-6746", href: "/", icon: "/whatsapp.svg" },
+  { name: "+1 (415) 579-2187", href: "/", icon: "/whatsapp.svg" },
 ];
 
 // export const socials = {
