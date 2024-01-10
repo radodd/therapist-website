@@ -73,8 +73,6 @@ const Navbar = () => {
           ))}
         </ul>
 
-              {/* testing merge conflic */}
-
         {/* Hamburger menu for small screens */}
         <div className="navscreen:hidden">
           <div

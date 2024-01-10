@@ -37,7 +37,7 @@ const Footer = () => {
               </div>
             </div>
             <div className="text-white flex flex-col justify-center items-end gap-3">
-              <h3>Gen Fulton Psychotherapy</h3>
+              <h3>Gen Fulton Consultancy</h3>
               {footerConnections.map((item) => (
                 <div key={item.name} className="flex gap-2">
                   <img src={item.icon} alt={`${item.name} icon`} />
@@ -71,7 +71,7 @@ const Footer = () => {
               </div>
             </div>
             <div className="text-white mt-5 flex flex-col justify-center items-center gap-2 w-max">
-              <h3>Gen Fulton Psychotherapy</h3>
+              <h3>Gen Fulton Consultancy</h3>
               {footerConnections.map((item) => (
                 <div key={item.name} className="flex gap-2">
                   <img src={item.icon} alt={`${item.name} icon`} />
