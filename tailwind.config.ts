@@ -31,6 +31,7 @@ module.exports = {
         secondary: "#26425A",
         tertiary: "#6E57D4",
         quaternary: "#4E3C97",
+        eggshell: "#F9F4E9",
         "sea-foam": "#B5D9CC",
         "consult-bg-color": "rgba(20, 79, 124, 0.70)",
       },
@@ -52,7 +53,8 @@ module.exports = {
         mobileplus: "470px",
         mobile: "394px",
       },
+      "group-hover": ["group-even", "group-odd"],
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-group-even-odd")],
 };

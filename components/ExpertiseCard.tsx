@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import Button from "./Button";
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 type ExpertiseCardProps = {
   title: string;
@@ -21,49 +21,80 @@ const ExpertiseCard = ({
 }: ExpertiseCardProps) => {
   const [collapse, setCollapse] = useState(false);
 
+  const ref = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["0 1", "1.33 1"],
+  });
+  const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
+  const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.9, 1]);
+
   return (
     <motion.div
-      className={`flex flex-col justify-center items-center text-[#000409]
+      ref={ref}
+      style={{
+        scale: scaleProgress,
+        opacity: opacityProgress,
+      }}
+      className="group flex flex-col justify-center items-center text-[#000409]
       mobile:w-[280px]
-      max-mobile:w-[264px]`}
+      max-mobile:w-[264px]"
       animate={{
         height: collapse ? 580 : 407,
       }}
+      // whileHover={{
+      //   scale: 1.04,
+      // }}
       transition={{
-        duration: 0.4,
+        duration: 0.3,
       }}
     >
       {/* Animated SVG */}
-      <div className="w-[186px] h-[186px] transform relative">
+      <div
+        className="w-[186px] h-[186px] transform relative
+      "
+      >
         {/* Include your animated SVG component here */}
         {/* Example: <AnimatedSVGComponent /> */}
 
         <motion.img
           src={blob}
           alt=""
-          className="z-10 absolute"
-          initial={{
-            x: 0,
-            y: 0,
-          }}
-          animate={{
-            x: 0,
-            y: 0,
-            rotate: 200,
-          }}
-          transition={{
-            repeat: Infinity,
-            repeatType: "mirror",
-            duration: 50,
-            ease: "easeInOut",
-          }}
+          className="z-10 absolute transition
+          group-hover:-translate-x-[15px]
+          group-hover:translate-y-2
+          group-hover:-rotate-6
+          group-hover:duration-500
+          group-hover:ease-in-out
+
+
+          "
+          // initial={{
+          //   x: 0,
+          //   y: 0,
+          // }}
+          // whileHover={{
+          //   x: 0,
+          //   y: 0,
+          //   scale: 2,
+          // }}
+          // transition={{
+          // repeat: Infinity,
+          // repeatType: "mirror",
+          // duration: 2,
+          // ease: "easeInOut",
         />
         <img
           src={icon}
           alt="icon"
           width={186}
           height={186}
-          className="z-20 absolute"
+          className="z-20 absolute
+          group-hover:translate-x-[15px]
+          group-hover:-translate-y-2
+          group-hover:rotate-6
+          group-hover:duration-500
+          group-hover:ease-in-out"
         />
       </div>
       <h2 className="text-lg text-primary font-semibold justify-center text-center py-7 tracking-[-1.5px]">
@@ -81,7 +112,7 @@ const ExpertiseCard = ({
       >
         {expanded}
       </p>
-      <div className="pt-7">
+      <div className="z-30 pt-7">
         <Button
           type="button"
           title={collapse ? "See Less" : "See More"}

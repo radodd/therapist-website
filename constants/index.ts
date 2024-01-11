@@ -80,26 +80,26 @@ export const expertise = [
 export const reviews = [
   {
     id: 1,
-    text: "My experiences with Gen were excellent. Over the course of many visits it's clear that Gen has strong listening skills and excellent therapy techniques to help cope or resolve challenges--many of which I now use daily or weekly to manage interpersonal and solo difficulties. I'd recommend Gen to anyone.",
-    name: "A.B.",
-  },
-  {
-    id: 1,
     text: "I started working with Gen midway through this season. Gen helped me to understand more about what makes me perform. Gen’s advice and assistance worked; I won my first event after working with her. I also had my lowest ever season scoring average. Gen’s practical but simple approach to sport psychology really helped me as it kept things simple. It allowed me a framework to use under pressure and it became the foundation to my on-course routine.",
     name: "Professional Golfer",
   },
   {
     id: 2,
+    text: "My experiences with Gen were excellent. Over the course of many visits it's clear that Gen has strong listening skills and excellent therapy techniques to help cope or resolve challenges--many of which I now use daily or weekly to manage interpersonal and solo difficulties. I'd recommend Gen to anyone.",
+    name: "A.B.",
+  },
+  {
+    id: 3,
     text: "Gen was clearly invested in our growth. I always want to feel like my therapist genuinely cares about me, and I got that from Gen each session",
     name: "S.C.",
   },
   {
-    id: 3,
+    id: 4,
     text: "We saw marriage and family therapist Genevieve Fulton for six months. Gen's knowledge and expertise in helping us discern and understand patterns of behavior built up over three decades of marriage in our weekly sessions was very helpful. Her empathetic manner and caring approach manages to build trust, while keeping us focused on underlying issues and behaviors that one sometimes finds easier to avoid.",
     name: "S.C.",
   },
   {
-    id: 4,
+    id: 5,
     text: "We had one in person meeting before moving online. Moving online didn't seem to detract at all from the depth and quality of our work together, further testament to Gen's skills as a therapist. We would both recommend her highly and encourage others to consider online sessions as well.",
     name: "M.R.",
   },

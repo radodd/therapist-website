@@ -33,10 +33,10 @@ body {
   }
 
   .btn-underline {
-    @apply bg-transparent underline border-none text-white font-light;
+    @apply bg-transparent underline border-none text-white font-light hover:font-semibold;
   }
   .btn-card {
-    @apply bg-transparent underline border-none text-primary font-normal text-sm;
+    @apply bg-transparent underline border-none text-primary font-normal text-sm hover:font-semibold;
   }
 
   .hero-bg-style {
@@ -90,10 +90,6 @@ body {
     height: 100%;
     width: auto;
   } */
-
-  .max-container {
-    @apply mx-auto max-w-[1440px];
-  }
 
   .padding {
     @apply sm:px-16 px-8 sm:py-24 py-12;

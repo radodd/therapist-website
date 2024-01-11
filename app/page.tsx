@@ -15,19 +15,19 @@ export default function Home() {
       <section>
         <Hero />
       </section>
-      <section className="flex justify-center bg-[#F9F4E9]">
+      <section className="flex justify-center bg-eggshell">
         <HeroText />
       </section>
       <section className="relative overflow-hidden">
         <Intro />
       </section>
-      <section className="mobile:px-[70px] mobile:my-16 ">
+      <section className="mobile:px-[70px] mobile:py-16 bg-eggshell ">
         <Expertise />
       </section>
-      <section className="relative sm:px-0 bg-sea-foam justify-center">
+      <section className="relative sm:px-0 bg-sea-foam justify-center shadow-[0px_4px_10px_0px_rgba(0,0,0,0.25)]">
         <Reviews />
       </section>
-      <section className=" mt-[72px] consult-bg-style">
+      <section className=" pt-[72px] consult-bg-style bg-eggshell">
         <Consult />
       </section>
       <Footer />
