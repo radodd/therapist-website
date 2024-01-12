@@ -27,7 +27,7 @@ export default function Home() {
       <section className="relative sm:px-0 bg-sea-foam justify-center shadow-[0px_4px_10px_0px_rgba(0,0,0,0.25)]">
         <Reviews />
       </section>
-      <section className=" pt-[72px] consult-bg-style bg-eggshell">
+      <section className="pt-[72px] bg-eggshell">
         <Consult />
       </section>
       <Footer />
