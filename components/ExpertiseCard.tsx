@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Button from "./Button";
 import { motion, useScroll, useTransform } from "framer-motion";
 
@@ -20,6 +20,25 @@ const ExpertiseCard = ({
   expanded,
 }: ExpertiseCardProps) => {
   const [collapse, setCollapse] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+  // const router = useRouter();
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.matchMedia("(max-width: 835px)").matches);
+    };
+
+    // Initial check on mount
+    handleResize();
+
+    // Listen for window resize events
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []); // Empty dependency array ensures that the effect runs only once on mount
 
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -60,15 +79,13 @@ const ExpertiseCard = ({
         <motion.img
           src={blob}
           alt=""
-          className="z-10 absolute transition
-          group-hover:-translate-x-[15px]
-          group-hover:translate-y-2
-          group-hover:-rotate-6
-          group-hover:duration-500
-          group-hover:ease-in-out
+          className={`z-10 absolute transition
+          ${
+            isMobile
+              ? ""
+              : "group-hover:-translate-x-[15px] group-hover:translate-y-2 group-hover:-rotate-6 group-hover:duration-500 group-hover:ease-in-out"
+          }`}
 
-
-          "
           // initial={{
           //   x: 0,
           //   y: 0,
@@ -89,12 +106,12 @@ const ExpertiseCard = ({
           alt="icon"
           width={186}
           height={186}
-          className="z-20 absolute
-          group-hover:translate-x-[15px]
-          group-hover:-translate-y-2
-          group-hover:rotate-6
-          group-hover:duration-500
-          group-hover:ease-in-out"
+          className={`z-20 absolute
+          ${
+            isMobile
+              ? ""
+              : "group-hover:translate-x-[15px] group-hover:-translate-y-2 group-hover:rotate-6 group-hover:duration-500 group-hover:ease-in-out"
+          }`}
         />
       </div>
       <h2 className="text-lg text-primary font-semibold justify-center text-center py-7 tracking-[-1.5px]">

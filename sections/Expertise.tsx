@@ -9,7 +9,7 @@ const Expertise = () => {
         <span className="max-mobile:inline-block">Expertise</span>
       </h1>
       <div
-        className="flex mx-auto items-center justify-center gap-16 flex-wrap
+        className="flex mx-auto items-center justify-center gap-14 flex-wrap
       max-mobile:mb-8
       max-wide:grid
       max-wide:grid-cols-2
