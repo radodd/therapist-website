@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Button from "../components/Button";
 import { useEffect, useState } from "react";
-import { qualifications } from "@/constants";
+import { intro, qualifications } from "@/constants";
 import { motion } from "framer-motion";
 import BlobLayer from "@/components/BlobLayer";
 
@@ -53,20 +53,16 @@ const Intro = () => {
 
         {/* Contains Title, Intro Paragraph, Buttons */}
         <div className="flex flex-col text-white max-w-[748px] gap-8 lg:ml-[110px] max-tablet:mx-8">
-          <h2 className="text-lg font-normal mt-10 lg:max-w-lg">
-            Hi, I'm Gen Fulton.
-          </h2>
-          <p className="lg:max-w-3xl text-sm font-normal">
-            My approach to therapy focuses on conjointly developing goals that
-            suit your needs to reduce stress, burnout and improve joy,
-            inspiration and harmony in your life. Primarily utilizing
-            neuroscience-backed techniques to improve emotional resiliency and
-            nervous system re-regulation, I will work with you on developing
-            goals that meet your needs. Sessions are paced at a rhythm that
-            feels right for your nervous system regulation and needs. I utilize
-            Somatic Experiencing, a mind-body approach to trauma healing and
-            improving stress resiliency to work with individuals and athletes.
-          </p>
+          {intro.map((items, index) => (
+            <>
+              {" "}
+              <h2 className="text-lg font-normal mt-10 lg:max-w-lg">
+                {items.greeting}
+              </h2>
+              <p className="lg:max-w-3xl text-sm font-normal">{items.text}</p>
+            </>
+          ))}
+
           {/* See Less/More Button */}
           <div className="max-tablet:hidden">
             <Button

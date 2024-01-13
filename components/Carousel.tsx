@@ -47,6 +47,7 @@ const Carousel: React.FC<CarouselProps> = ({ text, slideIndex }) => {
             className={`text-md font-normal text-primary z-30
             max-mobile:align-middle
             max-mobileplus:text-[16px]
+            max-mobileplus:justify-center
             max-mobile:w-56 ${index === current ? "" : "hidden"}`}
             initial={{ opacity: 0, x: 100 }}
             animate={{
@@ -57,12 +58,17 @@ const Carousel: React.FC<CarouselProps> = ({ text, slideIndex }) => {
             transition={{ type: "spring", duration: 0.5 }}
           >
             "{item.text}"
-            <span
-              key={item.name}
-              className="font-bold text-md text-tertiary flex justify-center mt-6 max-mobileplus:text-[16px]"
-            >
-              {item.name}
-            </span>
+            <div className="flex flex-row justify-center items-center mt-6 gap-4">
+              <span
+                key={item.name}
+                className="font-bold text-md text-tertiary flex justify-center max-mobileplus:text-[16px]"
+              >
+                {item.name}
+              </span>
+              <span key={item.id} className="italic text-tertiary flex ">
+                {item.profession}
+              </span>
+            </div>
           </motion.p>
         ))}
 
