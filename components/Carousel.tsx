@@ -28,13 +28,18 @@ const Carousel: React.FC<CarouselProps> = ({ text, slideIndex }) => {
   return (
     <>
       <motion.div
-        className="flex flex-col gap-6 items-center justify-center text-center max-w-[1080px]
-        mobile:max-h-[563px]
-        max-mobile:min-h-[508px]
-        max-mobileplus:max-w-[250px]
-        max-extrasmall:max-w-[350px]
-        max-small:max-w-[600px]
-        max-medium:max-w-[810px]"
+        className="flex flex-col gap-6 items-center justify-center text-center
+        min-h-full
+
+        max-w-[1080px]
+max-mobileplus:max-w-[250px]
+         max-extrasmall:max-w-[350px]
+max-small:max-w-[600px]
+         max-medium:max-w-[810px]"
+        // mobile:max-h-[563px]
+        // max-mobile:min-h-[508px]
+        //
+        //
       >
         <img
           src="carousel-icon.svg"
@@ -42,7 +47,7 @@ const Carousel: React.FC<CarouselProps> = ({ text, slideIndex }) => {
           className="z-10 flex justify-center"
         />
         {reviews.map((item, index) => (
-          <motion.p
+          <motion.div
             key={item.id}
             className={`text-md font-normal text-primary z-30
             max-mobile:align-middle
@@ -61,15 +66,18 @@ const Carousel: React.FC<CarouselProps> = ({ text, slideIndex }) => {
             <div className="flex flex-row justify-center items-center mt-6 gap-4">
               <span
                 key={item.name}
-                className="font-bold text-md text-tertiary flex justify-center max-mobileplus:text-[16px]"
+                className="font-bold text-md text-tertiary flex justify-center"
               >
                 {item.name}
               </span>
-              <span key={item.id} className="italic text-tertiary flex ">
+              <span
+                key={item.id}
+                className="italic text-tertiary flex max-mobile:text-[14px] "
+              >
                 {item.profession}
               </span>
             </div>
-          </motion.p>
+          </motion.div>
         ))}
 
         <div className=" z-40 flex bottom-0 justify-center py-2 gap-4 max-mobile:mb-4">

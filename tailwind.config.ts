@@ -53,8 +53,7 @@ module.exports = {
         mobileplus: "470px",
         mobile: "394px",
       },
-      "group-hover": ["group-even", "group-odd"],
     },
   },
-  plugins: [require("tailwind-group-even-odd")],
+  plugins: [],
 };
