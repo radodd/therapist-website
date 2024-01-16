@@ -6,7 +6,7 @@ export const navLinks = [
   {
     href: "https://calendly.com/genfultonconsultancy/",
     key: "book_appointment ",
-    label: "Schedule Free Consult",
+    label: "Schedule a Consult",
   },
 ];
 

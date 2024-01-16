@@ -47,7 +47,7 @@ const Consult = () => {
           </p>
           <Button
             type="button"
-            title={`Schedule a Free ${isMobile ? "Consult" : "Consult"}`}
+            title={`Schedule a  ${isMobile ? "Consult" : "Consult"}`}
             variant="btn-primary"
             onClick={handleClick}
           />
