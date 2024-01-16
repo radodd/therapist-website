@@ -39,7 +39,11 @@ const Intro = () => {
       <BlobLayer />
 
       {/* Contains <>Image,</> and <>Title, Intro Paragraph, Buttons</> */}
-      <div className="z-30 relative flex mt-10 max-lg:flex-col items-center medium:ml-[70px] medium:mr-[180px] tablet:m-10">
+      <div
+        className={`z-30 relative flex max-lg:flex-col items-center medium:ml-[70px] medium:mr-[180px] ${
+          collapse ? "tablet:my-10" : "tablet:my-16"
+        } tablet:mx-10 max-tablet:m-10 max-mobile:mx-8`}
+      >
         {/* Contains Only Image */}
         <div className="flex justify-start items-center max-lg:justify-center">
           <Image
@@ -90,7 +94,7 @@ const Intro = () => {
 
       {/* ONLY See More Content */}
       <div
-        className={`z-30 flex flex-col text-white long-text my-8 mx-[70px]
+        className={`z-30 flex flex-col text-white long-text  mx-[70px]
         max-w-[1190px]
         max-tablet:mx-7
          ${collapse ? "expanded" : ""} `}
@@ -114,7 +118,7 @@ const Intro = () => {
               window.open("/Gen Fulton's Curriculum Vitae 2024.pdf")
             }
           />
-          <div className="flex justify-center items-center pt-6">
+          <div className="flex justify-center items-center pt-6 mb-10">
             <Button
               type="button"
               variant="btn-icon"

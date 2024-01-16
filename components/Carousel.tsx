@@ -66,7 +66,7 @@ max-small:max-w-[600px]
             <div className="flex flex-row justify-center items-center mt-6 gap-4">
               <span
                 key={item.name}
-                className="font-bold text-md text-tertiary flex justify-center"
+                className="font-bold text-md text-tertiary flex justify-center max-mobile:text-xm"
               >
                 {item.name}
               </span>

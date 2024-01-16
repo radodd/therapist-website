@@ -1,7 +1,11 @@
+"use client";
 import Image from "next/image";
 import Button from "../components/Button";
 
 const Hero = () => {
+  const handleClick = () => {
+    window.open("https://calendly.com/genfultonconsultancy/", "_blank");
+  };
   return (
     <section
       id="hero"
@@ -79,8 +83,8 @@ const Hero = () => {
             <Button
               type="button"
               variant="btn-primary"
-              title="View Services"
-              href="#services"
+              title="Schedule a Consult"
+              onClick={handleClick}
             />
           </div>
         </div>
