@@ -17,8 +17,8 @@ const Footer = () => {
                   <Image
                     src="/favicon.ico"
                     alt="Gen fulton website logo"
-                    width={50}
-                    height={74}
+                    width={75}
+                    height={75}
                   />
                 </Link>
                 <h2>Gen Fulton</h2>
@@ -60,8 +60,8 @@ const Footer = () => {
                 <Image
                   src="/favicon.ico"
                   alt="Gen Fulton website logo"
-                  width={50}
-                  height={74}
+                  width={75}
+                  height={75}
                 />
               </Link>
               <div className="flex flex-col gap-1">
