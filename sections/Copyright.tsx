@@ -7,7 +7,7 @@ const Copyright = () => {
     max-tablet:justify-center
     max-tablet:ml-2"
     >
-      <img src="/copyright.svg" height={18} width={18} />
+      <img src="footer/copyright.svg" height={18} width={18} />
       <p className="">2024 Gen Fulton Consultancy All Rights Reserved.</p>
     </div>
   );

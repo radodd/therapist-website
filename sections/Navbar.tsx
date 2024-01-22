@@ -47,8 +47,8 @@ const Navbar = () => {
           <Image
             src="/favicon.ico"
             alt="Gen Fulton website logo"
-            width={70}
-            height={70}
+            width={65}
+            height={65}
           />
           {/* <span className="flex ml-2 text-white text-xl max-tablet:hidden">
             Gen Fulton

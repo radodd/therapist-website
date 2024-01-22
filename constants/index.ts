@@ -58,8 +58,8 @@ export const qualifications = [
 export const expertise = [
   {
     title: "Sports Performance",
-    icon: "/icon-sports.svg",
-    blob: "/card-blob-1.svg",
+    icon: "expertise cards/icon-sports.svg",
+    blob: "expertise cards/card-blob-1.svg",
     description:
       "If you need help increasing your confidence, and staying present at games.",
     expanded:
@@ -67,8 +67,8 @@ export const expertise = [
   },
   {
     title: "Stress/Burnout",
-    icon: "/icon-stress.svg",
-    blob: "/card-blob-2.svg",
+    icon: "expertise cards/icon-stress.svg",
+    blob: "expertise cards/card-blob-2.svg",
     description:
       "If you are feeling the post covid burnout and a lack of boundaries.",
     expanded:
@@ -76,16 +76,16 @@ export const expertise = [
   },
   {
     title: "Relationship",
-    icon: "/icon-relationship.svg",
-    blob: "/card-blob-3.svg",
+    icon: "expertise cards/icon-relationship.svg",
+    blob: "expertise cards/card-blob-3.svg",
     description: "If you and your partner need help with your communication.",
     expanded:
       "Gen has been working with couples for over 4 years and has specific training in Sue Johnson’s Emotionally Focused Therapy technique.",
   },
   {
     title: "Trauma/PTSD",
-    icon: "/icon-trauma.svg",
-    blob: "/card-blob-4.svg",
+    icon: "expertise cards/icon-trauma.svg",
+    blob: "expertise cards/card-blob-4.svg",
     description:
       "If you need help to increase stress resilience and promote hope.",
     expanded:
@@ -125,15 +125,18 @@ export const footerLinks = [
   { name: "About", href: "#intro" },
   { name: "Expertise", href: "#expertise" },
   { name: "Contact", href: "#contact" },
+  { name: "", href: "" },
+  { name: "Disclaimer", href: "/docs/Disclaimer.pdf" },
+  { name: "Privacy Policy", href: "/docs/Privacy Policy.pdf" },
 ];
 
 export const footerConnections = [
   {
     name: "Gen's Linkedin",
     href: "https://www.linkedin.com/in/gen-fulton-lmft-sep-96a38566/",
-    icon: "/linkedin.svg",
+    icon: "footer/linkedin.svg",
   },
-  { name: "+1 (415) 579-2187", href: "/", icon: "/whatsapp.svg" },
+  { name: "+1 (415) 579-2187", href: "/", icon: "footer/whatsapp.svg" },
 ];
 
 // export const socials = {

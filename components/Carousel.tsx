@@ -102,14 +102,14 @@ max-small:max-w-[600px]
           type="button"
           title=""
           variant="btn-icon"
-          icon="arrow-left.svg"
+          icon="arrow/arrow-left.svg"
           onClick={previousSlide}
         />
         <Button
           type="button"
           title=""
           variant="btn-icon"
-          icon="arrow-right.svg"
+          icon="arrow/arrow-right.svg"
           onClick={nextSlide}
         />
       </div>

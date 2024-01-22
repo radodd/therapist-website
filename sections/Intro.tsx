@@ -85,7 +85,7 @@ const Intro = () => {
             <Button
               type="button"
               variant="btn-icon"
-              icon="/arrow-down.svg"
+              icon="arrow/arrow-down.svg"
               onClick={() => setCollapse((prev) => !prev)}
             />
           </div>
@@ -122,7 +122,7 @@ const Intro = () => {
             <Button
               type="button"
               variant="btn-icon"
-              icon="/arrow-up.svg"
+              icon="arrow/arrow-up.svg"
               onClick={() => setCollapse((prev) => !prev)}
             />
           </div>
