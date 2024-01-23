@@ -12,7 +12,7 @@ const BlobLayer = () => {
       {/* Blob 1 */}
       <div className="w-full z-10 relative">
         <motion.img
-          src={"/blob-1.svg"}
+          src={"/intro section/blob-1.svg"}
           alt=""
           className="absolute small:scale-50 "
           style={{
@@ -41,7 +41,7 @@ const BlobLayer = () => {
         }}
       >
         <motion.img
-          src={"/blob-2.svg"}
+          src={"/intro section/blob-2.svg"}
           alt=""
           className="absolute transform"
           style={{
@@ -68,7 +68,7 @@ const BlobLayer = () => {
         style={{ transform: "translateY(-200px)" }}
       >
         <motion.img
-          src={"/blob-3.svg"}
+          src={"/intro section/blob-3.svg"}
           alt=""
           className="absolute"
           style={{

@@ -61,7 +61,7 @@ export const expertise = [
     icon: "expertise cards/icon-sports.svg",
     blob: "expertise cards/card-blob-1.svg",
     description:
-      "If you need help increasing your confidence, and staying present at games.",
+      "Do you need help focusing or performing under pressure?",
     expanded:
       "Gen has a graduate certificate in Sport Psychology and the Mental Performance Golf Academy coaching certification.",
   },
@@ -70,7 +70,7 @@ export const expertise = [
     icon: "expertise cards/icon-stress.svg",
     blob: "expertise cards/card-blob-2.svg",
     description:
-      "If you are feeling the post covid burnout and a lack of boundaries.",
+      "Are you are feeling the post-covid burnout and difficulty asserting boundaries?",
     expanded:
       "Gen is a Somatic Experiencing Practitioner, a mind-body approach to reducing reactivity to stress in both individuals and couples.",
   },
@@ -78,7 +78,7 @@ export const expertise = [
     title: "Relationship",
     icon: "expertise cards/icon-relationship.svg",
     blob: "expertise cards/card-blob-3.svg",
-    description: "If you and your partner need help with your communication.",
+    description: "Do you and your partner need help with your communication?.",
     expanded:
       "Gen has been working with couples for over 4 years and has specific training in Sue Johnson’s Emotionally Focused Therapy technique.",
   },
@@ -87,7 +87,7 @@ export const expertise = [
     icon: "expertise cards/icon-trauma.svg",
     blob: "expertise cards/card-blob-4.svg",
     description:
-      "If you need help to increase stress resilience and promote hope.",
+      "Do you need help to increase stress resilience and promote hope?",
     expanded:
       "Gen is a Somatic Experiencing practitioner which utilizes mindfulness and a slow and steady exposure to stressors. ",
   },

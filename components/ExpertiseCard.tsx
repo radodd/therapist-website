@@ -59,7 +59,7 @@ const ExpertiseCard = ({
       mobile:w-[280px]
       max-mobile:w-[264px]"
       animate={{
-        height: collapse ? 580 : 407,
+        height: collapse ? 600 : 447,
       }}
       // whileHover={{
       //   scale: 1.04,
