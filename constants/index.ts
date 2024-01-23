@@ -70,7 +70,7 @@ export const expertise = [
     icon: "expertise cards/icon-stress.svg",
     blob: "expertise cards/card-blob-2.svg",
     description:
-      "Are you are feeling the post-covid burnout and difficulty asserting boundaries?",
+      "Are you feeling post-covid burnout and difficulty asserting boundaries?",
     expanded:
       "Gen is a Somatic Experiencing Practitioner, a mind-body approach to reducing reactivity to stress in both individuals and couples.",
   },
