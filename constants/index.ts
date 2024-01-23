@@ -78,7 +78,7 @@ export const expertise = [
     title: "Relationship",
     icon: "expertise cards/icon-relationship.svg",
     blob: "expertise cards/card-blob-3.svg",
-    description: "Do you and your partner need help with your communication?.",
+    description: "Do you and your partner need help with your communication?",
     expanded:
       "Gen has been working with couples for over 4 years and has specific training in Sue Johnson’s Emotionally Focused Therapy technique.",
   },
