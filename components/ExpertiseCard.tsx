@@ -56,7 +56,7 @@ const ExpertiseCard = ({
         opacity: opacityProgress,
       }}
       className="group flex flex-col justify-center items-center text-[#000409]
-      mobile:w-[280px]
+      mobile:w-[279px]
       max-mobile:w-[264px]"
       animate={{
         height: collapse ? 600 : 447,
