@@ -46,7 +46,7 @@ const Intro = () => {
       >
         {/* Contains Only Image */}
         <div className="flex justify-start items-center max-lg:justify-center">
-          <Image
+          <img
             src="/selfie.jpg"
             alt="intro picture"
             width={300}
