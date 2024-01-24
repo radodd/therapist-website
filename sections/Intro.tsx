@@ -60,7 +60,7 @@ const Intro = () => {
           {intro.map((items, index) => (
             <div key={index}>
               {" "}
-              <h2 className="text-lg font-normal mt-10 lg:max-w-lg">
+              <h2 className="text-lg font-normal mt-10 pb-6 lg:max-w-lg">
                 {items.greeting}
               </h2>
               <p className="lg:max-w-3xl text-sm font-normal">{items.text}</p>

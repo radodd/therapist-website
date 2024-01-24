@@ -21,7 +21,7 @@ export const description = [
 // INTRO SECTION
 export const intro = [
   {
-    greeting: "Hi, I'm Gen Fulton",
+    greeting: "Hi, I'm Gen Fulton.",
     text: "My approach to therapy focuses on conjointly developing goals that suit your needs to reduce stress and burnout. My methodology utilizes neuroscience-backed techniques to re-regulate your nervous system. This technique may restore hope and harmony to guard against the things that stress us out the most, the uncontrollable factors of life.",
   },
 ];
