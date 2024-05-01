@@ -3,7 +3,7 @@ import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Gen Fulton Consulting",
+  title: "Gen Fulton Consultancy",
   description: "Psychotherapy & Coaching",
 };
 
@@ -17,7 +17,7 @@ export default function RootLayout({
       <head>
         {/* Add Open Graph meta tags */}
         <meta property="og:image" content="/opengraph-image.png" />
-        <meta property="og:title" content="Gen Fulton Consultancy." />
+        <meta property="og:title" content="Gen Fulton Consultancy" />
         <meta
           property="og:description"
           content="Gen's therapeutic approach focuses on conjointly developing goals that suit your needs to reduce stress and burnout"
