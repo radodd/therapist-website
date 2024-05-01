@@ -14,6 +14,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        {/* Add Open Graph meta tags */}
+        <meta property="og:image" content="/opengraph-image.png" />
+        <meta property="og:title" content="Gen Fulton Consultancy." />
+        <meta
+          property="og:description"
+          content="Gen's therapeutic approach focuses on conjointly developing goals that suit your needs to reduce stress and burnout"
+        />
+        {/* Add more Open Graph meta tags as needed */}
+      </head>
       <body>
         <main className="relative overflow-hidden">
           {children}
