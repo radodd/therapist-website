@@ -9,7 +9,9 @@ const HeroText = () => {
     tablet:mx-[140px]"
     >
       {description.map((item) => (
-        <p className="text-lg font-normal text-secondary">{item.text}</p>
+        <p className="text-lg font-normal text-secondary text-pretty">
+          {item.text}
+        </p>
       ))}
     </section>
   );

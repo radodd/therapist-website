@@ -1,33 +1,24 @@
 "use client";
 
-import Image from "next/image";
 import Button from "../components/Button";
 import { useEffect, useState } from "react";
 import { intro, qualifications } from "@/constants";
-import { motion } from "framer-motion";
 import BlobLayer from "@/components/BlobLayer";
 
 const Intro = () => {
   const [collapse, setCollapse] = useState(false);
   const [isTablet, setIsTablet] = useState(false);
-  // const router = useRouter();
 
   useEffect(() => {
     const handleResize = () => {
       setIsTablet(window.matchMedia("(max-width: 835px)").matches);
     };
-
-    // Initial check on mount
     handleResize();
-
-    // Listen for window resize events
     window.addEventListener("resize", handleResize);
-
-    // Cleanup the event listener on component unmount
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, []); // Empty dependency array ensures that the effect runs only once on mount
+  }, []);
 
   return (
     <section
@@ -42,7 +33,7 @@ const Intro = () => {
       <div
         className={`z-30 relative flex max-lg:flex-col items-center medium:ml-[70px] medium:mr-[180px] ${
           collapse ? "tablet:my-10" : "tablet:my-16"
-        } tablet:mx-10 max-tablet:m-10 max-mobile:mx-8`}
+        } tablet:mx-[70px] max-tablet:m-7 max-mobile:mx-8`}
       >
         {/* Contains Only Image */}
         <div className="flex justify-start items-center max-lg:justify-center">
@@ -56,7 +47,7 @@ const Intro = () => {
         </div>
 
         {/* Contains Title, Intro Paragraph, Buttons */}
-        <div className="flex flex-col text-white max-w-[748px] gap-8 lg:ml-[110px] max-tablet:mx-8">
+        <div className="flex flex-col text-white xl:max-w-[748px] gap-8 lg:ml-[110px] ">
           {intro.map((items, index) => (
             <div key={index}>
               {" "}
