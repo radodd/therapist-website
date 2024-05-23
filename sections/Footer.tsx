@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { footerLinks } from "@/constants";
-import { footerConnections } from "@/constants";
+
 import Button from "../components/Button";
 
 const Footer = () => {
@@ -28,16 +28,16 @@ const Footer = () => {
                 <ul key={item.name} className="">
                   <li className={index > 2 ? "justify-self-center" : ""}>
                     {index > 2 ? (
-                      <a
+                      <Link
                         href={item.href}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="ml-10"
                       >
                         {item.name}
-                      </a>
+                      </Link>
                     ) : (
-                      item.name
+                      <Link href={item.href}>{item.name}</Link>
                     )}
                   </li>
                 </ul>
@@ -107,16 +107,16 @@ const Footer = () => {
                       }`}
                     >
                       {index > 2 ? (
-                        <a
+                        <Link
                           href={item.href}
                           target="_blank"
                           rel="noopener noreferrer"
                           className="pl-10 max-mobileplus:pl-3"
                         >
                           {item.name}
-                        </a>
+                        </Link>
                       ) : (
-                        item.name
+                        <Link href={item.href}>{item.name}</Link>
                       )}
                     </li>
                   </ul>
@@ -177,18 +177,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-{
-  /* {footerConnections.map((item) => (
-              <div key={item.name} className="flex gap-2">
-                <img src={item.icon} alt={`${item.name} icon`} />
-                <Link
-                  href={item.href}
-                  target="_blank"
-                  className="curser-pointer hover:text-slate-300"
-                >
-                  {item.name}
-                </Link>
-              </div>
-            ))} */
-}

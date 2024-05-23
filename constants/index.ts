@@ -60,8 +60,7 @@ export const expertise = [
     title: "Sports Performance",
     icon: "expertise cards/icon-sports.svg",
     blob: "expertise cards/card-blob-1.svg",
-    description:
-      "Do you need help focusing or performing under pressure?",
+    description: "Do you need help focusing or performing under pressure?",
     expanded:
       "Gen has a graduate certificate in Sport Psychology and the Mental Performance Golf Academy coaching certification.",
   },
@@ -122,24 +121,10 @@ export const reviews = [
 
 // FOOTER SECTION
 export const footerLinks = [
-  { name: "About", href: "#intro" },
+  { name: "About", href: "#about" },
   { name: "Expertise", href: "#expertise" },
   { name: "Contact", href: "#contact" },
   { name: "", href: "" },
   { name: "Disclaimer", href: "/docs/Disclaimer.pdf" },
   { name: "Privacy Policy", href: "/docs/Privacy Policy.pdf" },
 ];
-
-export const footerConnections = [
-  {
-    name: "Gen's Linkedin",
-    href: "https://www.linkedin.com/in/gen-fulton-lmft-sep-96a38566/",
-    icon: "footer/linkedin.svg",
-  },
-  { name: "+1 (415) 579-2187", href: "/", icon: "footer/whatsapp.svg" },
-];
-
-// export const socials = {
-//   title: "Social",
-//   links: ["/facebook.svg", "/instagram.svg", "/twitter.svg", "/youtube.svg"],
-// };

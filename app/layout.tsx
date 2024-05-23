@@ -1,11 +1,17 @@
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
+import { Open_Sans } from "next/font/google";
 
 export const metadata: Metadata = {
   title: "Gen Fulton Consultancy",
   description: "Psychotherapy & Coaching",
 };
+
+const openSans = Open_Sans({
+  subsets: ["latin"],
+  weight: ["400", "600", "700"],
+});
 
 export default function RootLayout({
   children,
@@ -24,7 +30,7 @@ export default function RootLayout({
         />
         {/* Add more Open Graph meta tags as needed */}
       </head>
-      <body>
+      <body className={openSans.className}>
         <main className="relative overflow-hidden">
           {children}
           <Analytics />
