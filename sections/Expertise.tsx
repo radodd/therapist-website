@@ -16,7 +16,7 @@ const Expertise = () => {
       max-small:flex"
       >
         {expertise.map((item, index) => (
-          <div className="justify-center">
+          <div key={index} className="justify-center">
             <ExpertiseCard key={item.title} {...item} />
           </div>
         ))}

@@ -44,20 +44,45 @@ const Footer = () => {
               ))}
             </div>
           </div>
-          <div className="text-white flex flex-col justify-center items-end gap-3">
+          <div className="text-white flex flex-col justify-center items-end gap-2">
             <h3>Gen Fulton Consultancy</h3>
-            {footerConnections.map((item) => (
-              <div key={item.name} className="flex gap-2">
-                <img src={item.icon} alt={`${item.name} icon`} />
-                <Link
-                  href={item.href}
-                  target="_blank"
-                  className="curser-pointer hover:text-slate-300"
-                >
-                  {item.name}
-                </Link>
+
+            <Link href="tel:+14155792187">
+              <div className="flex gap-2 aspect-3/4">
+                <Image
+                  src="/footer/whatsapp.png"
+                  alt="Gen Fulton's WhatsApp phone number"
+                  width={24}
+                  height={24}
+                />
+                <span>+1 (415) 579-2187</span>
               </div>
-            ))}
+            </Link>
+
+            <div className="flex gap-4">
+              <Link
+                href="https://www.linkedin.com/in/gen-fulton-lmft-sep-96a38566/"
+                target="_blank"
+              >
+                <Image
+                  src="/footer/linkedin.png"
+                  alt="Gen Fulton's LinkedIn"
+                  width={18}
+                  height={17}
+                />
+              </Link>
+              <Link
+                href="https://www.instagram.com/genfultonconsultancy/"
+                target="_blank"
+              >
+                <Image
+                  src="/footer/instagram.png"
+                  alt="Gen Fulton's Instagram"
+                  width={18}
+                  height={17}
+                />
+              </Link>
+            </div>
           </div>
         </div>
 
@@ -73,10 +98,14 @@ const Footer = () => {
                   height={70}
                 />
               </Link>
-              <div className="grid grid-rows-3 grid-flow-col gap-1">
+              <div className="grid grid-rows-3 grid-flow-col gap-1 pb-6">
                 {footerLinks.map((item, index) => (
                   <ul key={item.name}>
-                    <li>
+                    <li
+                      className={`${
+                        index <= footerLinks.length - 3 ? "" : "hidden"
+                      }`}
+                    >
                       {index > 2 ? (
                         <a
                           href={item.href}
@@ -94,14 +123,51 @@ const Footer = () => {
                 ))}
               </div>
             </div>
-            <div className="text-white mt-5 flex flex-col justify-center items-center gap-2 w-max">
+            <div className="text-white flex flex-col justify-center items-center gap-2">
               <h3>Gen Fulton Consultancy</h3>
-              {footerConnections.map((item, index) => (
-                <div key={item.name} className="flex gap-2">
-                  <img src={item.icon} alt={`${item.name} icon`} />
-                  <p>{item.name}</p>
+              <Link href="tel:+14155792187">
+                <div className="flex gap-2 aspect-3/4">
+                  <Image
+                    src="/footer/whatsapp.png"
+                    alt="Gen Fulton's WhatsApp phone number"
+                    width={24}
+                    height={24}
+                  />
+                  <span>+1 (415) 579-2187</span>
                 </div>
-              ))}
+              </Link>
+              <div className="flex gap-4">
+                <Link
+                  href="https://www.linkedin.com/in/gen-fulton-lmft-sep-96a38566/"
+                  target="_blank"
+                >
+                  <Image
+                    src="/footer/linkedin.png"
+                    alt="Gen Fulton's LinkedIn"
+                    width={18}
+                    height={17}
+                  />
+                </Link>
+                <Link
+                  href="https://www.instagram.com/genfultonconsultancy/"
+                  target="_blank"
+                >
+                  <Image
+                    src="/footer/instagram.png"
+                    alt="Gen Fulton's Instagram"
+                    width={18}
+                    height={17}
+                  />
+                </Link>
+              </div>
+              <div>
+                <Link href="/docs/Privacy Policy.pdf" target="_blank">
+                  <span>Privacy Policy | </span>
+                </Link>
+                <Link href="/docs/Disclaimer.pdf" target="_blank">
+                  <span>Disclaimer</span>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
@@ -111,3 +177,18 @@ const Footer = () => {
 };
 
 export default Footer;
+
+{
+  /* {footerConnections.map((item) => (
+              <div key={item.name} className="flex gap-2">
+                <img src={item.icon} alt={`${item.name} icon`} />
+                <Link
+                  href={item.href}
+                  target="_blank"
+                  className="curser-pointer hover:text-slate-300"
+                >
+                  {item.name}
+                </Link>
+              </div>
+            ))} */
+}
