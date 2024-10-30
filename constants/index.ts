@@ -117,6 +117,12 @@ export const reviews = [
     name: "M.R.",
     profession: "Retired Environmental Philanthropist",
   },
+  {
+    id: 4,
+    text: "Gen is amazing. As founder/CEO of a fast growing tech company valued in nine figures, and juggling a spouse and three kids under 13, I was not taking care of myself and the wear was showing. Most impressively, Gen set specific goals for us to END therapy, rather than continue indefinitely. As a CEO, I appreciated clear goal setting, such as how to know if I was responding rather than just reacting to the inevitable challenges. We achieved those goals, declared victory, and stopped therapy. I bet you have never done that with a therapist. Gen is the best.",
+    name: "M.N.",
+    profession: "Founder/CEO",
+  },
 ];
 
 // FOOTER SECTION
