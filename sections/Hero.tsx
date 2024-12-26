@@ -2,6 +2,8 @@
 import Image from "next/image";
 import Button from "../components/Button";
 
+import styles from "../app/scss/Hero.module.scss";
+
 const Hero = () => {
   return (
     <section
@@ -14,10 +16,11 @@ const Hero = () => {
         className="z-20 absolute object-cover scale-150 object-center transform translate-x-[25%] translate-y-[5%] max-tablet:hidden"
       /> */}
 
-      <img
-        src="/mobile-hero.jpg"
+      {/* <img
+        // src="/mobile-hero.jpg"
+        src="/hero1.jpg"
         alt=""
-        className="z-20 absolute object-cover transform
+        className={` ${styles.imgHor} z-20 absolute object-cover transform
         max-mobileplus:scale-[2.3]
         max-extrasmall:translate-x-[5%]
         max-mobile:translate-y-[0%]
@@ -33,8 +36,17 @@ const Hero = () => {
         wide:scale-[1.2]
         wideplus:translate-x-[5%]
         wideplus:translate-y-[12%]
-        wideplus:scale-[1.1]"
-      />
+        wideplus:scale-[1.1]`}
+      /> */}
+      <div className={styles.imageContainer}>
+        <Image
+          src="/hero1.jpg"
+          alt=""
+          width={1000}
+          height={1000}
+          className={styles.image}
+        />
+      </div>
 
       <div
         className="z-30 bg-gradient-to-r from-black/80 from-12% to-transparent to-70%
