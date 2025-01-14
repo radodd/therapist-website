@@ -6,6 +6,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 
 type ExpertiseCardProps = {
   title: string;
+  service: string;
   icon: string;
   blob: string;
   description: string;
@@ -14,6 +15,7 @@ type ExpertiseCardProps = {
 
 const ExpertiseCard = ({
   title,
+  service,
   icon,
   blob,
   description,
@@ -114,9 +116,12 @@ const ExpertiseCard = ({
           }`}
         />
       </div>
-      <h2 className="text-lg text-primary font-semibold justify-center text-center py-7 tracking-[-1.5px]">
+      <h2 className="text-lg text-primary font-semibold justify-center text-center py-4 tracking-[-1.5px]">
         {title}
       </h2>
+      <span className="text-md text-primary font-normal justify-center text-center pb-3">
+        {service}
+      </span>
       <p className="justify-center text-center text-sm font-normal max-w-[260px]">
         {description}
       </p>

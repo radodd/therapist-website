@@ -1,7 +1,11 @@
 // NAVIGATION
 export const navLinks = [
   { href: "#about", key: "about", label: "About" },
-  { href: "#expertise", key: "expertise", label: "Expertise" },
+  {
+    href: "#expertise",
+    key: "expertise",
+    label: "Counseling & Coaching Services",
+  },
   { href: "#contact", key: "contact ", label: "Contact " },
   {
     href: "https://calendly.com/genfultonconsultancy/",
@@ -58,6 +62,7 @@ export const qualifications = [
 export const expertise = [
   {
     title: "Sports Performance",
+    service: "(Coaching)",
     icon: "expertise cards/icon-sports.svg",
     blob: "expertise cards/card-blob-1.svg",
     description: "Do you need help focusing or performing under pressure?",
@@ -66,6 +71,7 @@ export const expertise = [
   },
   {
     title: "Stress/Burnout",
+    service: "(Coaching)",
     icon: "expertise cards/icon-stress.svg",
     blob: "expertise cards/card-blob-2.svg",
     description:
@@ -75,6 +81,7 @@ export const expertise = [
   },
   {
     title: "Relationship",
+    service: "(Counseling)",
     icon: "expertise cards/icon-relationship.svg",
     blob: "expertise cards/card-blob-3.svg",
     description: "Do you and your partner need help with your communication?",
@@ -83,6 +90,7 @@ export const expertise = [
   },
   {
     title: "Trauma/PTSD",
+    service: "(Counseling)",
     icon: "expertise cards/icon-trauma.svg",
     blob: "expertise cards/card-blob-4.svg",
     description:
