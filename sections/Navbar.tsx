@@ -1,11 +1,10 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { navLinks } from "@/constants";
-import Button from "../components/Button";
 import "hamburgers/dist/hamburgers.css";
 
 const Navbar = () => {
@@ -50,9 +49,6 @@ const Navbar = () => {
             width={65}
             height={65}
           />
-          {/* <span className="flex ml-2 text-white text-xl max-tablet:hidden">
-            Gen Fulton
-          </span> */}
         </Link>
 
         {/* Navigation links for large screens */}
@@ -62,7 +58,7 @@ const Navbar = () => {
               href={link.href}
               key={link.key}
               target={`${index === navLinks.length - 1 ? "_blank" : ""}`}
-              className={`TEST ${
+              className={` ${
                 index === navLinks.length - 1
                   ? "btn-primary"
                   : "cursor-pointer transition-all hover:text-slate-300"

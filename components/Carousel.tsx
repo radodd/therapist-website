@@ -48,7 +48,7 @@ max-small:max-w-[600px]
         />
         {reviews.map((item, index) => (
           <motion.div
-            key={item.id}
+            key={index}
             className={`text-md font-normal text-primary z-30
             max-mobile:align-middle
             max-mobileplus:text-[16px]

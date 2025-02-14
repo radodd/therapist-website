@@ -10,7 +10,7 @@ export const navLinks = [
   {
     href: "https://calendly.com/genfultonconsultancy/",
     key: "book_appointment ",
-    label: "Schedule a Consult",
+    label: "Your Free Consultation",
   },
 ];
 
@@ -18,7 +18,7 @@ export const navLinks = [
 export const description = [
   {
     id: 1,
-    text: "I shred my agenda and provide a holistic approach to help you achieve your goals.",
+    text: "Providing a holistic approach to helping you thrive in every aspect of life.",
   },
 ];
 
@@ -26,7 +26,7 @@ export const description = [
 export const intro = [
   {
     greeting: "Hi, I'm Gen Fulton.",
-    text: "My approach to therapy focuses on conjointly developing goals that suit your needs to reduce stress and burnout. My methodology utilizes neuroscience-backed techniques to re-regulate your nervous system. This technique may restore hope and harmony to guard against the things that stress us out the most, the uncontrollable factors of life.",
+    text: "My approach to therapy is collaborative to help you reduce stress and prevent burnout. Using neuroscience-backed techniques, I focus on re-regulating your nervous system to restore balance and resilience. This process empowers you to navigate life’s uncertainties with greater ease, fostering hope, harmony and well-being.",
   },
 ];
 
@@ -136,7 +136,7 @@ export const reviews = [
 // FOOTER SECTION
 export const footerLinks = [
   { name: "About", href: "#about" },
-  { name: "Expertise", href: "#expertise" },
+  { name: "Counseling & Coaching Services", href: "#expertise" },
   { name: "Contact", href: "#contact" },
   { name: "", href: "" },
   { name: "Disclaimer", href: "/docs/Disclaimer.pdf" },

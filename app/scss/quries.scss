@@ -30,6 +30,11 @@ $breakpoint-xl-width: 2500px;
   }
 }
 
+@mixin custom-break-1800 {
+  @media (min-width: 1800px) {
+    @content;
+  }
+}
 @mixin custom-break-1600-1306 {
   @media (min-width: 1306px) and (max-width: 1600px) {
     @content;
