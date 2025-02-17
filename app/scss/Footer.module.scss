@@ -1,0 +1,45 @@
+@use "./quries.scss";
+@import "./quries.scss";
+
+.footerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #26425a;
+  padding: 24px 12px;
+  @include large-break {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 24px 72px;
+  }
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  color: white;
+  gap: 24px;
+  h2 {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: none;
+    @include large-break {
+      display: flex;
+    }
+  }
+  div:nth-child(1) {
+    @include mid-break {
+      padding-bottom: 40px;
+    }
+  }
+}
+
+.docContainer {
+  @include large-break {
+    display: none;
+  }
+}
