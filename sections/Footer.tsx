@@ -88,7 +88,7 @@ const ContactInfo = () => (
           width={24}
           height={24}
         />
-        <span>+1 (415) 579-218</span>
+        <span>+1 (415) 579-2187</span>
       </div>
     </Link>
   </>
