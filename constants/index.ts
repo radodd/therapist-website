@@ -26,7 +26,7 @@ export const description = [
 export const intro = [
   {
     greeting: "Hi, I'm Gen Fulton.",
-    text: "My approach to therapy is collaborative to help you reduce stress and prevent burnout. Using neuroscience-backed techniques, I focus on re-regulating your nervous system to restore balance and resilience. This process empowers you to navigate life’s uncertainties with greater ease, fostering hope, harmony and well-being.",
+    text: "My approach to therapy is collaborative to help you reduce stress and prevent burnout. I use motivational neuroscience to help you re-regulate your nervous system, build resilience, and perform with clarity in high-stakes situations. This process empowers you to navigate life’s uncertainties with greater ease, fostering hope, harmony and well-being.",
   },
 ];
 
