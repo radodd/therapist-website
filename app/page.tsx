@@ -11,7 +11,6 @@ import Copyright from "@/sections/Copyright";
 export default function Home() {
   return (
     <>
-      <Navbar />
       <section>
         <Hero />
       </section>
@@ -29,10 +28,6 @@ export default function Home() {
       </section>
       <section className="pt-[72px] bg-eggshell">
         <Consult />
-      </section>
-      <Footer />
-      <section>
-        <Copyright />
       </section>
     </>
   );
