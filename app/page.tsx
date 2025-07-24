@@ -1,10 +1,13 @@
 import Intro from "@/sections/Intro";
+import Footer from "@/sections/Footer";
 import Consult from "@/sections/Consult";
 import Hero from "@/sections/Hero";
 import Reviews from "@/sections/Reviews";
+import Navbar from "@/sections/Navbar";
 import Expertise from "@/sections/Expertise";
 import HeroText from "@/sections/HeroText";
-import Media from "@/sections/Media";
+import Copyright from "@/sections/Copyright";
+import Media from "./resources/page";
 
 export default function Home() {
   return (
