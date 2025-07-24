@@ -7,6 +7,7 @@ import Navbar from "@/sections/Navbar";
 import Expertise from "@/sections/Expertise";
 import HeroText from "@/sections/HeroText";
 import Copyright from "@/sections/Copyright";
+import { Media } from "./resources/page";
 
 export default function Home() {
   return (
@@ -25,6 +26,9 @@ export default function Home() {
       </section>
       <section className="relative sm:px-0 bg-sea-foam justify-center shadow-[0px_4px_10px_0px_rgba(0,0,0,0.25)]">
         <Reviews />
+      </section>
+      <section>
+        <Media />
       </section>
       <section className="pt-[72px] bg-eggshell">
         <Consult />
