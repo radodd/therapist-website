@@ -1,13 +1,12 @@
 // NAVIGATION
 export const navLinks = [
-  { href: "/#about", key: "about", label: "About" },
+  { href: "#about", key: "about", label: "About" },
   {
-    href: "/#expertise",
+    href: "#expertise",
     key: "expertise",
     label: "Counseling & Coaching Services",
   },
-  { href: "/#contact", key: "contact ", label: "Contact " },
-  { href: "/resources", key: "resources", label: "Resources" },
+  { href: "#contact", key: "contact ", label: "Contact " },
   {
     href: "https://calendly.com/genfultonconsultancy/",
     key: "book_appointment ",
@@ -139,7 +138,7 @@ export const footerLinks = [
   { name: "About", href: "#about" },
   { name: "Counseling & Coaching Services", href: "#expertise" },
   { name: "Contact", href: "#contact" },
-  { name: "Resources", href: "/resources" },
+  { name: "", href: "" },
   { name: "Disclaimer", href: "/docs/Disclaimer.pdf" },
   { name: "Privacy Policy", href: "/docs/Privacy Policy.pdf" },
 ];
