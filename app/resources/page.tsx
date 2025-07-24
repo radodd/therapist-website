@@ -4,8 +4,8 @@ import BlobLayer from "@/components/BlobLayer";
 import Button from "@/components/Button";
 import Consult from "@/sections/Consult";
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
+import Media from "@/sections/Media";
 
 import styles from "../scss/Resources.module.scss";
 
@@ -69,25 +69,6 @@ const Resources = () => {
             </div>
           </div>
         ))}
-      </div>
-    </section>
-  );
-};
-
-export const Media = () => {
-  return (
-    <section className={styles.media}>
-      <h1>Media</h1>
-      <div className={styles.imageContainer}>
-        <Link href="https://coloradoavidgolfer.com/mark-hubbard-my-demon-is-my-inner-critic/">
-          <Image
-            src="/media-mark-pga.jpg"
-            alt=""
-            width={1000}
-            height={1000}
-            className={styles.image}
-          />
-        </Link>
       </div>
     </section>
   );
