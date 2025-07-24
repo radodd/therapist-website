@@ -1,12 +1,12 @@
 // NAVIGATION
 export const navLinks = [
-  { href: "#about", key: "about", label: "About" },
+  { href: "/#about", key: "about", label: "About" },
   {
-    href: "#expertise",
+    href: "/#expertise",
     key: "expertise",
     label: "Counseling & Coaching Services",
   },
-  { href: "#contact", key: "contact ", label: "Contact " },
+  { href: "/#contact", key: "contact ", label: "Contact " },
   { href: "/resources", key: "resources", label: "Resources" },
   {
     href: "https://calendly.com/genfultonconsultancy/",

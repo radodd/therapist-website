@@ -1,0 +1,104 @@
+@use "./quries.scss";
+@import "./quries.scss";
+
+.resources {
+  position: relative;
+  background-color: #144f7c;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+  @include mid-break {
+    padding: 64px 70px;
+  }
+  @include large-break {
+    padding: 64px 70px;
+  }
+  h1 {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-bottom: 40px;
+    @include large-break {
+      padding-bottom: 60px;
+    }
+  }
+
+  .resourcesContainer {
+    z-index: 30;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+  }
+
+  .singleResourcesContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    @include large-break {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  .imageContainer {
+    max-width: 500px;
+    @include large-break {
+      max-width: 600px;
+    }
+    .image {
+      object-fit: cover;
+      border-radius: 0.5rem;
+    }
+  }
+
+  .textButtonContainer {
+    @include large-break {
+      //   display: flex;
+      //   flex-direction: row;
+    }
+  }
+}
+
+.media {
+  position: relative;
+  z-index: 30;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+  @include mid-break {
+    padding: 64px 70px;
+  }
+  @include large-break {
+    padding: 64px 70px;
+  }
+  h1 {
+    color: var(--Primary-Medium, #144f7c);
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-bottom: 40px;
+    @include large-break {
+      padding-bottom: 60px;
+    }
+  }
+
+  .imageContainer {
+    max-width: 500px;
+    @include large-break {
+      max-width: 600px;
+    }
+    .image {
+      object-fit: cover;
+      border-radius: 0.5rem;
+    }
+  }
+}
