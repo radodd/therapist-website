@@ -1,17 +1,14 @@
 import Intro from "@/sections/Intro";
-import Footer from "@/sections/Footer";
 import Consult from "@/sections/Consult";
 import Hero from "@/sections/Hero";
 import Reviews from "@/sections/Reviews";
-import Navbar from "@/sections/Navbar";
 import Expertise from "@/sections/Expertise";
 import HeroText from "@/sections/HeroText";
-import Copyright from "@/sections/Copyright";
+import Media from "@/sections/Media";
 
 export default function Home() {
   return (
     <>
-      <Navbar />
       <section>
         <Hero />
       </section>
@@ -27,12 +24,11 @@ export default function Home() {
       <section className="relative sm:px-0 bg-sea-foam justify-center shadow-[0px_4px_10px_0px_rgba(0,0,0,0.25)]">
         <Reviews />
       </section>
+      <section>
+        <Media />
+      </section>
       <section className="pt-[72px] bg-eggshell">
         <Consult />
-      </section>
-      <Footer />
-      <section>
-        <Copyright />
       </section>
     </>
   );
