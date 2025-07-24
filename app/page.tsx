@@ -7,7 +7,7 @@ import Navbar from "@/sections/Navbar";
 import Expertise from "@/sections/Expertise";
 import HeroText from "@/sections/HeroText";
 import Copyright from "@/sections/Copyright";
-import { Media } from "./resources/page";
+import Media from "./resources/page";
 
 export default function Home() {
   return (
