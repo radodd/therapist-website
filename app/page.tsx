@@ -21,7 +21,7 @@ export default function Home() {
       <section className="relative overflow-hidden">
         <Intro />
       </section>
-      <section className="mobile:px-[70px] mobile:py-16 max-mobile:px-8 max-mobile:py-10 bg-eggshell ">
+      <section className="mobile:px-[70px] mobile:py-16 max-mobile:px-8 max-mobile:py-10  ">
         <Expertise />
       </section>
       <section className="relative sm:px-0 bg-sea-foam justify-center shadow-[0px_4px_10px_0px_rgba(0,0,0,0.25)]">
@@ -30,7 +30,7 @@ export default function Home() {
       <section>
         <Media />
       </section>
-      <section className="pt-[72px] bg-eggshell">
+      <section>
         <Consult />
       </section>
     </>
