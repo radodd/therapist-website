@@ -7,7 +7,7 @@ import Navbar from "@/sections/Navbar";
 import Expertise from "@/sections/Expertise";
 import HeroText from "@/sections/HeroText";
 import Copyright from "@/sections/Copyright";
-import Media from "@/sections/Media";
+import PressAppearances from "@/sections/PressAppearances";
 
 export default function Home() {
   return (
@@ -28,7 +28,7 @@ export default function Home() {
         <Reviews />
       </section>
       <section>
-        <Media />
+        <PressAppearances />
       </section>
       <section>
         <Consult />

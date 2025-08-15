@@ -5,7 +5,7 @@ import Button from "@/components/Button";
 import Consult from "@/sections/Consult";
 import Image from "next/image";
 import React from "react";
-import Media from "@/sections/Media";
+import Media from "@/sections/PressAppearances";
 
 import styles from "../scss/Resources.module.scss";
 
@@ -27,7 +27,7 @@ const ResourcesPage = () => {
   return (
     <>
       <Resources />
-      <Media />
+      {/* <Media /> */}
       <div className="relative z-30">
         <Consult />
       </div>

@@ -4,10 +4,10 @@ import Image from "next/image";
 import styles from "../app/scss/Resources.module.scss";
 import Button from "@/components/Button";
 
-const Media = () => {
+const PressAppearances = () => {
   return (
     <section className={styles.media}>
-      <h1>Media</h1>
+      <h1>Press & Appearances</h1>
       <div className={styles.imageContainer}>
         <Link href="https://coloradoavidgolfer.com/mark-hubbard-my-demon-is-my-inner-critic/">
           <Image
@@ -40,4 +40,4 @@ const Media = () => {
   );
 };
 
-export default Media;
+export default PressAppearances;
