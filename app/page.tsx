@@ -7,6 +7,7 @@ import Navbar from "@/sections/Navbar";
 import Expertise from "@/sections/Expertise";
 import HeroText from "@/sections/HeroText";
 import Copyright from "@/sections/Copyright";
+import PressAppearances from "@/sections/PressAppearances";
 
 export default function Home() {
   return (
@@ -21,13 +22,16 @@ export default function Home() {
       <section className="relative overflow-hidden">
         <Intro />
       </section>
-      <section className="mobile:px-[70px] mobile:py-16 max-mobile:px-8 max-mobile:py-10 bg-eggshell ">
+      <section className="mobile:px-[70px] mobile:py-16 max-mobile:px-8 max-mobile:py-10  ">
         <Expertise />
       </section>
       <section className="relative sm:px-0 bg-sea-foam justify-center shadow-[0px_4px_10px_0px_rgba(0,0,0,0.25)]">
         <Reviews />
       </section>
-      <section className="pt-[72px] bg-eggshell">
+      <section>
+        <PressAppearances />
+      </section>
+      <section>
         <Consult />
       </section>
       <Footer />

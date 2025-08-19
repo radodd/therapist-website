@@ -1,0 +1,122 @@
+@use "./quries.scss";
+@import "./quries.scss";
+
+.resources {
+  position: relative;
+  background-color: #144f7c;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+  @include mid-break {
+    padding: 64px 70px;
+  }
+  @include large-break {
+    padding: 64px 70px;
+  }
+  h1 {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-bottom: 40px;
+    @include large-break {
+      padding-bottom: 60px;
+    }
+  }
+
+  .resourcesContainer {
+    z-index: 30;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+  }
+
+  .singleResourcesContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    @include large-break {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  .imageContainer {
+    max-width: 500px;
+    @include large-break {
+      max-width: 600px;
+    }
+    .image {
+      object-fit: cover;
+      border-radius: 0.5rem;
+    }
+  }
+
+  .textButtonContainer {
+    @include large-break {
+      //   display: flex;
+      //   flex-direction: row;
+    }
+  }
+}
+
+.media {
+  position: relative;
+  z-index: 30;
+  background-color: #f9f4e9;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+  @include mid-break {
+    padding: 64px 70px;
+  }
+  @include large-break {
+    padding: 64px 70px;
+  }
+  h1 {
+    color: var(--Primary-Medium, #144f7c);
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-bottom: 40px;
+    @include large-break {
+      padding-bottom: 60px;
+    }
+  }
+
+  .imageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 30px;
+    background-color: white;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    padding: 30px;
+    max-width: 500px;
+    // height: 300px;
+    @include mid-break {
+      gap: 40px;
+    }
+    @include large-break {
+      flex-direction: row;
+      gap: 60px;
+      max-width: 700px;
+    }
+    .image {
+      box-shadow: 0 5px 24px rgba(0, 0, 0, 0.2);
+      object-fit: cover;
+      @include large-break {
+        min-width: 250px;
+      }
+    }
+  }
+}
