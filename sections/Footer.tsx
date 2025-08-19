@@ -36,7 +36,7 @@ const FooterLinks = () => (
       />
       <h2>Gen Fulton</h2>
     </Link>
-    <div className="grid grid-rows-2 grid-flow-col gap-1 max-[1306px]:pb-6">
+    <div className="grid grid-rows-4 grid-flow-col gap-1 max-[1306px]:pb-6">
       {footerLinks.map((item, index) => {
         const isHidden = index >= footerLinks.length - 2;
         return (

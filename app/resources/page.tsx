@@ -16,11 +16,11 @@ const RESOURCES = [
     button: "View Course",
     href: "https://www.mpgagolf.com/offers/FkDREmy9/checkout",
   },
-  {
-    text: "After years of clinical experience and coaching, I’m thrilled to share my knowledge in two upcoming books: one on Trauma Psychotherapy and another on mental performance in golf. These books will offer practical tools and insights to transform your healing and game",
-    image: "/books.jpeg",
-    button: "Click Me",
-  },
+  // {
+  //   text: "After years of clinical experience and coaching, I’m thrilled to share my knowledge in two upcoming books: one on Trauma Psychotherapy and another on mental performance in golf. These books will offer practical tools and insights to transform your healing and game",
+  //   image: "/books.jpeg",
+  //   button: "Click Me",
+  // },
 ];
 
 const ResourcesPage = () => {
