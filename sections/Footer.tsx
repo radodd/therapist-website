@@ -46,7 +46,7 @@ const FooterLinks = () => (
                 isHidden ? "hidden min-[1306px]:flex" : ""
               }`}
             >
-              {index > 2 ? (
+              {index > 3 ? (
                 <Link
                   href={item.href}
                   target="_blank"

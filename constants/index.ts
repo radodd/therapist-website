@@ -139,7 +139,7 @@ export const footerLinks = [
   { name: "About", href: "#about" },
   { name: "Counseling & Coaching Services", href: "#expertise" },
   { name: "Contact", href: "#contact" },
-  { name: "", href: "" },
+  { name: "Resources", href: "/resources" },
   { name: "Disclaimer", href: "/docs/Disclaimer.pdf" },
   { name: "Privacy Policy", href: "/docs/Privacy Policy.pdf" },
 ];
