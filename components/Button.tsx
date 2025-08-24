@@ -9,6 +9,7 @@ type ButtonProps = {
   onClick?: () => void;
   selected?: boolean;
   href?: string;
+  target?: boolean;
 };
 
 const Button = ({
@@ -19,6 +20,7 @@ const Button = ({
   onClick,
   selected,
   href,
+  target,
 }: ButtonProps) => {
   if (href) {
     return (
@@ -26,6 +28,7 @@ const Button = ({
         href={href}
         className={`gap-3 rounded-full ${variant}`}
         onClick={onClick}
+        target={target ? "_blank" : ""}
       >
         {icon && <img src={icon} alt={title} />}
         <label className="whitespace-nowrap cursor-pointer">{title}</label>

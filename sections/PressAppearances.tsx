@@ -9,7 +9,10 @@ const PressAppearances = () => {
     <section className={styles.media}>
       <h1>Press & Appearances</h1>
       <div className={styles.imageContainer}>
-        <Link href="https://coloradoavidgolfer.com/mark-hubbard-my-demon-is-my-inner-critic/">
+        <Link
+          href="https://coloradoavidgolfer.com/mark-hubbard-my-demon-is-my-inner-critic/"
+          target="_blank"
+        >
           <Image
             src="/logo-avidgolfer.png"
             alt=""
@@ -20,17 +23,17 @@ const PressAppearances = () => {
         </Link>
         <div className="">
           <p>
-            Hubbard and sports psychologist Gen Fulton, a 2004 graduate of the
-            University of Colorado, did an hour-long Instagram Live interview
-            and went in-depth on Hubbard’s mental approach to the game. Hubbard
-            is one of the best golfers in the world and is ranked in the top 70
-            of all PGA Tour pros.
+            Hubbard and Gen Fulton, a 2004 graduate of the University of
+            Colorado who is a psychotherapist and performance coach, did an
+            hour-long Instagram Live interview and went in-depth on Hubbard’s
+            mental approach to the game.
           </p>
           <div className="flex justify-end pt-5">
             <Button
               variant="btn-primary"
               title="Read More"
               type="button"
+              target={true}
               href="https://coloradoavidgolfer.com/mark-hubbard-my-demon-is-my-inner-critic/"
             />
           </div>

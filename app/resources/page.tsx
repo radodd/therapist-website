@@ -64,6 +64,7 @@ const Resources = () => {
                   title={item.button}
                   type="button"
                   href={item.href}
+                  target={true}
                 />
               </div>
             </div>
