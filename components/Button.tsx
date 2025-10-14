@@ -9,6 +9,8 @@ type ButtonProps = {
   onClick?: () => void;
   selected?: boolean;
   href?: string;
+
+  target?: boolean;
 };
 
 const Button = ({
