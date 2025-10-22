@@ -17,7 +17,7 @@ const RESOURCES = [
     href: "https://www.mpgagolf.com/offers/FkDREmy9/checkout",
   },
   {
-    text: "How to Treat Perfectionism Clinically",
+    text: "Gen’s master’s thesis comes to life in this podcast, offering a holistic, mind-body approach that integrates Somatic Experiencing, Cognitive Behavioral Therapy (CBT), and Mindfulness. This brief dialogue demonstrates how perfectionism can become “maladaptive” and how to work with it when it does. Gen’s tool—the Fulton Cognitive Somatic Re-Appraisal Log—bridges perfectionist thoughts with bodily sensations to help calm the nervous system and reduce stress. Enjoy the journey toward a more embodied, compassionate understanding of perfectionism.",
     image: "/stock_stacked_rocks.png",
     button: "Play podcast",
     audioSrc: "/Unmasking_Perfectionism__Podcast.m4a",
@@ -69,6 +69,7 @@ const Resources = () => {
                     className="w-full mt-4"
                     preload="none"
                     autoPlay
+                    controlsList="nodownload"
                   >
                     Your browser does not support the audio element.
                   </audio>
