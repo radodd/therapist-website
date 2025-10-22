@@ -7,7 +7,7 @@ export const navLinks = [
     label: "Counseling & Coaching Services",
   },
   { href: "/#contact", key: "contact ", label: "Contact " },
-  { href: "/resources", key: "resources", label: "Resources" },
+  { href: "/resources", key: "resources ", label: "Resources " },
   {
     href: "https://calendly.com/genfultonconsultancy/",
     key: "book_appointment ",
