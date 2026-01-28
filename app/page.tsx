@@ -12,6 +12,7 @@ import PressAppearances from "@/sections/PressAppearances";
 export default function Home() {
   return (
     <>
+      {/* <Navbar /> */}
       <section>
         <Hero />
       </section>
@@ -32,6 +33,10 @@ export default function Home() {
       </section>
       <section>
         <Consult />
+        {/* </section> */}
+        {/* <Footer />
+      <section>
+        <Copyright /> */}
       </section>
     </>
   );

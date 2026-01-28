@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 import { Open_Sans } from "next/font/google";
-import Footer from "@/sections/Footer";
 import Navbar from "@/sections/Navbar";
+import Footer from "@/sections/Footer";
 import Copyright from "@/sections/Copyright";
 
 export const metadata: Metadata = {
