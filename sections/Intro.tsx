@@ -106,7 +106,9 @@ const Intro = () => {
             type="button"
             variant="btn-transparent"
             onClick={() =>
-              window.open("/docs/Gen Fulton's Curriculum Vitae Oct 2024.pdf")
+              window.open(
+                "/docs/Gen Fulton's Curriculum Vitae January 2026.pdf",
+              )
             }
           />
           <div className="flex justify-center items-center pt-6 mb-10">
