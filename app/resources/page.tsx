@@ -14,7 +14,7 @@ const RESOURCES = [
     text: "Originally developed for elite golfers, this class offers practical tools for managing pressure, building emotional resilience, and enhancing focus under stress. Whether you're navigating high-stakes competition or the demands of everyday life, these strategies are designed to help you perform at your best—on and off the course. ",
     image: "/course-stress.jpeg",
     button: "View Course",
-    href: "https://www.mpgagolf.com/offers/FkDREmy9/checkout",
+    href: "https://www.skool.com/mpga/classroom/bb625a25?md=b2ae7ffb4710475e9fa030e3a8c7caf1",
   },
   {
     text: "Gen’s master’s thesis comes to life in this podcast, offering a holistic, mind-body approach that integrates Somatic Experiencing, Cognitive Behavioral Therapy (CBT), and Mindfulness. This brief dialogue demonstrates how perfectionism can become “maladaptive” and how to work with it when it does. Gen’s tool—the Fulton Cognitive Somatic Re-Appraisal Log—bridges perfectionist thoughts with bodily sensations to help calm the nervous system and reduce stress. Enjoy the journey toward a more embodied, compassionate understanding of perfectionism.",
