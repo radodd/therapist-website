@@ -54,18 +54,19 @@ const Navbar = () => {
         {/* Navigation links for large screens */}
         <ul className="flex-1 flex justify-end items-center h-full gap-12 text-white text-md max-navscreen:hidden ">
           {navLinks.map((link, index) => (
-            <Link
-              href={link.href}
-              key={link.key}
-              target={`${index === navLinks.length - 1 ? "_blank" : ""}`}
-              className={` ${
-                index === navLinks.length - 1
-                  ? "btn-primary"
-                  : "cursor-pointer transition-all hover:text-slate-300"
-              }`}
-            >
-              {link.label}
-            </Link>
+            <li key={link.key}>
+              <Link
+                href={link.href}
+                target={`${index === navLinks.length - 1 ? "_blank" : ""}`}
+                className={` ${
+                  index === navLinks.length - 1
+                    ? "btn-primary"
+                    : "cursor-pointer transition-all hover:text-slate-300"
+                }`}
+              >
+                {link.label}
+              </Link>
+            </li>
           ))}
         </ul>
 
