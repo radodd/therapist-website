@@ -7,8 +7,25 @@ import Footer from "@/sections/Footer";
 import Copyright from "@/sections/Copyright";
 
 export const metadata: Metadata = {
-  title: "Gen Fulton Consultancy",
-  description: "Psychotherapy & Coaching",
+  title: {
+    default: "Gen Fulton | Psychotherapist & Performance Coach",
+    template: "%s | Gen Fulton Consultancy",
+  },
+  description:
+    "Gen Fulton offers psychotherapy and performance coaching for stress, burnout, perfectionism, and sports performance. Specializing in Somatic Experiencing, CBT, and Emotionally Focused Therapy.",
+  metadataBase: new URL("https://genfulton.com"),
+  openGraph: {
+    siteName: "Gen Fulton Consultancy",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Gen Fulton | Psychotherapist & Performance Coach",
+    description:
+      "Gen Fulton offers psychotherapy and performance coaching for stress, burnout, perfectionism, and sports performance.",
+    images: ["/opengraph-image.png"],
+  },
 };
 
 const openSans = Open_Sans({
@@ -23,17 +40,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        {/* Add Open Graph meta tags */}
-        <meta property="og:image" content="/opengraph-image.png" />
-        <meta property="og:title" content="Gen Fulton Consultancy" />
-        <meta
-          property="og:description"
-          content="Gen's therapeutic approach focuses on conjointly developing goals that suit your needs to reduce stress and burnout"
-        />
-        {/* Add more Open Graph meta tags as needed */}
-      </head>
-      <body className={openSans.className}>
+<body className={openSans.className}>
         <Navbar />
         <main className="relative overflow-hidden">
           {children}
