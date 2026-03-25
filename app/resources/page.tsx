@@ -28,7 +28,7 @@ const RESOURCES = [
     href: "https://www.skool.com/mpga/classroom/bb625a25?md=b2ae7ffb4710475e9fa030e3a8c7caf1",
   },
   {
-    text: "Gen's master's thesis comes to life in this podcast, offering a holistic, mind-body approach that integrates Somatic Experiencing, Cognitive Behavioral Therapy (CBT), and Mindfulness. This brief dialogue demonstrates how perfectionism can become "maladaptive" and how to work with it when it does. Gen's tool—the Fulton Cognitive Somatic Re-Appraisal Log—bridges perfectionist thoughts with bodily sensations to help calm the nervous system and reduce stress. Enjoy the journey toward a more embodied, compassionate understanding of perfectionism.",
+    text: "Gen\u2019s master\u2019s thesis comes to life in this podcast, offering a holistic, mind-body approach that integrates Somatic Experiencing, Cognitive Behavioral Therapy (CBT), and Mindfulness. This brief dialogue demonstrates how perfectionism can become \u201cmaladaptive\u201d and how to work with it when it does. Gen\u2019s tool\u2014the Fulton Cognitive Somatic Re-Appraisal Log\u2014bridges perfectionist thoughts with bodily sensations to help calm the nervous system and reduce stress. Enjoy the journey toward a more embodied, compassionate understanding of perfectionism.",
     image: "/stock_stacked_rocks.png",
     imageAlt: "Stacked balanced rocks representing mindfulness and calm",
     button: "Play podcast",
