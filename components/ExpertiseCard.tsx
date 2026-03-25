@@ -71,51 +71,28 @@ const ExpertiseCard = ({
       }}
     >
       {/* Animated SVG */}
-      <div
-        className="w-[186px] h-[186px] transform relative
-      "
+      <motion.div
+        className="w-[186px] h-[186px] transform relative"
+        whileHover={isMobile ? undefined : "hovered"}
       >
-        {/* Include your animated SVG component here */}
-        {/* Example: <AnimatedSVGComponent /> */}
-
         <motion.img
           src={blob}
           alt=""
-          className={`z-10 absolute transition
-          ${
-            isMobile
-              ? ""
-              : "group-hover:-translate-x-[15px] group-hover:translate-y-2 group-hover:-rotate-6 group-hover:duration-500 group-hover:ease-in-out"
-          }`}
-
-          // initial={{
-          //   x: 0,
-          //   y: 0,
-          // }}
-          // whileHover={{
-          //   x: 0,
-          //   y: 0,
-          //   scale: 2,
-          // }}
-          // transition={{
-          // repeat: Infinity,
-          // repeatType: "mirror",
-          // duration: 2,
-          // ease: "easeInOut",
+          aria-hidden="true"
+          className="z-10 absolute"
+          variants={{ hovered: { x: -15, y: 8, rotate: -6 } }}
+          transition={{ type: "spring", stiffness: 260, damping: 18 }}
         />
-        <img
+        <motion.img
           src={icon}
-          alt="icon"
+          alt={`${title} icon`}
           width={186}
           height={186}
-          className={`z-20 absolute
-          ${
-            isMobile
-              ? ""
-              : "group-hover:translate-x-[15px] group-hover:-translate-y-2 group-hover:rotate-6 group-hover:duration-500 group-hover:ease-in-out"
-          }`}
+          className="z-20 absolute"
+          variants={{ hovered: { x: 15, y: -8, rotate: 6 } }}
+          transition={{ type: "spring", stiffness: 260, damping: 18 }}
         />
-      </div>
+      </motion.div>
       <h2 className="text-lg text-primary font-semibold justify-center text-center py-4 tracking-[-1.5px]">
         {title}
       </h2>

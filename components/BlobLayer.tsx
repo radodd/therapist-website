@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 const BlobLayer = () => {
   return (
     <div
+      aria-hidden="true"
       className="absolute flex flex-wrap w-full h-[1000px]
     max-small:scale-[0.5]
     max-small:right-0
@@ -14,16 +15,10 @@ const BlobLayer = () => {
         <motion.img
           src={"/intro section/blob-1.svg"}
           alt=""
-          className="absolute small:scale-50 "
-          style={{
-            right: "0",
-          }}
-          initial={{
-            transform: "translateX(3px) translateY(-8px)",
-          }}
-          animate={{
-            transform: "translateX(35px) translateY(-15px)",
-          }}
+          className="absolute small:scale-50"
+          style={{ right: "0" }}
+          initial={{ x: 3, y: -8 }}
+          animate={{ x: 35, y: -15 }}
           transition={{
             repeat: Infinity,
             repeatType: "mirror",
@@ -36,23 +31,15 @@ const BlobLayer = () => {
       {/* Blob 2 */}
       <div
         className="z-20 w-full relative"
-        style={{
-          transform: "translateX(10vw) translateY(vh)", // Use viewport units for responsive translation
-        }}
+        style={{ transform: "translateX(10vw)" }}
       >
         <motion.img
           src={"/intro section/blob-2.svg"}
           alt=""
-          className="absolute transform"
-          style={{
-            right: "10vw",
-          }}
-          initial={{
-            transform: "translateX(15px) translateY(-4px)",
-          }}
-          animate={{
-            transform: "translateX(50px) translateY(-50px)",
-          }}
+          className="absolute"
+          style={{ right: "10vw" }}
+          initial={{ x: 15, y: -4 }}
+          animate={{ x: 50, y: -50 }}
           transition={{
             repeat: Infinity,
             repeatType: "mirror",
@@ -71,15 +58,9 @@ const BlobLayer = () => {
           src={"/intro section/blob-3.svg"}
           alt=""
           className="absolute"
-          style={{
-            right: "0",
-          }}
-          initial={{
-            transform: "translateX(9px) translateY(1px)",
-          }}
-          animate={{
-            transform: "translateX(15px) translateY(-50px)",
-          }}
+          style={{ right: "0" }}
+          initial={{ x: 9, y: 1 }}
+          animate={{ x: 15, y: -50 }}
           transition={{
             repeat: Infinity,
             repeatType: "mirror",
@@ -93,24 +74,3 @@ const BlobLayer = () => {
 };
 
 export default BlobLayer;
-
-{
-  /* <motion.img */
-}
-//   src={"/blob.svg"}
-//   alt=""
-//   className="absolute z-10"
-//   style={{ right: "0" }}
-//   initial={{
-//     transform: "translateX(8px) translateY(-4px)",
-//   }}
-//   animate={{
-//     transform: "translateX(25px) translateY(-20px)",
-//   }}
-//   transition={{
-//     repeat: Infinity,
-//     repeatType: "mirror",
-//     duration: 3,
-//     ease: "easeInOut",
-//   }}
-// />

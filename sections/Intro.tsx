@@ -1,6 +1,7 @@
 "use client";
 
 import Button from "../components/Button";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { intro, qualifications } from "@/constants";
 import BlobLayer from "@/components/BlobLayer";
@@ -37,9 +38,9 @@ const Intro = () => {
       >
         {/* Contains Only Image */}
         <div className="flex justify-start items-center max-lg:justify-center">
-          <img
+          <Image
             src="/selfie.jpg"
-            alt="intro picture"
+            alt="Gen Fulton, psychotherapist and performance coach"
             width={300}
             height={450}
             className="max-lg:m-0 rounded-t-full"
