@@ -53,9 +53,9 @@ const Consult = () => {
         max-[1380px]:col-span-4
         max-[1100px]:col-span-5"
         >
-          <h1 className="font-normal text-xl text-pretty max-mobile:text-center">
+          <h2 className="font-normal text-xl text-pretty max-mobile:text-center">
             Ready to take the next step?
-          </h1>
+          </h2>
           <p className="font-normal text-md text-pretty">
             Request a free 30{" "}
             <span className="max-consultsection:block">

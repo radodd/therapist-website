@@ -7,7 +7,7 @@ import Button from "@/components/Button";
 const PressAppearances = () => {
   return (
     <section className={styles.media}>
-      <h1>Press & Appearances</h1>
+      <h2>Press & Appearances</h2>
       <div className={styles.imageContainer}>
         <Link
           href="https://coloradoavidgolfer.com/mark-hubbard-my-demon-is-my-inner-critic/"
@@ -15,7 +15,7 @@ const PressAppearances = () => {
         >
           <Image
             src="/logo-avidgolfer.png"
-            alt=""
+            alt="Colorado Avid Golfer magazine logo"
             width={1000}
             height={1000}
             className={styles.image}
