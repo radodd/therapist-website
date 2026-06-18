@@ -7,7 +7,9 @@ import Button from "@/components/Button";
 const PressAppearances = () => {
   return (
     <section className={styles.media}>
-      <h2>Press & Appearances</h2>
+      <h2 className="text-xl font-normal pb-10 text-primary text-center">
+        Press &amp; Appearances
+      </h2>
       <div className={styles.imageContainer}>
         <Link
           href="https://coloradoavidgolfer.com/mark-hubbard-my-demon-is-my-inner-critic/"
