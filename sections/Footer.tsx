@@ -80,7 +80,7 @@ const ContactInfo = () => (
       </div>
     </Link>
 
-    <Link href="tel:+14155792187">
+    <Link href="tel:+14155792187" className="hidden">
       <div className="flex gap-2 aspect-3/4">
         <Image
           src="/footer/whatsapp.png"
